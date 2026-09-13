@@ -1,0 +1,22 @@
+# Core agent framework
+langgraph>=0.2.0
+langgraph-checkpoint-sqlite>=2.0.0
+langchain-core>=0.3.0
+
+# RAG / embeddings
+sentence-transformers>=2.2.2
+chromadb>=0.4.22
+numpy>=1.26.0
+
+# Dataset / Excel
+pandas>=2.0.0
+openpyxl>=3.1.0
+
+# API
+fastapi>=0.109.0
+uvicorn>=0.27.0
+pydantic>=2.6.0
+
+# MCP
+fastmcp>=0.1.0
+httpx>=0.26.0
