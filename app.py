@@ -1,183 +1,161 @@
-import json
-import os
-import time
-import uuid
-
-import chromadb
+# app.py
+import json, os, time, uuid
+from typing import Union
 from fastapi import FastAPI, HTTPException
-
-from agent import agent_graph
-from guardrails import mask_pii
-from rag_core import model
-from schemas import (
-    AddDocumentRequest,
-    AddDocumentResponse,
-    AgentStructuredResponse,
-    AskRequest,
-    AskResponse,
+from schemas import AskRequest, AgentResponse, AddDocumentRequest, AddDocumentResponse, ErrorResponse
+from agent import run_agent
+from guardrails import input_guardrail, output_guardrail
+from rag_core import (
+    chroma_client, create_embeddings, fixed_size_chunk,
+    sentence_based_chunk, semantic_based_chunk,
+    FIXED_COLLECTION_NAME, SENTENCE_COLLECTION_NAME, SEMANTIC_COLLECTION_NAME
 )
 
+app = FastAPI(title="Cred Banking & FinTech Support Agent", version="1.0")
 
-app = FastAPI(
-    title="Cred Domain Support Agent API",
-    version="1.0"
-)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+LOG_FILE = os.path.join(BASE_DIR, "requests.jsonl")
 
-LOG_FILE = "logs/requests.jsonl"
-VECTOR_PATH = "vector_store"
-RAG_COLLECTION = "fixed_chunks"
 
-os.makedirs("logs", exist_ok=True)
-
-def log_request_jsonl(
-    trace_id: str,
-    thread_id: str,
-    raw_query: str,
-    response_data: dict,
-    duration_ms: float
-):
-    entry = {
-        "timestamp": time.strftime(
-            "%Y-%m-%dT%H:%M:%SZ",
-            time.gmtime()
-        ),
+def write_log(trace_id, endpoint, query, status, duration_ms):
+    record = {
         "trace_id": trace_id,
-        "thread_id": thread_id,
-        "query_masked": mask_pii(raw_query),
-        "response": response_data,
-        "duration_ms": round(duration_ms, 2),
+        "endpoint": endpoint,
+        "query": query,
+        "status": status,
+        "duration_ms": round(duration_ms, 2)
     }
+    with open(LOG_FILE, "a", encoding="utf-8") as f:
+        f.write(json.dumps(record, ensure_ascii=False) + "\n")
 
-    with open(
-        LOG_FILE,
-        "a",
-        encoding="utf-8"
-    ) as file:
-        file.write(
-            json.dumps(
-                entry,
-                ensure_ascii=False
-            )
-            + "\n"
-        )
 
-@app.post(
-    "/ask",
-    response_model=AskResponse
-)
-def ask_agent(req: AskRequest):
+@app.get("/")
+def root():
+    return {"service": "Cred Banking & FinTech Support Agent", "status": "running"}
 
-    start_time = time.time()
-    trace_id = f"trace-{uuid.uuid4().hex[:8]}"
 
-    config = {
-        "configurable": {
-            "thread_id": req.thread_id
-        }
-    }
+@app.post("/ask", response_model=Union[AgentResponse, ErrorResponse])
+def ask(request: AskRequest):
+    start = time.perf_counter()
+    trace_id = str(uuid.uuid4())
+
+    guard = input_guardrail(request.query)
+    safe_query = guard["text"]
+
+    if not guard["allowed"]:
+        duration = (time.perf_counter() - start) * 1000
+        write_log(trace_id, "/ask", safe_query, "blocked", duration)
+        return ErrorResponse(error=guard["response"])
 
     try:
-        final_state = agent_graph.invoke(
-            {
-                "query": req.query,
-                "conversation_history": []
-            },
-            config=config
-        )
+        result = run_agent(safe_query, request.thread_id)
+        result["answer"] = output_guardrail(result["answer"], grounded=True)
+        validated = AgentResponse.model_validate(result)
 
-        response = AgentStructuredResponse(
-            **final_state["response"]
-        )
+        duration = (time.perf_counter() - start) * 1000
+        write_log(trace_id, "/ask", safe_query, "success", duration)
+        return validated
 
-    except Exception as exc:
-        raise HTTPException(
-            status_code=500,
-            detail=f"Agent execution failed: {exc}"
-        )
+    except Exception as e:
+        duration = (time.perf_counter() - start) * 1000
+        write_log(trace_id, "/ask", safe_query, "error", duration)
+        return ErrorResponse(error=str(e))
 
-    duration_ms = (
-        time.time() - start_time
-    ) * 1000
 
-    log_request_jsonl(
-        trace_id,
-        req.thread_id,
-        req.query,
-        response.model_dump(),
-        duration_ms
+def add_chunks(collection_name, doc, chunks, strategy):
+    collection = chroma_client.get_or_create_collection(
+        name=collection_name,
+        metadata={"hnsw:space": "cosine"}
     )
 
-    return AskResponse(
-        trace_id=trace_id,
-        status="success",
-        data=response
-    )
+    ids, documents, metadatas = [], [], []
 
-@app.post(
-    "/add-document",
-    response_model=AddDocumentResponse
-)
-def add_document(req: AddDocumentRequest):
+    for i, text in enumerate(chunks):
+        ids.append(f"{doc.doc_id}_{strategy}_{i:03d}")
+        documents.append(text)
+        metadatas.append({
+            "doc_id": doc.doc_id,
+            "topic": doc.topic,
+            "title": doc.title,
+            "strategy": strategy
+        })
 
-    client = chromadb.PersistentClient(
-        path=VECTOR_PATH
-    )
+    if documents:
+        collection.add(
+            ids=ids,
+            documents=documents,
+            metadatas=metadatas,
+            embeddings=create_embeddings(documents)
+        )
+
+
+@app.post("/add-document", response_model=Union[AddDocumentResponse, ErrorResponse])
+def add_document(request: AddDocumentRequest):
+    start = time.perf_counter()
+    trace_id = str(uuid.uuid4())
+
+    guard = input_guardrail(request.content)
+    safe_content = guard["text"]
+
+    if not guard["allowed"]:
+        duration = (time.perf_counter() - start) * 1000
+        write_log(trace_id, "/add-document", safe_content, "blocked", duration)
+        return ErrorResponse(error=guard["response"])
 
     try:
-        collection = client.get_collection(
-            RAG_COLLECTION
-        )
-    except Exception as exc:
-        raise HTTPException(
-            status_code=500,
-            detail=f"Vector collection unavailable: {exc}"
-        )
+        existing = []
+        for name in [FIXED_COLLECTION_NAME, SENTENCE_COLLECTION_NAME, SEMANTIC_COLLECTION_NAME]:
+            try:
+                collection = chroma_client.get_collection(name)
+                result = collection.get(where={"doc_id": request.doc_id})
+                existing.extend(result.get("ids", []))
+            except Exception:
+                pass
 
-    chunk_id = f"dynamic_{req.doc_id}"
+        if existing:
+            raise HTTPException(status_code=409, detail="Document ID already exists.")
 
-    # Prevent duplicate IDs during repeated testing
-    existing = collection.get(
-        ids=[chunk_id]
-    )
+        safe_doc = request.model_copy(update={"content": safe_content})
 
-    if existing["ids"]:
-        raise HTTPException(
-            status_code=409,
-            detail=(
-                f"Document {req.doc_id} "
-                "already exists."
-            )
+        add_chunks(
+            FIXED_COLLECTION_NAME,
+            safe_doc,
+            fixed_size_chunk(safe_content, chunk_size=300, overlap=60),
+            "fixed"
         )
 
-    embedding = model.encode(
-        req.content
-    ).tolist()
+        add_chunks(
+            SENTENCE_COLLECTION_NAME,
+            safe_doc,
+            sentence_based_chunk(safe_content, sentences_per_chunk=2),
+            "sentence"
+        )
 
-    collection.add(
-        ids=[chunk_id],
-        embeddings=[embedding],
-        documents=[req.content],
-        metadatas=[
-            {
-                "doc_id": req.doc_id,
-                "topic": req.topic,
-                "dynamic": True,
-            }
-        ]
-    )
+        add_chunks(
+            SEMANTIC_COLLECTION_NAME,
+            safe_doc,
+            semantic_based_chunk(safe_content, similarity_threshold=0.65),
+            "semantic"
+        )
 
-    return AddDocumentResponse(
-        status="success",
-        message=(
-            f"Document {req.doc_id} successfully "
-            "embedded and indexed."
-        ),
-        doc_id=req.doc_id
-    )
+        duration = (time.perf_counter() - start) * 1000
+        write_log(trace_id, "/add-document", f"document:{request.doc_id}", "success", duration)
 
-@app.get("/health")
-def health():
-    return {
-        "status": "ok",
-        "rag_collection": RAG_COLLECTION
-    }
+        return AddDocumentResponse(
+            success=True,
+            doc_id=request.doc_id,
+            message="Document added to all vector collections."
+        )
+
+    except HTTPException:
+        raise
+
+    except Exception as e:
+        duration = (time.perf_counter() - start) * 1000
+        write_log(trace_id, "/add-document", f"document:{request.doc_id}", "error", duration)
+        return ErrorResponse(error=str(e))
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("app:app", host="127.0.0.1", port=8000, reload=True)
