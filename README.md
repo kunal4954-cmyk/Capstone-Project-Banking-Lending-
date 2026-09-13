@@ -1,96 +1,99 @@
-# Cred Banking & FinTech Domain Support Agent
+# Cred Banking & FinTech Support Agent
+
+A Banking & FinTech support agent built with **LangGraph + RAG** for banking queries and loan application status lookup.
 
 **Track:** Banking & FinTech (Cred)  
-**Mode:** MOCK_LLM — Deterministic, Offline, Zero API Key  
-**Frameworks:** LangGraph, ChromaDB, FastAPI, MCP
+**Mode:** `MOCK_LLM` — Offline, deterministic, no API key  
+**Random Seed:** `42`
+
+## Key Features
+
+- RAG-based banking question answering
+- Loan application status lookup
+- LangGraph conditional routing
+- PII masking and prompt-injection protection
+- Grounded response validation
+- FastAPI endpoints
+- FastMCP integration
+- SQLite checkpointing
+- JSONL request logging
+- Retry and timeout handling
 
 ## Dataset
 
-- Random seed: `42`
-- Total records: `1000`
-- Personal Loan: `205`
-- Home Loan: `199`
-- Auto Loan: `197`
-- Business Loan: `186`
-- Education Loan: `213`
-- Fraud review rate: `19.60%`
-- Loan amount range: `INR 200,000 – INR 4,999,000`
+The project uses `Banking.csv` to create **1,000 loan application records**.
 
-## Knowledge Base
+| Property | Value |
+|---|---:|
+| Records | 1,000 |
+| Unique IDs | 1,000 |
+| Loan Range | ₹200,561 – ₹4,999,992 |
+| Fraud Review | 144 (14.4%) |
 
-12 policy documents covering:
+**Loan Categories:** Business, Home, Education, Personal, Auto
 
-- Loan eligibility
-- EMI calculation
-- Credit card fees
-- KYC requirements
-- Fraud dispute resolution
-- Account closure
-- Interest rates
-- Prepayment penalties
-- Minimum balance
-- Credit score factors
-- Joint accounts
-- NRI eligibility
+**Application Status:** Submitted, Under Review, Approved, Rejected, Disbursed
 
-## RAG Chunking Evaluation
+## Knowledge Base & RAG
 
-| Strategy | Precision@3 | Recall@3 |
-|---|---:|---:|
-| Fixed-size + overlap | 0.3333 | 1.0000 |
-| Sentence-based | 0.3333 | 1.0000 |
+The knowledge base contains **20 documents** covering important Banking and FinTech topics including:
 
-Both required strategies achieved identical results.  
-**Selected collection:** `fixed_chunks`
+KYC, EMI, loan eligibility, credit score, fraud, prepayment, NPA/default, collateral, guarantor, bank lending, NBFC lending, and P2P lending.
 
-Semantic chunking is included as an additional experiment.
+Three chunking methods were evaluated:
 
-## Similarity Threshold
+| Chunking | Threshold | P@3 | R@3 |
+|---|---:|---:|---:|
+| Fixed | 0.2390 | 0.3333 | 1.0000 |
+| **Sentence** | **0.2480** | **0.3333** | **1.0000** |
+| Semantic | 0.2651 | 0.3333 | 1.0000 |
 
-- Minimum in-scope similarity: `0.6735`
-- Maximum out-of-scope similarity: `0.2403`
-- Empirically selected threshold: `0.4569`
+**Final Strategy:** Sentence-based chunking  
+**Embedding:** `all-MiniLM-L6-v2`  
+**Vector DB:** ChromaDB
 
-## Agent Capabilities
+Queries below the threshold return:
 
-- Policy RAG queries
-- Loan application status lookup
-- Grounded response generation
-- Source attribution
-- Escalation scoring
-- PII masking
+```text
+I don't know based on the available knowledge base.
+```
+
+## Agent Workflow
+
+```text
+                  ┌── RAG ─────┐
+Query → Classify ─┤             ├→ Final Response
+                  └── Lookup ──┘
+```
+
+The lookup tool returns loan status, amount, escalation score, and escalation requirement.
+
+**Escalation Threshold:** `0.65`  
+**Escalated Applications:** 128/1000 (12.8%)
+
+## Guardrails
+
+- PAN masking
+- Aadhaar masking
+- Bank account masking
 - Prompt-injection detection
-- Out-of-scope abstention
-- Conversation checkpointing
+- RAG groundedness check
+- PII-safe logging
 
-## API
+## API & MCP
 
-FastAPI supports:
-
-- Health check
-- Policy queries
-- Application lookup
-- Dynamic document ingestion
-
-## MCP
-
-Tool:
+FastAPI endpoints:
 
 ```text
-lookup_loan_status
+POST /ask
+POST /add-document
 ```
 
-Endpoint:
-
-```text
-http://127.0.0.1:8001/mcp
-```
-
-MCP round-trip verified for two loan application IDs.
+FastMCP exposes the loan-status lookup tool through `/mcp`.
 
 ## Evaluation
 
-12 policy queries:
+RAG evaluation was performed on **15 queries**.
 
 | Metric | Score |
 |---|---:|
@@ -98,27 +101,28 @@ MCP round-trip verified for two loan application IDs.
 | Groundedness | 1.0000 |
 | Answer Relevance | 1.0000 |
 
-Functional and safety checks: **3/3 PASS**
-
-## Resilience
-
-- SQLite checkpoint/resume: PASS
-- Exponential backoff: PASS
-- Per-node timeout: PASS
-- Global timeout: PASS
-
 ## Run
 
 ```bash
-pip install -r requirement.txt
+pip install -r requirements.txt
 python dataset.py
-python rag_core.py
+python kb_dataset.py
 python test_eval.py
-python test_resilience.py
 ```
 
-FastAPI:
+Start API:
 
 ```bash
-uvicorn app:app --reload
+uvicorn app:app --host 127.0.0.1 --port 8000
 ```
+
+Start MCP:
+
+```bash
+python mcp_server.py
+python mcp_client.py
+```
+
+## Tech Stack
+
+`Python` • `LangGraph` • `SentenceTransformers` • `ChromaDB` • `FastAPI` • `FastMCP` • `Pydantic` • `SQLite`
