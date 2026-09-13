@@ -13,8 +13,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "checkpoints.sqlite")
 HISTORY_FILE = os.path.join(BASE_DIR, "conversation_history.json")
 
-RAG_STRATEGY = "sentence"       # replace after evaluation
-RAG_THRESHOLD = None           # replace with calibrated value
+RAG_STRATEGY = "sentence"       
+RAG_THRESHOLD = 0.2480           
 ESCALATION_THRESHOLD = 0.65
 
 APPLICATION_INDEX = {str(x["record_id"]): x for x in LOAN_APPLICATIONS}
