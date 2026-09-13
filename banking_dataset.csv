@@ -1,0 +1,1001 @@
+Lender_Type,Customer_ID,Loan_ID,Loan_Type,Loan_Purpose,Loan_Amount,Interest_Rate,Loan_Term_Months,Start_Date,End_Date,Repayment_Status,NPA_Status,Pending_Amount,Non_Repayment_EMIs,Default_Date,Recovery_Status,Collateral,Guarantor,Prepayment_Option,EMI_Amount,Name,Age,Gender,Account_Type,Credit_Score,Customer_Segment,Branch_Location
+Bank,C397,L564,Business Loan,Startup Funding,3421449,8.2,240,2023-05-08,2043-01-23,Ongoing,No,3421449,5,,Active,Factory,Brother,No,14256.0,Sneha Kumar,51,F,Savings,758,Corporate,Hyderabad
+Bank,C422,L1511,Home Loan,Residential Property,2268478,14.1,120,2022-05-27,2032-04-04,Closed,No,0,0,,Closed,House,Mother,No,18904.0,Meera Kumar,44,F,Savings,776,Corporate,Ahmedabad
+Bank,C1492,L1769,Education Loan,Overseas Study,4726700,12.4,120,2021-10-05,2031-08-14,Ongoing,No,4726700,4,,Active,None,Father,Yes,39389.0,Pooja Bansal,44,F,Savings,705,Corporate,Pune
+Bank,C1118,L242,Education Loan,Higher Education,3080873,14.4,60,2024-04-02,2029-03-07,Closed,No,0,0,,Closed,None,Wife,Yes,51348.0,Anita Mehta,36,M,Savings,769,Retail,Ahmedabad
+Bank,C1019,L1602,Personal Loan,Medical Expenses,1229430,14.4,60,2019-10-02,2024-09-05,Ongoing,No,1229430,5,,Active,None,Brother,No,20490.0,Shalini Nair,28,F,Current,649,Retail,Pune
+Bank,C344,L98,Business Loan,Startup Funding,2339125,7.4,120,2022-09-05,2032-07-14,Ongoing,No,2339125,2,,Active,Factory,Brother,No,19493.0,Anjali Sharma,30,F,Current,722,SME,Patna
+Bank,C75,L496,Car Loan,Vehicle Purchase,4674103,13.8,36,2025-04-02,2028-03-17,Closed,No,0,0,,Closed,Car,Husband,No,129836.0,Vikram Nair,30,M,Savings,733,SME,Lucknow
+Bank,C665,L905,Education Loan,Higher Education,4123740,11.6,48,2019-12-21,2023-11-30,Ongoing,No,4123740,3,,Active,None,None,Yes,85911.0,Megha Verma,23,M,Current,625,SME,Chennai
+Bank,C1363,L982,Home Loan,Residential Property,2248532,10.7,120,2022-11-05,2032-09-13,Ongoing,No,2248532,5,,Active,House,Brother,No,18738.0,Meera Malhotra,57,F,Savings,734,SME,Jaipur
+Bank,C587,L1391,Education Loan,Higher Education,978018,7.8,120,2024-08-06,2034-06-15,Ongoing,No,978018,3,,Active,None,Mother,No,8150.0,Sunita Gupta,32,M,Current,786,Retail,Hyderabad
+Bank,C257,L1684,Personal Loan,Debt Consolidation,3222881,14.1,240,2023-11-26,2043-08-13,Closed,No,0,0,,Closed,None,Father,Yes,13429.0,Anita Rao,37,M,Savings,659,Corporate,Pune
+Bank,C1759,L1646,Personal Loan,Wedding Expenses,2176343,11.1,60,2019-09-07,2024-08-11,Ongoing,No,2176343,6,,Active,None,Mother,No,36272.0,Sneha Kapoor,55,M,Current,718,Corporate,Bangalore
+Bank,C391,L1185,Car Loan,Vehicle Purchase,3776281,9.6,60,2020-07-13,2025-06-17,Ongoing,No,3776281,2,,Active,Car,Wife,Yes,62938.0,Sneha Patel,34,F,Savings,796,SME,Mumbai
+Bank,C174,L899,Business Loan,Working Capital,2338079,12.5,120,2021-07-23,2031-06-01,Defaulted,Yes,2338079,0,2024-08-02,Recovery,Factory,Father,No,19484.0,Shalini Mehta,38,M,Current,725,SME,Patna
+Bank,C1347,L1758,Personal Loan,Medical Expenses,4940734,10.4,60,2021-03-12,2026-02-14,Ongoing,No,4940734,2,,Active,None,Wife,No,82346.0,Shreya Gupta,40,F,Current,625,Corporate,Bangalore
+Bank,C1424,L1042,Home Loan,Renovation,4881472,12.7,240,2022-02-21,2041-11-08,Ongoing,No,4881472,1,,Active,House,Wife,No,20339.0,Rohit Singh,53,F,Savings,658,SME,Kolkata
+Bank,C587,L1246,Personal Loan,Wedding Expenses,1020161,10.4,96,2019-01-13,2026-12-02,Ongoing,No,1020161,5,,Active,None,None,Yes,10627.0,Pooja Singh,27,M,Savings,632,Corporate,Chennai
+Bank,C1909,L1740,Home Loan,Renovation,789546,7.0,36,2019-08-06,2022-07-21,Ongoing,No,789546,1,,Active,House,Father,Yes,21932.0,Deepak Sharma,39,M,Current,785,Retail,Ahmedabad
+Bank,C1770,L127,Personal Loan,Debt Consolidation,3754995,7.8,240,2025-11-21,2045-08-08,Ongoing,No,3754995,4,,Active,None,Mother,No,15646.0,Anjali Patel,59,F,Current,736,Corporate,Chennai
+Bank,C1049,L1064,Education Loan,Higher Education,2155696,12.9,180,2022-07-20,2037-05-02,Ongoing,No,2155696,5,,Active,None,Mother,Yes,11976.0,Sneha Patel,39,M,Savings,689,Corporate,Gurugram
+Bank,C1426,L1583,Car Loan,Vehicle Purchase,3967086,14.4,36,2024-10-27,2027-10-12,Ongoing,No,3967086,4,,Active,Car,Brother,No,110197.0,Pooja Nair,48,F,Current,665,SME,Hyderabad
+Bank,C1317,L1586,Home Loan,Renovation,3842109,12.3,240,2022-09-08,2042-05-26,Ongoing,No,3842109,0,,Active,House,Husband,No,16009.0,Meera Kumar,56,M,Savings,755,SME,Patna
+Bank,C1988,L42,Home Loan,Residential Property,3135402,14.3,60,2024-09-07,2029-08-12,Ongoing,No,3135402,1,,Active,House,Husband,Yes,52257.0,Rohit Verma,57,M,Savings,764,SME,Bangalore
+Bank,C1533,L232,Education Loan,Overseas Study,4706151,12.7,48,2019-11-28,2023-11-07,Ongoing,No,4706151,1,,Active,None,Wife,No,98045.0,Anita Nair,45,M,Current,643,SME,Gurugram
+Bank,C1452,L1169,Education Loan,Overseas Study,3363894,9.5,36,2023-05-25,2026-05-09,Ongoing,No,3363894,3,,Active,None,Wife,No,93442.0,Neha Sharma,56,F,Current,785,SME,Mumbai
+Bank,C98,L1551,Home Loan,Residential Property,2648416,10.0,60,2024-09-28,2029-09-02,Closed,No,0,0,,Closed,House,Father,No,44140.0,Shalini Desai,44,F,Savings,702,Corporate,Jaipur
+Bank,C51,L1710,Business Loan,Startup Funding,1074271,14.5,60,2025-04-30,2030-04-04,Ongoing,No,1074271,2,,Active,Factory,None,No,17905.0,Rahul Joshi,40,F,Savings,632,Retail,Lucknow
+Bank,C1889,L1685,Personal Loan,Medical Expenses,4754889,7.9,180,2025-06-20,2040-04-02,Ongoing,No,4754889,5,,Active,None,Wife,No,26416.0,Sunita Kapoor,30,F,Current,742,Corporate,Kolkata
+Bank,C1700,L1526,Home Loan,Residential Property,2469659,14.7,120,2019-10-09,2029-08-17,Ongoing,No,2469659,0,,Active,House,Brother,No,20580.0,Arjun Joshi,37,M,Current,723,Retail,Mumbai
+Bank,C780,L108,Education Loan,Overseas Study,245393,11.7,24,2021-11-02,2023-10-23,Ongoing,No,245393,5,,Active,None,Brother,Yes,10225.0,Shalini Kumar,41,M,Savings,718,Retail,Kolkata
+Bank,C865,L1124,Personal Loan,Debt Consolidation,1982292,10.9,120,2021-09-14,2031-07-24,Ongoing,No,1982292,6,,Active,None,Mother,No,16519.0,Megha Malhotra,41,M,Savings,668,Retail,Chennai
+Bank,C1737,L826,Education Loan,Overseas Study,1541527,12.9,60,2020-04-25,2025-03-30,Ongoing,No,1541527,0,,Active,None,Brother,No,25692.0,Neha Malhotra,22,F,Savings,630,SME,Mumbai
+Bank,C755,L1687,Personal Loan,Debt Consolidation,3040021,8.7,180,2022-05-13,2037-02-23,Ongoing,No,3040021,5,,Active,None,Brother,Yes,16889.0,Anjali Singh,57,F,Savings,700,Corporate,Delhi
+Bank,C1239,L732,Business Loan,Startup Funding,4177197,12.3,120,2022-03-30,2032-02-06,Ongoing,No,4177197,2,,Active,Factory,None,No,34810.0,Vikram Rathi,57,F,Savings,622,SME,Bangalore
+Bank,C1342,L1017,Car Loan,Vehicle Purchase,3862906,9.2,180,2023-06-01,2038-03-14,Ongoing,No,3862906,0,,Active,Car,None,Yes,21461.0,Anjali Desai,52,F,Savings,709,Corporate,Pune
+Bank,C324,L1204,Business Loan,Working Capital,612267,7.8,120,2023-09-28,2033-08-06,Ongoing,No,612267,6,,Active,Factory,Husband,Yes,5102.0,Rohit Gupta,28,M,Savings,600,Retail,Gurugram
+Bank,C691,L169,Personal Loan,Debt Consolidation,2603543,7.6,48,2021-12-31,2025-12-10,Ongoing,No,2603543,5,,Active,None,Mother,Yes,54240.0,Vikram Sharma,38,F,Savings,793,SME,Chennai
+Bank,C866,L1946,Car Loan,Vehicle Purchase,625957,14.5,24,2025-04-12,2027-04-02,Ongoing,No,625957,2,,Active,Car,Mother,No,26082.0,Shalini Desai,28,F,Current,604,Corporate,Hyderabad
+Bank,C1166,L798,Car Loan,Vehicle Purchase,3527210,11.0,48,2022-05-07,2026-04-16,Ongoing,No,3527210,2,,Active,Car,Mother,No,73484.0,Sunita Nair,22,M,Savings,717,Corporate,Jaipur
+Bank,C1235,L1850,Business Loan,Working Capital,1142780,14.9,36,2020-08-05,2023-07-21,Ongoing,No,1142780,6,,Active,Factory,Father,No,31744.0,Rahul Rao,33,F,Current,732,Corporate,Bangalore
+Bank,C1476,L1519,Business Loan,Startup Funding,3150470,13.9,120,2022-08-24,2032-07-02,Closed,No,0,0,,Closed,Factory,None,No,26254.0,Sneha Kumar,24,M,Savings,760,Corporate,Lucknow
+Bank,C1496,L1262,Education Loan,Higher Education,2417500,8.2,24,2023-02-08,2025-01-28,Ongoing,No,2417500,3,,Active,None,Wife,Yes,100729.0,Shalini Rao,56,M,Current,722,Corporate,Gurugram
+Bank,C72,L967,Education Loan,Higher Education,1839424,12.0,60,2024-10-26,2029-09-30,Ongoing,No,1839424,3,,Active,None,None,No,30657.0,Arjun Gupta,25,F,Current,624,Corporate,Pune
+Bank,C97,L444,Personal Loan,Debt Consolidation,2450126,14.9,60,2021-03-28,2026-03-02,Ongoing,No,2450126,0,,Active,None,None,Yes,40835.0,Arjun Rao,50,F,Current,795,SME,Kolkata
+Bank,C1296,L1895,Education Loan,Higher Education,1245732,11.2,60,2021-02-23,2026-01-28,Defaulted,No,1245732,3,2024-03-07,Recovery,None,Wife,No,20762.0,Rajesh Rathi,35,M,Savings,629,SME,Patna
+Bank,C1524,L1460,Business Loan,Startup Funding,2762431,13.0,36,2025-10-26,2028-10-10,Ongoing,No,2762431,1,,Active,Factory,Wife,No,76734.0,Rahul Iyer,57,M,Savings,672,Corporate,Ahmedabad
+Bank,C691,L1037,Personal Loan,Debt Consolidation,1903255,10.2,48,2020-02-18,2024-01-28,Ongoing,No,1903255,1,,Active,None,None,Yes,39651.0,Arjun Mehta,27,M,Current,786,Retail,Gurugram
+Bank,C1198,L1708,Business Loan,Working Capital,1094125,11.6,60,2024-12-07,2029-11-11,Ongoing,No,1094125,0,,Active,Factory,Wife,No,18235.0,Rajesh Nair,26,M,Savings,718,Corporate,Kolkata
+Bank,C1848,L1601,Car Loan,Vehicle Purchase,251339,8.2,240,2022-07-27,2042-04-13,Ongoing,No,251339,5,,Active,Car,None,Yes,1047.0,Amit Gupta,27,F,Savings,657,SME,Kolkata
+Bank,C1259,L1793,Personal Loan,Debt Consolidation,791674,14.9,96,2020-05-19,2028-04-07,Ongoing,No,791674,5,,Active,None,Husband,No,8247.0,Suresh Kumar,41,M,Current,614,Corporate,Bangalore
+Bank,C103,L1511,Education Loan,Overseas Study,730330,13.4,48,2025-11-23,2029-11-02,Ongoing,No,730330,2,,Active,None,Husband,Yes,15215.0,Suresh Desai,43,M,Current,614,Retail,Patna
+Bank,C1330,L1040,Education Loan,Overseas Study,810710,12.1,120,2025-08-22,2035-07-01,Ongoing,No,810710,4,,Active,None,Father,Yes,6756.0,Shalini Malhotra,54,M,Current,660,Retail,Kolkata
+Bank,C624,L790,Business Loan,Business Expansion,850031,11.0,48,2019-06-10,2023-05-20,Ongoing,No,850031,5,,Active,Factory,Brother,Yes,17709.0,Sneha Patel,41,M,Current,709,Retail,Hyderabad
+Bank,C1261,L600,Car Loan,Vehicle Purchase,1187855,12.6,36,2020-03-07,2023-02-20,Ongoing,No,1187855,0,,Active,Car,Brother,Yes,32996.0,Deepak Bansal,47,M,Current,767,Retail,Gurugram
+Bank,C590,L1192,Business Loan,Startup Funding,1573848,12.5,48,2024-03-21,2028-02-29,Closed,No,0,0,,Closed,Factory,Wife,No,32788.0,Deepak Mehta,57,F,Current,676,Corporate,Jaipur
+Bank,C1717,L428,Car Loan,Vehicle Purchase,4225547,9.7,60,2024-12-27,2029-12-01,Closed,No,0,0,,Closed,Car,Wife,No,70426.0,Neha Kumar,57,M,Savings,634,Corporate,Bangalore
+Bank,C1046,L45,Home Loan,Renovation,4999992,11.9,36,2019-02-03,2022-01-18,Defaulted,Yes,4999992,1,2024-06-07,Recovery,House,Wife,Yes,138889.0,Anita Rathi,34,M,Savings,762,Corporate,Hyderabad
+Bank,C293,L1293,Car Loan,Vehicle Purchase,2457851,11.3,120,2024-01-02,2033-11-10,Ongoing,No,2457851,5,,Active,Car,Father,No,20482.0,Anjali Desai,46,M,Current,760,SME,Patna
+Bank,C1800,L1664,Home Loan,Renovation,3984160,9.6,120,2021-10-09,2031-08-18,Ongoing,No,3984160,6,,Active,House,None,No,33201.0,Rohit Rao,39,F,Savings,657,Retail,Lucknow
+Bank,C297,L159,Home Loan,Residential Property,1421905,12.6,240,2024-02-04,2043-10-22,Ongoing,No,1421905,2,,Active,House,Husband,Yes,5925.0,Sneha Desai,53,F,Savings,784,Corporate,Delhi
+Bank,C626,L1895,Business Loan,Working Capital,3337687,9.9,24,2019-09-21,2021-09-10,Closed,No,0,0,,Closed,Factory,Father,Yes,139070.0,Anita Kumar,60,F,Current,626,SME,Lucknow
+Bank,C952,L1206,Personal Loan,Wedding Expenses,4998075,7.4,24,2022-10-28,2024-10-17,Closed,No,0,0,,Closed,None,Husband,No,208253.0,Rahul Kumar,32,M,Savings,667,Retail,Lucknow
+Bank,C729,L239,Personal Loan,Debt Consolidation,376594,10.3,60,2019-01-04,2023-12-09,Ongoing,No,376594,5,,Active,None,None,Yes,6277.0,Suresh Gupta,46,M,Current,627,Retail,Patna
+Bank,C636,L65,Business Loan,Working Capital,3361232,12.5,240,2023-12-16,2043-09-02,Ongoing,No,3361232,6,,Active,Factory,Father,No,14005.0,Anjali Iyer,41,M,Current,633,Retail,Jaipur
+Bank,C1614,L1191,Education Loan,Overseas Study,241167,9.5,48,2022-06-17,2026-05-27,Closed,No,0,0,,Closed,None,Mother,No,5024.0,Deepak Patel,31,M,Savings,686,Corporate,Pune
+Bank,C1633,L102,Car Loan,Vehicle Purchase,2086865,9.5,48,2021-08-27,2025-08-06,Defaulted,Yes,2086865,4,2026-06-26,Recovery,Car,Mother,No,43476.0,Rahul Joshi,30,M,Current,699,Retail,Patna
+Bank,C453,L529,Car Loan,Vehicle Purchase,689330,11.8,180,2021-11-27,2036-09-09,Ongoing,No,689330,1,,Active,Car,Brother,Yes,3830.0,Neha Gupta,36,F,Savings,751,Corporate,Pune
+Bank,C1245,L1017,Education Loan,Higher Education,388150,9.7,96,2020-04-23,2028-03-12,Defaulted,Yes,388150,2,2025-12-26,Recovery,None,Wife,Yes,4043.0,Pooja Iyer,46,M,Current,701,SME,Chennai
+Bank,C1582,L1262,Personal Loan,Debt Consolidation,1476689,14.3,60,2022-02-11,2027-01-16,Ongoing,No,1476689,2,,Active,None,Mother,No,24611.0,Meera Kapoor,46,F,Current,786,SME,Chennai
+Bank,C1186,L955,Business Loan,Working Capital,375191,9.4,36,2024-05-09,2027-04-24,Ongoing,No,375191,3,,Active,Factory,Father,Yes,10422.0,Rajesh Iyer,38,M,Current,663,SME,Lucknow
+Bank,C848,L1536,Home Loan,Renovation,3949757,8.1,120,2024-12-30,2034-11-08,Ongoing,No,3949757,5,,Active,House,Wife,No,32915.0,Anita Gupta,57,M,Current,671,SME,Patna
+Bank,C657,L727,Car Loan,Vehicle Purchase,3771880,12.8,180,2024-02-12,2038-11-25,Ongoing,No,3771880,2,,Active,Car,Mother,Yes,20955.0,Arjun Verma,47,M,Savings,753,Retail,Ahmedabad
+Bank,C249,L126,Personal Loan,Debt Consolidation,1127530,14.0,240,2021-05-17,2041-02-01,Ongoing,No,1127530,3,,Active,None,Brother,Yes,4698.0,Arjun Malhotra,31,M,Savings,769,Retail,Ahmedabad
+Bank,C854,L1511,Personal Loan,Wedding Expenses,4047742,9.4,180,2021-08-04,2036-05-17,Ongoing,No,4047742,0,,Active,None,None,Yes,22487.0,Amit Patel,37,M,Current,639,SME,Bangalore
+Bank,C334,L275,Car Loan,Vehicle Purchase,4079202,7.7,180,2020-02-15,2034-11-28,Ongoing,No,4079202,2,,Active,Car,Husband,No,22662.0,Sneha Nair,41,F,Current,741,Corporate,Pune
+Bank,C1308,L693,Business Loan,Business Expansion,2019838,9.0,48,2020-02-08,2024-01-18,Ongoing,No,2019838,6,,Active,Factory,Father,No,42080.0,Amit Nair,34,F,Savings,710,SME,Hyderabad
+Bank,C611,L1989,Personal Loan,Debt Consolidation,777554,12.3,180,2020-06-10,2035-03-24,Defaulted,Yes,777554,5,2026-02-20,Recovery,None,None,No,4320.0,Kunal Nair,47,F,Current,702,Corporate,Delhi
+Bank,C1434,L1385,Car Loan,Vehicle Purchase,887818,13.3,48,2025-11-24,2029-11-03,Ongoing,No,887818,6,,Active,Car,Mother,Yes,18496.0,Sunita Sharma,21,F,Savings,711,Retail,Jaipur
+Bank,C1897,L193,Home Loan,Renovation,2290757,11.2,96,2023-06-07,2031-04-26,Ongoing,No,2290757,2,,Active,House,Father,Yes,23862.0,Sunita Nair,59,F,Current,610,SME,Delhi
+Bank,C947,L419,Car Loan,Vehicle Purchase,2400352,11.8,120,2020-06-22,2030-05-01,Ongoing,No,2400352,2,,Active,Car,Mother,Yes,20003.0,Pooja Gupta,54,M,Current,724,Retail,Jaipur
+Bank,C1098,L1092,Education Loan,Higher Education,3381477,7.4,24,2023-11-28,2025-11-17,Closed,No,0,0,,Closed,None,Husband,No,140895.0,Anita Bansal,56,F,Current,778,Corporate,Mumbai
+Bank,C1845,L382,Business Loan,Working Capital,2468693,7.3,24,2021-03-27,2023-03-17,Ongoing,No,2468693,2,,Active,Factory,None,Yes,102862.0,Sunita Verma,58,M,Savings,697,SME,Kolkata
+Bank,C915,L944,Business Loan,Startup Funding,1895690,9.5,96,2025-01-29,2032-12-18,Ongoing,No,1895690,4,,Active,Factory,None,No,19747.0,Kunal Verma,24,F,Current,667,Retail,Kolkata
+Bank,C1573,L227,Education Loan,Higher Education,4592436,8.1,60,2023-06-04,2028-05-08,Defaulted,Yes,4592436,6,2025-11-27,Recovery,None,Mother,Yes,76541.0,Megha Verma,44,M,Savings,729,SME,Kolkata
+Bank,C87,L240,Personal Loan,Medical Expenses,922952,10.2,60,2020-06-14,2025-05-19,Closed,No,0,0,,Closed,None,Husband,No,15383.0,Deepak Malhotra,57,F,Current,687,SME,Bangalore
+Bank,C1684,L104,Business Loan,Startup Funding,638020,10.5,180,2025-10-02,2040-07-15,Defaulted,No,638020,5,2024-08-16,Recovery,Factory,Father,No,3545.0,Amit Joshi,59,F,Savings,749,Retail,Jaipur
+Bank,C1749,L993,Car Loan,Vehicle Purchase,3778335,12.6,60,2022-09-27,2027-09-01,Ongoing,No,3778335,2,,Active,Car,Brother,No,62972.0,Anita Joshi,25,F,Current,663,Corporate,Chennai
+Bank,C357,L1764,Business Loan,Working Capital,3586207,13.5,24,2022-06-07,2024-05-27,Closed,No,0,0,,Closed,Factory,Father,No,149425.0,Arjun Desai,46,M,Current,797,SME,Kolkata
+Bank,C711,L815,Business Loan,Business Expansion,1392646,13.9,60,2025-07-01,2030-06-05,Ongoing,No,1392646,6,,Active,Factory,Wife,Yes,23211.0,Shreya Verma,30,M,Savings,731,Retail,Pune
+Bank,C927,L629,Personal Loan,Wedding Expenses,3650496,13.6,48,2019-03-19,2023-02-26,Defaulted,Yes,3650496,6,2024-12-26,Recovery,None,Brother,Yes,76052.0,Rahul Desai,31,F,Savings,736,Retail,Hyderabad
+Bank,C1548,L1825,Personal Loan,Wedding Expenses,1922897,12.4,120,2023-09-13,2033-07-22,Ongoing,No,1922897,2,,Active,None,Brother,No,16024.0,Amit Nair,39,M,Current,777,Retail,Bangalore
+Bank,C777,L1388,Home Loan,Residential Property,4741280,8.4,240,2023-03-25,2042-12-10,Ongoing,No,4741280,1,,Active,House,Father,Yes,19755.0,Vikram Joshi,48,M,Savings,745,Corporate,Mumbai
+Bank,C1805,L1099,Car Loan,Vehicle Purchase,4132457,13.5,120,2025-02-05,2034-12-15,Closed,No,0,0,,Closed,Car,None,No,34437.0,Anita Joshi,59,F,Savings,673,SME,Jaipur
+Bank,C476,L482,Home Loan,Residential Property,1436405,7.1,96,2025-06-09,2033-04-28,Ongoing,No,1436405,0,,Active,House,Mother,Yes,14963.0,Suresh Nair,42,F,Current,791,SME,Kolkata
+Bank,C182,L636,Business Loan,Business Expansion,488260,14.8,96,2020-12-21,2028-11-09,Ongoing,No,488260,1,,Active,Factory,Brother,Yes,5086.0,Rohit Desai,48,F,Savings,777,Corporate,Kolkata
+Bank,C797,L349,Car Loan,Vehicle Purchase,3126498,14.5,240,2022-05-19,2042-02-03,Ongoing,No,3126498,5,,Active,Car,None,No,13027.0,Rohit Kumar,21,F,Current,672,Corporate,Kolkata
+Bank,C1700,L396,Personal Loan,Medical Expenses,2025113,7.2,240,2025-02-07,2044-10-25,Closed,No,0,0,,Closed,None,Father,No,8438.0,Suresh Desai,31,M,Current,750,SME,Gurugram
+Bank,C927,L1985,Business Loan,Startup Funding,3190616,13.7,60,2025-08-15,2030-07-20,Ongoing,No,3190616,1,,Active,Factory,Mother,No,53177.0,Arjun Singh,55,M,Savings,645,SME,Delhi
+Bank,C1641,L134,Education Loan,Higher Education,4461102,11.3,96,2020-04-15,2028-03-04,Ongoing,No,4461102,2,,Active,None,Father,No,46470.0,Rajesh Iyer,32,F,Savings,677,Retail,Chennai
+Bank,C593,L724,Car Loan,Vehicle Purchase,1556416,9.8,60,2023-02-20,2028-01-25,Closed,No,0,0,,Closed,Car,Mother,Yes,25940.0,Arjun Patel,54,M,Current,651,Retail,Chennai
+Bank,C1605,L601,Business Loan,Business Expansion,3206046,10.5,96,2020-05-15,2028-04-03,Ongoing,No,3206046,3,,Active,Factory,None,Yes,33396.0,Anjali Kapoor,29,F,Savings,702,Corporate,Hyderabad
+Bank,C160,L202,Personal Loan,Debt Consolidation,4355158,13.6,48,2020-12-03,2024-11-12,Closed,No,0,0,,Closed,None,None,Yes,90732.0,Sneha Singh,58,F,Current,718,Retail,Mumbai
+Bank,C844,L1952,Personal Loan,Wedding Expenses,4069939,7.9,36,2024-03-18,2027-03-03,Ongoing,No,4069939,6,,Active,None,Brother,No,113054.0,Kunal Singh,45,F,Current,692,SME,Gurugram
+Bank,C521,L1834,Personal Loan,Wedding Expenses,4644246,14.2,120,2022-02-05,2031-12-15,Ongoing,No,4644246,1,,Active,None,Brother,Yes,38702.0,Anjali Rathi,43,F,Current,796,Retail,Chennai
+Bank,C278,L1954,Personal Loan,Debt Consolidation,228043,12.4,240,2020-08-26,2040-05-13,Closed,No,0,0,,Closed,None,Mother,No,950.0,Shreya Desai,28,F,Savings,699,Corporate,Pune
+Bank,C1772,L1172,Education Loan,Higher Education,1502963,7.4,60,2019-03-03,2024-02-05,Ongoing,No,1502963,4,,Active,None,None,No,25049.0,Amit Rathi,23,M,Current,756,SME,Chennai
+Bank,C263,L1223,Personal Loan,Medical Expenses,1292678,12.5,48,2022-01-04,2025-12-14,Closed,No,0,0,,Closed,None,Brother,Yes,26931.0,Neha Iyer,54,M,Savings,752,Corporate,Patna
+Bank,C1247,L203,Car Loan,Vehicle Purchase,2564386,14.2,36,2019-07-13,2022-06-27,Defaulted,Yes,2564386,1,2024-01-23,Recovery,Car,Brother,Yes,71233.0,Shalini Gupta,57,F,Current,768,Retail,Delhi
+Bank,C315,L122,Personal Loan,Medical Expenses,2115717,7.7,60,2025-01-15,2029-12-20,Ongoing,No,2115717,3,,Active,None,Brother,No,35262.0,Anjali Mehta,57,F,Savings,764,Corporate,Kolkata
+Bank,C1784,L838,Home Loan,Residential Property,4430130,14.4,48,2019-02-15,2023-01-25,Ongoing,No,4430130,4,,Active,House,None,Yes,92294.0,Anjali Nair,50,F,Current,672,Retail,Gurugram
+Bank,C434,L1600,Education Loan,Overseas Study,3828507,13.9,96,2019-06-16,2027-05-05,Ongoing,No,3828507,5,,Active,None,Father,Yes,39880.0,Suresh Rathi,44,F,Current,658,Retail,Chennai
+Bank,C503,L1446,Business Loan,Business Expansion,4314057,14.7,180,2019-12-03,2034-09-15,Ongoing,No,4314057,3,,Active,Factory,Wife,No,23967.0,Suresh Iyer,49,M,Savings,777,Corporate,Gurugram
+Bank,C1485,L1259,Education Loan,Overseas Study,1075193,12.0,180,2021-02-27,2035-12-11,Defaulted,Yes,1075193,0,2024-02-19,Recovery,None,Mother,Yes,5973.0,Amit Kumar,23,M,Current,646,SME,Kolkata
+Bank,C1732,L1651,Business Loan,Startup Funding,4353313,14.3,24,2020-08-10,2022-07-31,Ongoing,No,4353313,2,,Active,Factory,Husband,No,181388.0,Neha Singh,49,F,Current,697,Retail,Kolkata
+Bank,C920,L1463,Personal Loan,Debt Consolidation,2360827,14.7,240,2022-09-07,2042-05-25,Ongoing,No,2360827,1,,Active,None,Brother,Yes,9837.0,Anjali Rao,24,M,Savings,773,Corporate,Kolkata
+Bank,C123,L409,Education Loan,Higher Education,2467329,7.6,36,2021-10-25,2024-10-09,Ongoing,No,2467329,0,,Active,None,Husband,Yes,68537.0,Rohit Malhotra,50,M,Current,771,Retail,Delhi
+Bank,C1554,L167,Home Loan,Residential Property,868304,7.9,60,2023-12-31,2028-12-04,Ongoing,No,868304,2,,Active,House,Mother,Yes,14472.0,Rajesh Malhotra,49,M,Current,766,Corporate,Bangalore
+Bank,C825,L959,Business Loan,Startup Funding,1290801,12.5,60,2022-08-07,2027-07-12,Closed,No,0,0,,Closed,Factory,Husband,No,21513.0,Rahul Iyer,28,F,Current,686,Corporate,Chennai
+Bank,C1933,L1656,Personal Loan,Debt Consolidation,4829385,11.4,24,2023-07-24,2025-07-13,Ongoing,No,4829385,6,,Active,None,Brother,No,201224.0,Sunita Kapoor,40,M,Savings,717,Retail,Gurugram
+Bank,C813,L1599,Business Loan,Working Capital,2942263,14.8,96,2022-03-31,2030-02-17,Closed,No,0,0,,Closed,Factory,Wife,No,30649.0,Rohit Mehta,31,F,Current,754,SME,Delhi
+Bank,C29,L73,Personal Loan,Wedding Expenses,1234933,8.6,36,2025-11-05,2028-10-20,Ongoing,No,1234933,2,,Active,None,Brother,No,34304.0,Anjali Nair,42,M,Current,628,SME,Lucknow
+Bank,C874,L114,Education Loan,Higher Education,563081,12.8,60,2020-04-05,2025-03-10,Ongoing,No,563081,3,,Active,None,Mother,No,9385.0,Megha Kumar,28,M,Current,800,Corporate,Ahmedabad
+Bank,C1652,L1404,Car Loan,Vehicle Purchase,4879004,10.1,240,2019-12-16,2039-09-02,Ongoing,No,4879004,5,,Active,Car,Brother,No,20329.0,Anita Nair,43,F,Savings,700,SME,Delhi
+Bank,C835,L711,Business Loan,Startup Funding,1621278,11.1,240,2024-09-11,2044-05-29,Ongoing,No,1621278,2,,Active,Factory,Wife,No,6755.0,Meera Sharma,35,M,Savings,691,Retail,Bangalore
+Bank,C449,L431,Home Loan,Residential Property,4674513,13.0,96,2025-07-25,2033-06-13,Ongoing,No,4674513,0,,Active,House,Mother,Yes,48693.0,Anjali Verma,36,M,Current,787,Corporate,Kolkata
+Bank,C652,L1870,Business Loan,Working Capital,1443616,11.9,96,2024-09-02,2032-07-22,Defaulted,Yes,1443616,2,2026-07-23,Recovery,Factory,Father,No,15038.0,Shreya Iyer,25,F,Savings,745,Retail,Patna
+Bank,C466,L1596,Home Loan,Renovation,2294543,10.1,240,2019-05-07,2039-01-22,Defaulted,Yes,2294543,4,2024-11-29,Recovery,House,None,No,9561.0,Megha Malhotra,26,F,Current,739,SME,Chennai
+Bank,C573,L1629,Home Loan,Residential Property,3687979,9.5,36,2025-06-13,2028-05-28,Defaulted,No,3687979,4,2026-03-29,Recovery,House,Wife,No,102444.0,Rohit Singh,33,M,Current,633,Retail,Patna
+Bank,C1710,L1042,Car Loan,Vehicle Purchase,2032714,10.7,24,2022-05-12,2024-05-01,Ongoing,No,2032714,1,,Active,Car,None,Yes,84696.0,Sneha Nair,21,M,Savings,691,Retail,Lucknow
+Bank,C1223,L1086,Education Loan,Overseas Study,3470797,11.2,96,2023-11-25,2031-10-14,Ongoing,No,3470797,4,,Active,None,Mother,No,36154.0,Sunita Malhotra,29,M,Current,799,Retail,Hyderabad
+Bank,C437,L1247,Personal Loan,Medical Expenses,4340009,10.9,24,2025-04-28,2027-04-18,Ongoing,No,4340009,6,,Active,None,Husband,Yes,180834.0,Shreya Singh,32,F,Savings,781,SME,Kolkata
+Bank,C679,L1678,Home Loan,Residential Property,4368281,11.3,24,2025-01-31,2027-01-21,Ongoing,No,4368281,3,,Active,House,Father,Yes,182012.0,Amit Bansal,32,M,Current,782,Corporate,Lucknow
+Bank,C364,L1059,Home Loan,Renovation,2200870,14.7,120,2025-02-02,2034-12-12,Ongoing,No,2200870,5,,Active,House,Husband,No,18341.0,Meera Verma,53,M,Savings,629,Retail,Pune
+Bank,C1337,L736,Business Loan,Business Expansion,627253,11.1,120,2025-10-24,2035-09-02,Ongoing,No,627253,3,,Active,Factory,Husband,No,5227.0,Anita Iyer,56,F,Savings,747,Corporate,Jaipur
+Bank,C90,L1934,Car Loan,Vehicle Purchase,1129795,13.3,240,2019-03-22,2038-12-07,Closed,No,0,0,,Closed,Car,Wife,Yes,4707.0,Shalini Singh,32,F,Savings,660,Retail,Pune
+Bank,C439,L838,Home Loan,Renovation,4515147,8.7,24,2019-05-03,2021-04-22,Ongoing,No,4515147,0,,Active,House,None,No,188131.0,Megha Verma,32,M,Savings,697,SME,Gurugram
+Bank,C652,L1562,Car Loan,Vehicle Purchase,2542907,10.2,36,2019-12-09,2022-11-23,Ongoing,No,2542907,2,,Active,Car,None,Yes,70636.0,Amit Gupta,35,M,Savings,780,SME,Lucknow
+Bank,C534,L1255,Business Loan,Working Capital,2924035,13.0,24,2022-02-03,2024-01-24,Ongoing,No,2924035,3,,Active,Factory,Mother,Yes,121835.0,Megha Desai,40,M,Current,699,Retail,Chennai
+Bank,C1106,L1439,Business Loan,Startup Funding,4178241,7.5,24,2019-06-28,2021-06-17,Ongoing,No,4178241,5,,Active,Factory,Wife,No,174093.0,Sneha Desai,37,M,Savings,671,Corporate,Delhi
+Bank,C1206,L1239,Home Loan,Renovation,4545911,10.8,36,2023-10-11,2026-09-25,Ongoing,No,4545911,2,,Active,House,Wife,No,126275.0,Deepak Patel,37,M,Savings,730,Retail,Mumbai
+Bank,C1891,L1033,Car Loan,Vehicle Purchase,3587177,11.8,96,2022-05-31,2030-04-19,Ongoing,No,3587177,2,,Active,Car,Brother,No,37366.0,Rohit Bansal,51,F,Current,618,Corporate,Gurugram
+Bank,C411,L744,Car Loan,Vehicle Purchase,2721801,8.6,96,2023-04-26,2031-03-15,Ongoing,No,2721801,2,,Active,Car,Wife,Yes,28352.0,Megha Malhotra,60,F,Current,696,Retail,Pune
+Bank,C1327,L107,Personal Loan,Wedding Expenses,822617,11.0,36,2021-03-25,2024-03-09,Ongoing,No,822617,0,,Active,None,Mother,No,22850.0,Shalini Malhotra,39,M,Current,684,Retail,Bangalore
+Bank,C706,L505,Home Loan,Residential Property,4148435,14.8,180,2024-03-01,2038-12-13,Ongoing,No,4148435,3,,Active,House,Father,No,23047.0,Neha Gupta,38,M,Savings,624,Corporate,Jaipur
+Bank,C288,L939,Home Loan,Renovation,3650515,9.9,48,2020-12-08,2024-11-17,Ongoing,No,3650515,0,,Active,House,Husband,Yes,76052.0,Anjali Kumar,50,F,Savings,711,SME,Gurugram
+Bank,C1708,L1746,Home Loan,Residential Property,1411803,9.1,36,2022-08-18,2025-08-02,Ongoing,No,1411803,4,,Active,House,Brother,Yes,39217.0,Rohit Joshi,28,F,Current,635,Retail,Bangalore
+Bank,C200,L927,Home Loan,Residential Property,2858426,7.0,48,2020-04-18,2024-03-28,Closed,No,0,0,,Closed,House,Brother,No,59551.0,Shreya Kapoor,44,M,Current,708,Retail,Ahmedabad
+Bank,C162,L393,Home Loan,Renovation,1062512,13.9,96,2024-11-11,2032-09-30,Ongoing,No,1062512,5,,Active,House,None,No,11068.0,Meera Kapoor,50,F,Current,660,SME,Ahmedabad
+Bank,C1256,L1224,Business Loan,Working Capital,3104886,12.4,36,2024-02-03,2027-01-18,Ongoing,No,3104886,5,,Active,Factory,Husband,Yes,86247.0,Vikram Sharma,47,F,Current,697,SME,Hyderabad
+Bank,C1094,L1906,Business Loan,Working Capital,3932691,8.5,96,2022-02-28,2030-01-17,Defaulted,No,3932691,5,2025-06-23,Recovery,Factory,Husband,Yes,40966.0,Pooja Sharma,38,M,Savings,676,Retail,Hyderabad
+Bank,C333,L1875,Education Loan,Higher Education,3611966,11.4,24,2025-07-25,2027-07-15,Closed,No,0,0,,Closed,None,Husband,Yes,150499.0,Rajesh Singh,50,M,Savings,751,Corporate,Bangalore
+Bank,C264,L1289,Education Loan,Overseas Study,2311482,12.4,48,2021-10-27,2025-10-06,Ongoing,No,2311482,0,,Active,None,Father,No,48156.0,Anita Joshi,35,M,Current,638,Corporate,Lucknow
+Bank,C1267,L1585,Education Loan,Higher Education,1390326,14.3,48,2020-06-27,2024-06-06,Ongoing,No,1390326,5,,Active,None,None,Yes,28965.0,Arjun Joshi,45,M,Current,622,Corporate,Lucknow
+Bank,C1356,L673,Car Loan,Vehicle Purchase,1889509,9.5,48,2022-03-03,2026-02-10,Ongoing,No,1889509,4,,Active,Car,Brother,Yes,39365.0,Suresh Verma,54,M,Current,705,Retail,Patna
+Bank,C1681,L1142,Business Loan,Startup Funding,3746377,9.1,24,2023-09-24,2025-09-13,Closed,No,0,0,,Closed,Factory,None,No,156099.0,Meera Joshi,60,M,Current,694,SME,Patna
+Bank,C1025,L324,Home Loan,Renovation,3998191,7.3,96,2024-05-16,2032-04-04,Ongoing,No,3998191,4,,Active,House,Father,No,41648.0,Rohit Singh,23,M,Savings,772,Retail,Chennai
+Bank,C295,L1341,Education Loan,Overseas Study,2074603,10.8,240,2022-02-23,2041-11-10,Ongoing,No,2074603,0,,Active,None,Wife,Yes,8644.0,Pooja Malhotra,22,M,Savings,602,Retail,Bangalore
+Bank,C359,L1969,Business Loan,Working Capital,551762,9.2,60,2019-06-14,2024-05-18,Ongoing,No,551762,4,,Active,Factory,Mother,No,9196.0,Sunita Nair,57,F,Current,729,SME,Lucknow
+Bank,C293,L1473,Business Loan,Startup Funding,4165897,14.9,96,2020-05-05,2028-03-24,Ongoing,No,4165897,3,,Active,Factory,Brother,Yes,43395.0,Anita Joshi,52,M,Current,788,Retail,Gurugram
+Bank,C239,L1402,Home Loan,Renovation,552067,14.1,24,2021-05-06,2023-04-26,Ongoing,No,552067,2,,Active,House,Wife,Yes,23003.0,Rahul Desai,59,F,Current,750,Retail,Kolkata
+Bank,C297,L16,Car Loan,Vehicle Purchase,1001940,11.0,48,2023-03-23,2027-03-02,Closed,No,0,0,,Closed,Car,Wife,Yes,20874.0,Anjali Rathi,36,F,Savings,705,SME,Ahmedabad
+Bank,C336,L44,Education Loan,Overseas Study,928683,9.9,180,2024-08-03,2039-05-17,Ongoing,No,928683,4,,Active,None,Husband,Yes,5159.0,Rohit Joshi,26,F,Savings,715,SME,Bangalore
+Bank,C776,L503,Business Loan,Working Capital,2340487,11.5,180,2022-01-08,2036-10-21,Ongoing,No,2340487,4,,Active,Factory,Husband,No,13003.0,Vikram Desai,53,M,Savings,750,Retail,Hyderabad
+Bank,C1994,L363,Education Loan,Higher Education,2762835,13.3,24,2022-02-08,2024-01-29,Ongoing,No,2762835,3,,Active,None,Wife,Yes,115118.0,Sneha Desai,53,F,Current,614,Corporate,Patna
+Bank,C1326,L1349,Education Loan,Overseas Study,3368728,14.9,36,2023-11-05,2026-10-20,Ongoing,No,3368728,6,,Active,None,Brother,No,93576.0,Rohit Sharma,33,M,Current,741,Retail,Jaipur
+Bank,C347,L1235,Car Loan,Vehicle Purchase,4552380,13.3,120,2021-02-11,2030-12-21,Ongoing,No,4552380,4,,Active,Car,Brother,No,37936.0,Rohit Kumar,29,F,Current,678,Corporate,Kolkata
+Bank,C1211,L1119,Car Loan,Vehicle Purchase,4382738,9.2,48,2020-09-15,2024-08-25,Closed,No,0,0,,Closed,Car,None,No,91307.0,Vikram Kapoor,30,F,Current,728,Corporate,Pune
+Bank,C64,L213,Car Loan,Vehicle Purchase,2689976,8.6,96,2020-07-12,2028-05-31,Closed,No,0,0,,Closed,Car,Husband,Yes,28021.0,Sneha Iyer,56,M,Current,648,Retail,Jaipur
+Bank,C246,L967,Personal Loan,Wedding Expenses,404807,7.7,48,2024-10-08,2028-09-17,Ongoing,No,404807,4,,Active,None,Mother,Yes,8433.0,Megha Singh,24,M,Current,714,Retail,Mumbai
+Bank,C688,L1810,Car Loan,Vehicle Purchase,905357,9.1,60,2022-02-03,2027-01-08,Defaulted,Yes,905357,6,2024-02-22,Recovery,Car,Father,No,15089.0,Pooja Joshi,58,M,Savings,606,Corporate,Delhi
+Bank,C1468,L1214,Education Loan,Higher Education,3255721,11.5,120,2020-07-03,2030-05-12,Ongoing,No,3255721,5,,Active,None,Mother,Yes,27131.0,Rajesh Mehta,46,F,Savings,669,Retail,Ahmedabad
+Bank,C821,L202,Education Loan,Higher Education,1012751,11.2,24,2020-04-25,2022-04-15,Ongoing,No,1012751,2,,Active,None,Husband,No,42198.0,Megha Verma,24,F,Current,781,SME,Mumbai
+Bank,C1090,L1734,Education Loan,Overseas Study,4812906,10.3,96,2022-12-15,2030-11-03,Closed,No,0,0,,Closed,None,Husband,No,50134.0,Deepak Patel,36,F,Savings,732,SME,Bangalore
+Bank,C98,L1842,Home Loan,Residential Property,4353126,12.7,48,2019-04-20,2023-03-30,Closed,No,0,0,,Closed,House,Wife,Yes,90690.0,Amit Desai,28,M,Current,727,SME,Mumbai
+Bank,C934,L605,Education Loan,Overseas Study,312959,10.3,60,2023-12-30,2028-12-03,Ongoing,No,312959,1,,Active,None,Father,No,5216.0,Neha Desai,21,F,Savings,646,Corporate,Lucknow
+Bank,C124,L1436,Car Loan,Vehicle Purchase,3046895,10.9,180,2020-10-15,2035-07-29,Ongoing,No,3046895,2,,Active,Car,Wife,No,16927.0,Rahul Iyer,52,M,Current,769,Retail,Jaipur
+Bank,C1578,L1832,Car Loan,Vehicle Purchase,2616736,14.9,240,2021-09-25,2041-06-12,Ongoing,No,2616736,0,,Active,Car,Husband,No,10903.0,Suresh Kumar,27,F,Current,683,Corporate,Mumbai
+Bank,C117,L1812,Car Loan,Vehicle Purchase,980907,7.5,36,2025-01-29,2028-01-14,Ongoing,No,980907,4,,Active,Car,Husband,No,27247.0,Neha Verma,26,M,Savings,675,Corporate,Jaipur
+Bank,C115,L1793,Business Loan,Business Expansion,2256776,10.3,120,2020-06-19,2030-04-28,Ongoing,No,2256776,6,,Active,Factory,Wife,No,18806.0,Pooja Mehta,32,F,Savings,701,Retail,Lucknow
+Bank,C712,L1908,Personal Loan,Medical Expenses,1173907,7.8,60,2023-01-05,2027-12-10,Ongoing,No,1173907,2,,Active,None,Mother,Yes,19565.0,Neha Iyer,34,M,Savings,704,Retail,Jaipur
+Bank,C1919,L1092,Personal Loan,Wedding Expenses,2704180,13.9,60,2020-04-14,2025-03-19,Ongoing,No,2704180,4,,Active,None,Husband,Yes,45070.0,Neha Patel,58,M,Savings,607,Corporate,Lucknow
+Bank,C260,L245,Business Loan,Business Expansion,3150019,11.2,24,2022-03-14,2024-03-03,Closed,No,0,0,,Closed,Factory,Brother,Yes,131251.0,Deepak Joshi,56,M,Current,797,Corporate,Ahmedabad
+Bank,C1816,L1598,Home Loan,Residential Property,1636139,12.3,24,2024-11-07,2026-10-28,Closed,No,0,0,,Closed,House,Wife,Yes,68172.0,Suresh Singh,28,F,Savings,693,Corporate,Bangalore
+Bank,C1235,L606,Business Loan,Startup Funding,1309297,12.9,24,2021-03-17,2023-03-07,Defaulted,Yes,1309297,4,2024-06-05,Recovery,Factory,Mother,No,54554.0,Suresh Verma,53,M,Current,772,Corporate,Mumbai
+Bank,C647,L112,Home Loan,Renovation,3757426,8.3,60,2025-05-14,2030-04-18,Ongoing,No,3757426,0,,Active,House,Wife,No,62624.0,Rahul Desai,51,M,Savings,676,SME,Mumbai
+Bank,C1612,L158,Home Loan,Residential Property,3577735,7.7,96,2021-12-15,2029-11-03,Ongoing,No,3577735,4,,Active,House,Husband,No,37268.0,Vikram Malhotra,35,F,Current,618,Retail,Delhi
+Bank,C1613,L100,Car Loan,Vehicle Purchase,808003,14.3,180,2023-10-27,2038-08-09,Ongoing,No,808003,4,,Active,Car,Father,Yes,4489.0,Arjun Mehta,59,M,Current,627,Retail,Hyderabad
+Bank,C948,L385,Car Loan,Vehicle Purchase,3093356,10.9,180,2022-11-17,2037-08-30,Ongoing,No,3093356,0,,Active,Car,Husband,Yes,17185.0,Anjali Kapoor,50,M,Savings,691,Corporate,Lucknow
+Bank,C1902,L1706,Home Loan,Renovation,1898960,11.5,96,2020-09-06,2028-07-26,Ongoing,No,1898960,0,,Active,House,Husband,Yes,19781.0,Arjun Sharma,60,M,Current,687,Retail,Mumbai
+Bank,C338,L686,Car Loan,Vehicle Purchase,2400343,13.7,240,2025-05-15,2045-01-30,Ongoing,No,2400343,6,,Active,Car,Father,No,10001.0,Rahul Kumar,42,F,Savings,759,SME,Jaipur
+Bank,C1316,L1397,Personal Loan,Medical Expenses,606447,14.3,240,2019-12-30,2039-09-16,Ongoing,No,606447,1,,Active,None,Brother,No,2527.0,Anjali Joshi,30,M,Savings,721,Corporate,Lucknow
+Bank,C800,L90,Home Loan,Renovation,3854545,12.2,180,2023-07-28,2038-05-10,Closed,No,0,0,,Closed,House,None,Yes,21414.0,Arjun Malhotra,47,F,Savings,672,Corporate,Chennai
+Bank,C67,L611,Education Loan,Overseas Study,1949351,12.1,36,2023-05-12,2026-04-26,Ongoing,No,1949351,2,,Active,None,Father,Yes,54149.0,Anjali Bansal,46,M,Savings,756,SME,Chennai
+Bank,C1557,L1012,Car Loan,Vehicle Purchase,979963,12.5,24,2022-03-03,2024-02-21,Ongoing,No,979963,0,,Active,Car,Mother,No,40832.0,Sneha Kapoor,56,M,Current,715,Corporate,Kolkata
+Bank,C1528,L438,Business Loan,Startup Funding,1088462,11.0,36,2022-07-10,2025-06-24,Ongoing,No,1088462,5,,Active,Factory,Wife,Yes,30235.0,Suresh Verma,23,M,Current,706,Corporate,Bangalore
+Bank,C907,L1635,Education Loan,Overseas Study,4514714,11.8,120,2024-04-29,2034-03-08,Defaulted,No,4514714,5,2024-07-19,Recovery,None,Father,Yes,37623.0,Deepak Gupta,52,F,Current,771,Corporate,Jaipur
+Bank,C1315,L94,Personal Loan,Medical Expenses,699576,11.8,180,2024-04-14,2039-01-26,Ongoing,No,699576,1,,Active,None,Father,No,3887.0,Suresh Joshi,40,F,Current,776,Retail,Mumbai
+Bank,C345,L1579,Business Loan,Business Expansion,609418,10.9,96,2023-12-18,2031-11-06,Closed,No,0,0,,Closed,Factory,Father,No,6348.0,Pooja Mehta,37,F,Savings,725,Corporate,Patna
+Bank,C35,L309,Education Loan,Overseas Study,3811667,14.1,24,2024-05-20,2026-05-10,Ongoing,No,3811667,6,,Active,None,Husband,Yes,158819.0,Sneha Rathi,28,M,Current,764,Retail,Patna
+Bank,C282,L1193,Business Loan,Startup Funding,1140169,13.2,48,2024-07-21,2028-06-30,Closed,No,0,0,,Closed,Factory,None,Yes,23754.0,Neha Singh,22,F,Current,693,Corporate,Pune
+Bank,C867,L259,Business Loan,Business Expansion,3228879,7.1,36,2023-04-28,2026-04-12,Closed,No,0,0,,Closed,Factory,Husband,Yes,89691.0,Pooja Joshi,28,F,Current,717,Corporate,Patna
+Bank,C1240,L1332,Business Loan,Business Expansion,1599496,13.2,36,2025-10-17,2028-10-01,Ongoing,No,1599496,2,,Active,Factory,Wife,No,44430.0,Shalini Joshi,32,M,Savings,785,SME,Chennai
+Bank,C1254,L1715,Education Loan,Overseas Study,1070681,8.4,120,2019-07-01,2029-05-09,Ongoing,No,1070681,3,,Active,None,None,No,8922.0,Arjun Nair,50,F,Current,696,Retail,Lucknow
+Bank,C1208,L1661,Business Loan,Startup Funding,1095277,14.9,36,2019-04-14,2022-03-29,Ongoing,No,1095277,6,,Active,Factory,Wife,No,30424.0,Arjun Singh,58,M,Current,660,SME,Lucknow
+Bank,C324,L908,Education Loan,Overseas Study,4887055,9.1,60,2021-09-27,2026-09-01,Ongoing,No,4887055,1,,Active,None,Mother,No,81451.0,Kunal Iyer,30,F,Savings,687,Corporate,Gurugram
+Bank,C579,L1596,Home Loan,Renovation,2514252,10.3,240,2023-07-24,2043-04-10,Ongoing,No,2514252,2,,Active,House,Wife,No,10476.0,Megha Rao,58,F,Savings,732,Retail,Pune
+Bank,C1591,L1447,Personal Loan,Medical Expenses,1992313,13.5,240,2023-04-11,2042-12-27,Ongoing,No,1992313,5,,Active,None,Father,No,8301.0,Pooja Kapoor,45,M,Savings,600,SME,Delhi
+Bank,C1542,L1973,Home Loan,Renovation,1677833,11.4,24,2024-04-04,2026-03-25,Ongoing,No,1677833,3,,Active,House,None,Yes,69910.0,Kunal Malhotra,51,F,Current,669,Corporate,Gurugram
+Bank,C1353,L506,Business Loan,Startup Funding,3399654,12.5,96,2025-06-06,2033-04-25,Ongoing,No,3399654,3,,Active,Factory,Brother,Yes,35413.0,Kunal Gupta,31,M,Savings,771,SME,Ahmedabad
+Bank,C1096,L1628,Car Loan,Vehicle Purchase,2437559,10.0,36,2021-09-23,2024-09-07,Ongoing,No,2437559,2,,Active,Car,Mother,No,67710.0,Anita Joshi,36,M,Savings,790,Retail,Chennai
+Bank,C1528,L1729,Business Loan,Startup Funding,4400649,14.1,36,2019-10-07,2022-09-21,Defaulted,No,4400649,4,2024-03-06,Recovery,Factory,Wife,Yes,122240.0,Megha Iyer,56,F,Current,662,Retail,Hyderabad
+Bank,C85,L1612,Education Loan,Overseas Study,277132,10.1,36,2019-10-16,2022-09-30,Ongoing,No,277132,5,,Active,None,None,Yes,7698.0,Rohit Verma,34,M,Current,713,Corporate,Hyderabad
+Bank,C1057,L1627,Car Loan,Vehicle Purchase,368426,11.5,48,2022-09-14,2026-08-24,Ongoing,No,368426,6,,Active,Car,Mother,Yes,7676.0,Kunal Gupta,59,M,Current,725,SME,Jaipur
+Bank,C346,L462,Personal Loan,Medical Expenses,2510383,10.7,60,2022-06-05,2027-05-10,Ongoing,No,2510383,2,,Active,None,Brother,No,41840.0,Amit Sharma,29,F,Current,649,Retail,Ahmedabad
+Bank,C708,L1066,Home Loan,Residential Property,1605904,12.6,120,2020-01-03,2029-11-11,Ongoing,No,1605904,2,,Active,House,Husband,Yes,13383.0,Sunita Singh,58,M,Savings,759,SME,Kolkata
+Bank,C937,L464,Home Loan,Renovation,1973914,8.2,240,2024-12-12,2044-08-29,Ongoing,No,1973914,3,,Active,House,Brother,No,8225.0,Anita Mehta,39,M,Savings,778,SME,Chennai
+Bank,C510,L1912,Personal Loan,Medical Expenses,4305124,13.3,240,2023-01-17,2042-10-04,Ongoing,No,4305124,0,,Active,None,Brother,No,17938.0,Arjun Verma,56,F,Current,643,Corporate,Pune
+Bank,C1046,L1646,Car Loan,Vehicle Purchase,4113136,8.1,36,2021-03-21,2024-03-05,Ongoing,No,4113136,6,,Active,Car,Husband,No,114254.0,Rajesh Gupta,34,F,Savings,747,Corporate,Mumbai
+Bank,C78,L115,Business Loan,Startup Funding,2221926,9.7,120,2025-10-27,2035-09-05,Closed,No,0,0,,Closed,Factory,Wife,Yes,18516.0,Anita Malhotra,24,F,Savings,607,Corporate,Delhi
+Bank,C148,L1332,Personal Loan,Wedding Expenses,3215701,14.0,48,2019-03-15,2023-02-22,Ongoing,No,3215701,0,,Active,None,Brother,No,66994.0,Rahul Bansal,44,M,Savings,738,SME,Bangalore
+Bank,C296,L1657,Car Loan,Vehicle Purchase,2539901,9.8,36,2024-09-28,2027-09-13,Ongoing,No,2539901,3,,Active,Car,None,Yes,70553.0,Rajesh Rathi,37,F,Savings,605,SME,Gurugram
+Bank,C1672,L569,Car Loan,Vehicle Purchase,2868966,14.4,36,2024-04-26,2027-04-11,Ongoing,No,2868966,1,,Active,Car,Wife,No,79694.0,Vikram Singh,49,F,Current,795,Corporate,Patna
+Bank,C413,L1236,Car Loan,Vehicle Purchase,2289957,9.2,60,2022-10-15,2027-09-19,Ongoing,No,2289957,4,,Active,Car,Wife,No,38166.0,Rahul Rathi,44,F,Savings,762,Retail,Bangalore
+Bank,C623,L1802,Car Loan,Vehicle Purchase,864880,11.4,96,2024-11-30,2032-10-19,Ongoing,No,864880,6,,Active,Car,Wife,Yes,9009.0,Anita Kapoor,51,F,Current,761,SME,Gurugram
+Bank,C831,L1270,Education Loan,Overseas Study,997577,8.4,48,2022-09-29,2026-09-08,Ongoing,No,997577,4,,Active,None,Brother,No,20783.0,Rahul Verma,42,F,Current,761,SME,Gurugram
+Bank,C619,L1480,Business Loan,Business Expansion,966154,10.8,48,2023-08-10,2027-07-20,Ongoing,No,966154,6,,Active,Factory,Mother,No,20128.0,Pooja Rathi,51,F,Savings,658,Corporate,Delhi
+Bank,C148,L626,Personal Loan,Wedding Expenses,4121759,7.3,96,2019-09-24,2027-08-13,Ongoing,No,4121759,0,,Active,None,Husband,No,42935.0,Anjali Gupta,56,M,Savings,605,SME,Lucknow
+Bank,C1859,L1546,Home Loan,Residential Property,533047,12.6,240,2022-01-25,2041-10-12,Ongoing,No,533047,2,,Active,House,Father,Yes,2221.0,Anita Iyer,27,M,Savings,798,Corporate,Delhi
+Bank,C287,L768,Personal Loan,Debt Consolidation,1652384,10.9,36,2022-03-03,2025-02-15,Closed,No,0,0,,Closed,None,None,No,45900.0,Meera Iyer,58,F,Current,615,Corporate,Jaipur
+Bank,C611,L439,Home Loan,Renovation,3573183,14.1,120,2022-07-13,2032-05-21,Ongoing,No,3573183,5,,Active,House,Wife,No,29777.0,Anita Iyer,44,F,Current,688,Retail,Gurugram
+Bank,C1912,L218,Home Loan,Renovation,1678547,10.3,96,2021-12-01,2029-10-20,Ongoing,No,1678547,3,,Active,House,Mother,No,17485.0,Rajesh Joshi,36,M,Savings,767,Retail,Chennai
+Bank,C1814,L532,Education Loan,Higher Education,4158751,11.4,48,2019-11-20,2023-10-30,Ongoing,No,4158751,0,,Active,None,Husband,Yes,86641.0,Anjali Patel,31,F,Current,649,Corporate,Bangalore
+Bank,C863,L246,Education Loan,Overseas Study,727809,10.7,120,2021-04-21,2031-02-28,Defaulted,Yes,727809,3,2025-04-11,Recovery,None,Father,Yes,6065.0,Deepak Malhotra,21,F,Savings,764,Corporate,Pune
+Bank,C341,L752,Education Loan,Overseas Study,2650817,8.9,24,2023-02-09,2025-01-29,Ongoing,No,2650817,3,,Active,None,Mother,No,110451.0,Rajesh Patel,42,M,Savings,770,SME,Kolkata
+Bank,C1237,L1383,Personal Loan,Medical Expenses,4257137,9.7,48,2024-03-15,2028-02-23,Closed,No,0,0,,Closed,None,Mother,No,88690.0,Vikram Rathi,51,M,Current,681,SME,Pune
+Bank,C1227,L824,Car Loan,Vehicle Purchase,358432,13.5,24,2024-12-13,2026-12-03,Ongoing,No,358432,0,,Active,Car,Brother,Yes,14935.0,Arjun Sharma,38,M,Current,767,Corporate,Jaipur
+Bank,C1328,L58,Business Loan,Business Expansion,1899493,11.8,240,2024-05-19,2044-02-04,Closed,No,0,0,,Closed,Factory,Brother,No,7915.0,Shreya Sharma,49,F,Savings,716,Corporate,Pune
+Bank,C566,L647,Home Loan,Residential Property,819892,8.9,24,2024-11-29,2026-11-19,Ongoing,No,819892,3,,Active,House,Wife,No,34162.0,Arjun Kumar,43,F,Savings,628,SME,Chennai
+Bank,C482,L285,Education Loan,Overseas Study,2541157,8.7,24,2024-04-14,2026-04-04,Ongoing,No,2541157,5,,Active,None,Brother,Yes,105882.0,Rajesh Malhotra,49,M,Current,678,Corporate,Hyderabad
+Bank,C1926,L1887,Personal Loan,Wedding Expenses,958495,13.0,60,2020-04-23,2025-03-28,Ongoing,No,958495,4,,Active,None,Wife,Yes,15975.0,Rohit Patel,41,M,Savings,776,Corporate,Mumbai
+Bank,C1947,L1470,Home Loan,Residential Property,2401210,8.0,60,2024-07-17,2029-06-21,Closed,No,0,0,,Closed,House,Wife,Yes,40020.0,Rahul Nair,42,M,Current,685,Retail,Ahmedabad
+Bank,C1614,L767,Personal Loan,Wedding Expenses,689990,13.2,60,2025-07-27,2030-07-01,Ongoing,No,689990,4,,Active,None,Wife,No,11500.0,Shreya Rao,23,F,Current,626,Corporate,Hyderabad
+Bank,C1821,L939,Business Loan,Startup Funding,918852,8.4,24,2022-09-18,2024-09-07,Ongoing,No,918852,0,,Active,Factory,Brother,Yes,38286.0,Rajesh Rathi,23,F,Current,659,SME,Gurugram
+Bank,C1336,L1458,Education Loan,Higher Education,4194792,10.6,180,2022-07-24,2037-05-06,Defaulted,Yes,4194792,2,2025-02-12,Recovery,None,Brother,Yes,23304.0,Suresh Malhotra,25,F,Savings,707,Corporate,Pune
+Bank,C31,L912,Education Loan,Higher Education,2077553,14.8,96,2025-01-05,2032-11-24,Ongoing,No,2077553,6,,Active,None,Mother,No,21641.0,Megha Sharma,46,M,Current,748,SME,Delhi
+Bank,C248,L1240,Personal Loan,Medical Expenses,3503837,14.3,24,2023-07-30,2025-07-19,Closed,No,0,0,,Closed,None,None,No,145993.0,Rohit Rao,40,F,Current,634,SME,Lucknow
+Bank,C1768,L948,Personal Loan,Medical Expenses,4992270,11.4,180,2020-10-11,2035-07-25,Ongoing,No,4992270,0,,Active,None,None,No,27735.0,Anita Desai,54,M,Current,748,SME,Jaipur
+Bank,C1954,L92,Business Loan,Business Expansion,1728052,13.7,60,2025-09-09,2030-08-14,Defaulted,Yes,1728052,0,2025-01-26,Recovery,Factory,Mother,Yes,28801.0,Deepak Joshi,49,M,Current,780,SME,Mumbai
+Bank,C1540,L728,Business Loan,Business Expansion,4988243,13.3,96,2023-11-22,2031-10-11,Ongoing,No,4988243,2,,Active,Factory,None,Yes,51961.0,Anjali Mehta,34,M,Savings,721,Retail,Ahmedabad
+Bank,C1875,L474,Home Loan,Renovation,2190393,10.2,60,2023-04-15,2028-03-19,Ongoing,No,2190393,3,,Active,House,Wife,No,36507.0,Pooja Patel,43,F,Current,629,Retail,Mumbai
+Bank,C1375,L866,Education Loan,Overseas Study,4541224,14.8,48,2024-05-06,2028-04-15,Ongoing,No,4541224,6,,Active,None,None,No,94609.0,Rohit Rao,38,F,Current,725,SME,Ahmedabad
+Bank,C1420,L1649,Home Loan,Renovation,1318866,12.2,240,2025-05-05,2045-01-20,Closed,No,0,0,,Closed,House,None,Yes,5495.0,Sneha Iyer,55,F,Savings,638,Retail,Jaipur
+Bank,C438,L856,Education Loan,Higher Education,1345192,11.7,180,2019-03-23,2034-01-03,Ongoing,No,1345192,0,,Active,None,Father,Yes,7473.0,Suresh Malhotra,24,F,Current,656,Corporate,Bangalore
+Bank,C846,L253,Car Loan,Vehicle Purchase,2736297,13.0,120,2019-01-17,2028-11-25,Ongoing,No,2736297,0,,Active,Car,Father,Yes,22802.0,Shreya Singh,60,M,Current,720,Retail,Chennai
+Bank,C217,L125,Car Loan,Vehicle Purchase,721730,7.2,60,2023-07-10,2028-06-13,Closed,No,0,0,,Closed,Car,Mother,No,12029.0,Rahul Kumar,25,F,Current,614,SME,Kolkata
+Bank,C1342,L1862,Personal Loan,Wedding Expenses,546268,10.1,240,2019-09-16,2039-06-03,Closed,No,0,0,,Closed,None,Wife,No,2276.0,Pooja Rao,26,F,Savings,732,SME,Hyderabad
+Bank,C66,L478,Education Loan,Higher Education,783274,9.5,36,2021-06-19,2024-06-03,Ongoing,No,783274,2,,Active,None,Wife,Yes,21758.0,Rohit Gupta,22,F,Savings,718,Retail,Bangalore
+Bank,C131,L1941,Car Loan,Vehicle Purchase,622146,10.3,60,2019-12-03,2024-11-06,Ongoing,No,622146,1,,Active,Car,Mother,Yes,10369.0,Sneha Malhotra,27,M,Savings,719,SME,Kolkata
+Bank,C789,L1199,Personal Loan,Medical Expenses,1649021,13.9,24,2019-01-28,2021-01-17,Closed,No,0,0,,Closed,None,Mother,No,68709.0,Kunal Rao,59,M,Current,682,SME,Hyderabad
+Bank,C900,L747,Home Loan,Renovation,2821611,8.3,180,2023-06-07,2038-03-20,Ongoing,No,2821611,4,,Active,House,Wife,Yes,15676.0,Sneha Desai,60,M,Savings,665,SME,Mumbai
+Bank,C1784,L179,Car Loan,Vehicle Purchase,2018897,11.3,48,2025-07-06,2029-06-15,Defaulted,No,2018897,0,2026-09-08,Recovery,Car,None,No,42060.0,Arjun Rathi,41,F,Current,677,SME,Gurugram
+Bank,C59,L623,Car Loan,Vehicle Purchase,1902313,8.6,60,2022-12-07,2027-11-11,Ongoing,No,1902313,1,,Active,Car,Brother,Yes,31705.0,Rajesh Kumar,31,M,Savings,723,Retail,Jaipur
+Bank,C1802,L1778,Personal Loan,Medical Expenses,830272,9.6,24,2025-02-22,2027-02-12,Ongoing,No,830272,1,,Active,None,Husband,No,34595.0,Rahul Rathi,23,F,Current,693,Corporate,Lucknow
+Bank,C1047,L960,Home Loan,Residential Property,4988767,7.4,24,2023-11-25,2025-11-14,Ongoing,No,4988767,1,,Active,House,Father,No,207865.0,Shreya Joshi,23,F,Current,672,SME,Kolkata
+Bank,C696,L785,Education Loan,Higher Education,2338230,13.0,180,2022-05-23,2037-03-05,Closed,No,0,0,,Closed,None,Wife,Yes,12990.0,Megha Patel,60,F,Savings,720,Corporate,Chennai
+Bank,C1546,L454,Education Loan,Higher Education,2284518,14.4,240,2024-04-08,2043-12-25,Ongoing,No,2284518,3,,Active,None,Father,No,9519.0,Rahul Singh,43,M,Savings,670,Corporate,Chennai
+Bank,C1949,L1031,Home Loan,Residential Property,3036808,12.6,60,2022-04-29,2027-04-03,Defaulted,No,3036808,4,2025-07-02,Recovery,House,Husband,Yes,50613.0,Shreya Nair,29,M,Savings,630,Corporate,Chennai
+Bank,C1880,L225,Education Loan,Overseas Study,622825,8.4,48,2021-01-13,2024-12-23,Ongoing,No,622825,5,,Active,None,Husband,No,12976.0,Vikram Gupta,32,M,Current,778,SME,Bangalore
+Bank,C969,L1114,Business Loan,Business Expansion,1913327,13.4,96,2024-12-12,2032-10-31,Ongoing,No,1913327,4,,Active,Factory,None,No,19930.0,Deepak Patel,23,F,Current,792,Corporate,Chennai
+Bank,C1508,L780,Home Loan,Residential Property,4919322,8.2,120,2023-07-02,2033-05-10,Ongoing,No,4919322,6,,Active,House,Brother,No,40994.0,Anita Mehta,26,M,Savings,775,SME,Delhi
+Bank,C1230,L933,Car Loan,Vehicle Purchase,4502108,7.0,120,2020-10-30,2030-09-08,Ongoing,No,4502108,5,,Active,Car,Husband,No,37518.0,Megha Bansal,26,F,Current,746,Retail,Pune
+Bank,C1867,L1712,Personal Loan,Medical Expenses,807893,14.7,96,2020-07-15,2028-06-03,Ongoing,No,807893,0,,Active,None,Mother,No,8416.0,Sneha Singh,46,F,Savings,734,Retail,Bangalore
+Bank,C1628,L1461,Car Loan,Vehicle Purchase,2146230,11.6,180,2021-10-17,2036-07-30,Ongoing,No,2146230,3,,Active,Car,Brother,No,11924.0,Suresh Kumar,47,F,Savings,752,Corporate,Hyderabad
+Bank,C1355,L953,Car Loan,Vehicle Purchase,3710354,13.4,36,2024-09-25,2027-09-10,Ongoing,No,3710354,1,,Active,Car,Wife,Yes,103065.0,Rahul Sharma,45,F,Savings,706,SME,Delhi
+Bank,C366,L191,Car Loan,Vehicle Purchase,3993995,9.9,180,2023-12-23,2038-10-05,Defaulted,Yes,3993995,4,2024-02-27,Recovery,Car,Father,Yes,22189.0,Shalini Sharma,31,M,Savings,704,Retail,Jaipur
+Bank,C1907,L1343,Business Loan,Startup Funding,987242,9.5,180,2020-09-12,2035-06-26,Ongoing,No,987242,0,,Active,Factory,Father,Yes,5485.0,Arjun Patel,52,M,Current,601,SME,Lucknow
+Bank,C387,L1323,Business Loan,Working Capital,3198163,14.2,60,2023-03-05,2028-02-07,Ongoing,No,3198163,0,,Active,Factory,Wife,No,53303.0,Sneha Desai,23,F,Current,783,Corporate,Kolkata
+Bank,C1237,L785,Car Loan,Vehicle Purchase,722228,11.6,180,2023-07-12,2038-04-24,Ongoing,No,722228,2,,Active,Car,Wife,Yes,4012.0,Sunita Kumar,32,F,Current,747,Retail,Gurugram
+Bank,C813,L587,Personal Loan,Debt Consolidation,4728637,7.9,48,2023-09-21,2027-08-31,Ongoing,No,4728637,6,,Active,None,Mother,No,98513.0,Amit Verma,43,F,Current,693,Retail,Bangalore
+Bank,C1173,L134,Business Loan,Startup Funding,4360976,13.1,60,2020-01-05,2024-12-09,Ongoing,No,4360976,1,,Active,Factory,None,No,72683.0,Anjali Kapoor,54,F,Current,654,Retail,Kolkata
+Bank,C1623,L1098,Education Loan,Higher Education,314865,14.2,60,2023-10-17,2028-09-20,Ongoing,No,314865,6,,Active,None,Father,No,5248.0,Rahul Iyer,44,F,Savings,731,SME,Patna
+Bank,C1939,L974,Business Loan,Startup Funding,4551346,9.4,96,2020-07-20,2028-06-08,Closed,No,0,0,,Closed,Factory,Husband,Yes,47410.0,Rahul Joshi,25,M,Savings,680,Corporate,Lucknow
+Bank,C1895,L1682,Education Loan,Overseas Study,2646629,12.6,24,2023-06-13,2025-06-02,Ongoing,No,2646629,4,,Active,None,Wife,Yes,110276.0,Rohit Mehta,43,F,Savings,631,Retail,Chennai
+Bank,C707,L1013,Personal Loan,Medical Expenses,3492808,13.9,36,2021-04-02,2024-03-17,Ongoing,No,3492808,3,,Active,None,Father,No,97022.0,Rohit Singh,49,M,Current,667,Retail,Bangalore
+Bank,C814,L1571,Car Loan,Vehicle Purchase,575177,7.1,120,2023-03-20,2033-01-26,Ongoing,No,575177,3,,Active,Car,Father,No,4793.0,Kunal Kumar,49,F,Savings,633,SME,Bangalore
+Bank,C1342,L372,Home Loan,Renovation,2527791,8.5,24,2021-12-23,2023-12-13,Defaulted,Yes,2527791,1,2024-06-01,Recovery,House,None,No,105325.0,Megha Verma,29,F,Savings,798,SME,Chennai
+Bank,C68,L1460,Business Loan,Working Capital,1826598,9.7,36,2021-02-03,2024-01-19,Ongoing,No,1826598,6,,Active,Factory,Father,No,50739.0,Anita Kumar,34,F,Current,675,Retail,Gurugram
+Bank,C1257,L1880,Car Loan,Vehicle Purchase,4719003,10.4,60,2022-04-10,2027-03-15,Closed,No,0,0,,Closed,Car,Brother,Yes,78650.0,Rajesh Desai,44,M,Current,781,Corporate,Lucknow
+Bank,C675,L1472,Education Loan,Higher Education,2770051,11.1,48,2024-12-02,2028-11-11,Ongoing,No,2770051,5,,Active,None,Wife,No,57709.0,Rohit Rathi,36,M,Current,795,Retail,Bangalore
+Bank,C597,L1555,Business Loan,Working Capital,3550933,12.0,120,2022-09-25,2032-08-03,Ongoing,No,3550933,4,,Active,Factory,Husband,No,29591.0,Rohit Rathi,41,M,Savings,601,SME,Hyderabad
+Bank,C596,L730,Personal Loan,Medical Expenses,2885578,9.4,96,2021-06-21,2029-05-10,Closed,No,0,0,,Closed,None,Mother,No,30058.0,Kunal Kapoor,56,M,Savings,667,Corporate,Kolkata
+Bank,C720,L1829,Personal Loan,Medical Expenses,2603354,10.7,120,2021-06-09,2031-04-18,Ongoing,No,2603354,5,,Active,None,Father,No,21695.0,Kunal Bansal,55,F,Current,689,Corporate,Hyderabad
+Bank,C1248,L300,Home Loan,Renovation,887664,8.1,60,2022-04-12,2027-03-17,Ongoing,No,887664,4,,Active,House,Father,No,14794.0,Suresh Patel,26,M,Savings,691,Retail,Patna
+Bank,C1915,L932,Personal Loan,Debt Consolidation,4360674,14.5,48,2019-03-18,2023-02-25,Ongoing,No,4360674,3,,Active,None,None,No,90847.0,Vikram Sharma,52,M,Current,606,Retail,Kolkata
+Bank,C1881,L97,Home Loan,Residential Property,3066325,11.6,24,2025-07-24,2027-07-14,Ongoing,No,3066325,6,,Active,House,None,No,127764.0,Sunita Singh,59,F,Current,780,SME,Lucknow
+Bank,C126,L657,Education Loan,Overseas Study,4764525,10.1,36,2023-07-05,2026-06-19,Ongoing,No,4764525,0,,Active,None,None,Yes,132348.0,Rajesh Gupta,41,F,Savings,728,Corporate,Bangalore
+Bank,C1708,L1974,Car Loan,Vehicle Purchase,216325,12.1,120,2022-09-04,2032-07-13,Ongoing,No,216325,3,,Active,Car,Father,No,1803.0,Kunal Iyer,25,M,Current,735,Corporate,Gurugram
+Bank,C1033,L1415,Business Loan,Business Expansion,2123178,9.3,96,2023-05-31,2031-04-19,Closed,No,0,0,,Closed,Factory,Brother,Yes,22116.0,Arjun Gupta,27,F,Savings,790,Retail,Jaipur
+Bank,C733,L1069,Car Loan,Vehicle Purchase,475499,14.1,48,2019-09-06,2023-08-16,Defaulted,No,475499,2,2026-10-17,Recovery,Car,Husband,Yes,9906.0,Pooja Gupta,34,F,Savings,688,SME,Patna
+Bank,C627,L1157,Personal Loan,Wedding Expenses,2731242,11.2,36,2019-04-23,2022-04-07,Ongoing,No,2731242,5,,Active,None,Mother,Yes,75868.0,Sneha Kapoor,59,F,Current,639,Corporate,Lucknow
+Bank,C1162,L997,Education Loan,Overseas Study,747761,9.7,240,2023-03-08,2042-11-23,Ongoing,No,747761,0,,Active,None,Father,Yes,3116.0,Vikram Rao,54,F,Current,605,Corporate,Ahmedabad
+Bank,C1388,L605,Business Loan,Working Capital,2260582,12.2,48,2024-02-28,2028-02-07,Ongoing,No,2260582,5,,Active,Factory,None,No,47095.0,Arjun Malhotra,60,M,Current,776,Retail,Gurugram
+Bank,C59,L438,Education Loan,Overseas Study,3737002,14.3,180,2022-10-29,2037-08-11,Ongoing,No,3737002,1,,Active,None,Father,No,20761.0,Sunita Iyer,60,F,Current,688,Retail,Delhi
+Bank,C127,L543,Personal Loan,Wedding Expenses,1571136,9.9,36,2025-09-29,2028-09-13,Ongoing,No,1571136,3,,Active,None,Brother,No,43643.0,Sneha Malhotra,43,F,Current,610,SME,Mumbai
+Bank,C391,L1309,Car Loan,Vehicle Purchase,3621615,14.6,120,2025-05-17,2035-03-26,Defaulted,Yes,3621615,6,2025-09-05,Recovery,Car,Husband,Yes,30180.0,Kunal Verma,51,F,Savings,798,SME,Gurugram
+Bank,C513,L1781,Car Loan,Vehicle Purchase,2096580,10.2,180,2025-04-03,2040-01-15,Ongoing,No,2096580,2,,Active,Car,Brother,Yes,11648.0,Amit Malhotra,24,F,Current,614,Corporate,Kolkata
+Bank,C1663,L867,Education Loan,Higher Education,1773429,7.5,48,2023-01-27,2027-01-06,Ongoing,No,1773429,0,,Active,None,None,Yes,36946.0,Suresh Patel,40,M,Savings,637,Corporate,Gurugram
+Bank,C640,L11,Personal Loan,Medical Expenses,2996984,10.0,120,2019-06-07,2029-04-15,Ongoing,No,2996984,4,,Active,None,Wife,Yes,24975.0,Kunal Patel,30,F,Savings,719,Corporate,Ahmedabad
+Bank,C1300,L1670,Home Loan,Residential Property,3293564,8.9,240,2019-05-29,2039-02-13,Closed,No,0,0,,Closed,House,Husband,No,13723.0,Sunita Mehta,21,M,Current,634,SME,Chennai
+Bank,C451,L1937,Personal Loan,Wedding Expenses,3328713,11.5,48,2022-04-02,2026-03-12,Closed,No,0,0,,Closed,None,Husband,No,69348.0,Megha Joshi,30,M,Current,665,SME,Hyderabad
+Bank,C1926,L1616,Personal Loan,Wedding Expenses,2639330,12.2,24,2020-06-07,2022-05-28,Ongoing,No,2639330,5,,Active,None,Wife,No,109972.0,Deepak Patel,35,M,Savings,640,SME,Kolkata
+Bank,C760,L496,Education Loan,Higher Education,2605464,14.8,240,2024-08-01,2044-04-18,Ongoing,No,2605464,6,,Active,None,Husband,Yes,10856.0,Pooja Nair,37,F,Current,785,SME,Kolkata
+Bank,C1921,L871,Personal Loan,Medical Expenses,3709397,14.5,24,2020-05-07,2022-04-27,Ongoing,No,3709397,5,,Active,None,Wife,Yes,154558.0,Amit Kapoor,35,M,Current,778,Corporate,Hyderabad
+Bank,C1817,L183,Car Loan,Vehicle Purchase,727763,10.0,120,2024-11-10,2034-09-19,Ongoing,No,727763,2,,Active,Car,Father,Yes,6065.0,Megha Rathi,47,F,Savings,788,Retail,Jaipur
+Bank,C4,L1226,Personal Loan,Debt Consolidation,626801,13.4,36,2020-05-22,2023-05-07,Ongoing,No,626801,2,,Active,None,None,No,17411.0,Anita Desai,46,M,Savings,752,SME,Chennai
+Bank,C899,L441,Home Loan,Renovation,2668112,12.4,240,2019-12-16,2039-09-02,Closed,No,0,0,,Closed,House,Wife,No,11117.0,Anjali Joshi,50,F,Current,739,Corporate,Chennai
+Bank,C1305,L1755,Personal Loan,Wedding Expenses,3824827,13.0,180,2019-02-10,2033-11-23,Ongoing,No,3824827,1,,Active,None,Husband,Yes,21249.0,Anita Bansal,25,F,Current,632,Retail,Mumbai
+Bank,C1601,L1796,Personal Loan,Wedding Expenses,3395456,7.5,120,2022-08-30,2032-07-08,Ongoing,No,3395456,0,,Active,None,None,No,28295.0,Rohit Desai,50,M,Current,619,Retail,Jaipur
+Bank,C678,L1705,Home Loan,Residential Property,505582,11.8,48,2023-02-25,2027-02-04,Ongoing,No,505582,5,,Active,House,None,No,10533.0,Kunal Rathi,51,F,Savings,723,SME,Delhi
+Bank,C839,L1218,Education Loan,Overseas Study,3848618,8.3,240,2025-04-16,2045-01-01,Closed,No,0,0,,Closed,None,Mother,No,16036.0,Rajesh Malhotra,36,F,Savings,758,SME,Pune
+Bank,C1647,L1581,Business Loan,Working Capital,242658,7.6,180,2022-03-21,2037-01-01,Defaulted,No,242658,2,2024-01-22,Recovery,Factory,Wife,Yes,1348.0,Rahul Desai,49,F,Savings,600,SME,Patna
+Bank,C1154,L1135,Business Loan,Working Capital,438393,8.7,180,2024-03-22,2039-01-03,Ongoing,No,438393,6,,Active,Factory,Father,No,2436.0,Rahul Rathi,58,F,Savings,610,Corporate,Bangalore
+Bank,C62,L237,Home Loan,Residential Property,1190320,11.8,96,2020-08-28,2028-07-17,Closed,No,0,0,,Closed,House,Mother,Yes,12399.0,Anita Desai,23,F,Savings,687,Retail,Delhi
+Bank,C937,L295,Business Loan,Business Expansion,1543028,7.0,120,2021-03-13,2031-01-20,Closed,No,0,0,,Closed,Factory,Wife,Yes,12859.0,Rohit Nair,34,M,Current,707,Corporate,Ahmedabad
+Bank,C578,L1145,Home Loan,Residential Property,3975199,14.7,24,2024-04-07,2026-03-28,Ongoing,No,3975199,5,,Active,House,None,No,165633.0,Pooja Nair,32,F,Current,693,Retail,Mumbai
+Bank,C1513,L1543,Car Loan,Vehicle Purchase,3687448,13.4,60,2019-12-31,2024-12-04,Ongoing,No,3687448,0,,Active,Car,None,Yes,61457.0,Sunita Patel,47,M,Savings,755,Corporate,Chennai
+Bank,C1317,L1580,Education Loan,Overseas Study,4223692,7.2,240,2024-12-15,2044-09-01,Closed,No,0,0,,Closed,None,Father,Yes,17599.0,Kunal Bansal,59,M,Current,763,Retail,Ahmedabad
+Bank,C363,L546,Education Loan,Higher Education,3404774,10.1,240,2023-02-15,2042-11-02,Ongoing,No,3404774,1,,Active,None,Brother,Yes,14187.0,Meera Sharma,23,F,Savings,605,SME,Mumbai
+Bank,C723,L360,Car Loan,Vehicle Purchase,3319988,12.8,180,2025-03-23,2040-01-04,Closed,No,0,0,,Closed,Car,None,Yes,18444.0,Suresh Patel,49,F,Current,787,SME,Patna
+Bank,C1737,L303,Education Loan,Higher Education,1163164,12.7,24,2020-09-28,2022-09-18,Closed,No,0,0,,Closed,None,Brother,No,48465.0,Rahul Sharma,39,F,Savings,760,SME,Lucknow
+Bank,C1576,L334,Education Loan,Higher Education,1271302,11.7,180,2022-03-29,2037-01-09,Ongoing,No,1271302,1,,Active,None,Husband,Yes,7063.0,Megha Malhotra,25,F,Savings,700,Corporate,Chennai
+Bank,C1471,L1667,Home Loan,Residential Property,476175,7.4,180,2023-11-19,2038-09-01,Ongoing,No,476175,1,,Active,House,Brother,No,2645.0,Megha Singh,28,M,Savings,676,SME,Hyderabad
+Bank,C1855,L998,Home Loan,Residential Property,1494680,13.8,180,2023-03-10,2037-12-21,Ongoing,No,1494680,4,,Active,House,Father,No,8304.0,Rohit Rao,50,F,Current,685,Corporate,Chennai
+Bank,C161,L1107,Home Loan,Residential Property,2381245,10.5,240,2020-02-08,2039-10-26,Ongoing,No,2381245,6,,Active,House,Husband,Yes,9922.0,Arjun Rao,46,F,Current,798,Corporate,Chennai
+Bank,C1416,L1860,Home Loan,Renovation,1817740,7.4,120,2024-10-22,2034-08-31,Closed,No,0,0,,Closed,House,Mother,No,15148.0,Meera Nair,43,M,Current,602,SME,Ahmedabad
+Bank,C1766,L866,Home Loan,Renovation,3407903,8.6,24,2019-12-24,2021-12-13,Ongoing,No,3407903,4,,Active,House,Husband,No,141996.0,Kunal Singh,23,M,Current,782,SME,Gurugram
+Bank,C1967,L450,Business Loan,Startup Funding,2825015,9.3,24,2023-12-05,2025-11-24,Ongoing,No,2825015,3,,Active,Factory,None,No,117709.0,Sunita Kapoor,26,F,Current,662,Corporate,Hyderabad
+Bank,C1811,L513,Education Loan,Overseas Study,292585,12.6,180,2021-07-22,2036-05-04,Ongoing,No,292585,2,,Active,None,Husband,No,1625.0,Rajesh Joshi,24,M,Current,600,Retail,Lucknow
+Bank,C1676,L1829,Personal Loan,Medical Expenses,4759327,11.2,180,2022-07-06,2037-04-18,Ongoing,No,4759327,6,,Active,None,Mother,No,26441.0,Rohit Bansal,43,F,Current,795,SME,Ahmedabad
+Bank,C1539,L1781,Home Loan,Residential Property,2338950,9.7,96,2021-06-04,2029-04-23,Ongoing,No,2338950,6,,Active,House,Wife,Yes,24364.0,Megha Kapoor,49,F,Savings,795,Retail,Gurugram
+Bank,C630,L795,Car Loan,Vehicle Purchase,3553304,9.4,48,2021-07-28,2025-07-07,Closed,No,0,0,,Closed,Car,Wife,Yes,74027.0,Anita Desai,23,M,Savings,643,SME,Jaipur
+Bank,C1679,L1419,Home Loan,Renovation,850080,7.7,48,2019-01-15,2022-12-25,Ongoing,No,850080,6,,Active,House,Brother,Yes,17710.0,Pooja Sharma,39,F,Current,769,Retail,Hyderabad
+Bank,C342,L116,Education Loan,Overseas Study,2070772,10.3,96,2020-02-19,2028-01-08,Ongoing,No,2070772,5,,Active,None,Father,Yes,21571.0,Anita Kapoor,47,F,Current,625,SME,Mumbai
+Bank,C968,L923,Education Loan,Higher Education,3092894,7.8,36,2022-03-24,2025-03-08,Closed,No,0,0,,Closed,None,Mother,Yes,85914.0,Sneha Rathi,57,M,Current,771,SME,Bangalore
+Bank,C1507,L696,Car Loan,Vehicle Purchase,629324,13.9,96,2024-09-12,2032-08-01,Ongoing,No,629324,6,,Active,Car,Wife,No,6555.0,Sneha Kumar,25,M,Current,601,Corporate,Delhi
+Bank,C579,L1802,Education Loan,Higher Education,318031,14.1,24,2024-03-27,2026-03-17,Ongoing,No,318031,6,,Active,None,Husband,No,13251.0,Rajesh Nair,38,F,Current,649,Retail,Chennai
+Bank,C631,L1428,Personal Loan,Wedding Expenses,1998642,10.1,48,2024-08-15,2028-07-25,Ongoing,No,1998642,3,,Active,None,Mother,Yes,41638.0,Deepak Desai,21,M,Current,652,Retail,Jaipur
+Bank,C1953,L393,Personal Loan,Debt Consolidation,4175187,9.3,36,2024-05-20,2027-05-05,Defaulted,Yes,4175187,4,2026-03-16,Recovery,None,Brother,Yes,115977.0,Rahul Joshi,43,M,Savings,778,Retail,Chennai
+Bank,C599,L1319,Personal Loan,Debt Consolidation,4117101,9.6,60,2020-02-22,2025-01-26,Ongoing,No,4117101,2,,Active,None,Mother,No,68618.0,Deepak Verma,46,F,Current,663,Corporate,Ahmedabad
+Bank,C962,L314,Business Loan,Working Capital,3420029,8.3,180,2021-09-24,2036-07-07,Ongoing,No,3420029,1,,Active,Factory,Husband,No,19000.0,Deepak Bansal,36,F,Savings,711,SME,Bangalore
+Bank,C240,L1781,Business Loan,Working Capital,2580260,13.2,120,2019-02-11,2028-12-20,Ongoing,No,2580260,2,,Active,Factory,Wife,Yes,21502.0,Sneha Rathi,44,F,Current,712,Corporate,Delhi
+Bank,C670,L1138,Car Loan,Vehicle Purchase,4611784,9.5,180,2019-01-30,2033-11-12,Ongoing,No,4611784,4,,Active,Car,Brother,Yes,25621.0,Sunita Rathi,38,M,Savings,743,Corporate,Pune
+Bank,C658,L209,Car Loan,Vehicle Purchase,1058304,13.3,48,2019-04-03,2023-03-13,Ongoing,No,1058304,4,,Active,Car,Wife,Yes,22048.0,Neha Desai,41,F,Current,660,Retail,Mumbai
+Bank,C543,L731,Business Loan,Startup Funding,450993,13.0,240,2023-11-30,2043-08-17,Ongoing,No,450993,1,,Active,Factory,Husband,No,1879.0,Rohit Kapoor,28,M,Current,764,Corporate,Chennai
+Bank,C337,L1074,Business Loan,Working Capital,4400442,8.4,24,2023-07-17,2025-07-06,Ongoing,No,4400442,3,,Active,Factory,Mother,No,183352.0,Rajesh Iyer,42,M,Savings,600,Corporate,Patna
+Bank,C1891,L701,Education Loan,Higher Education,4984115,8.0,240,2024-05-06,2044-01-22,Ongoing,No,4984115,5,,Active,None,Brother,No,20767.0,Rahul Patel,51,F,Savings,686,Retail,Ahmedabad
+Bank,C224,L631,Education Loan,Higher Education,2243592,7.1,180,2020-04-06,2035-01-18,Ongoing,No,2243592,5,,Active,None,Wife,No,12464.0,Anita Mehta,32,F,Savings,622,Retail,Gurugram
+Bank,C644,L1620,Education Loan,Overseas Study,3919869,12.0,120,2025-06-09,2035-04-18,Defaulted,No,3919869,2,2024-03-04,Recovery,None,Wife,Yes,32666.0,Anita Kumar,24,F,Current,759,Corporate,Kolkata
+Bank,C95,L692,Car Loan,Vehicle Purchase,536536,7.2,96,2025-01-31,2032-12-20,Ongoing,No,536536,6,,Active,Car,Husband,Yes,5589.0,Sunita Bansal,50,M,Current,775,Corporate,Lucknow
+Bank,C660,L333,Car Loan,Vehicle Purchase,3721983,11.2,180,2023-03-25,2038-01-05,Ongoing,No,3721983,1,,Active,Car,None,Yes,20678.0,Rohit Sharma,42,M,Current,679,SME,Mumbai
+Bank,C1813,L1770,Car Loan,Vehicle Purchase,4858046,9.8,240,2025-05-30,2045-02-14,Closed,No,0,0,,Closed,Car,Husband,No,20242.0,Suresh Bansal,48,M,Current,735,Corporate,Patna
+Bank,C1287,L1814,Car Loan,Vehicle Purchase,3931134,11.4,180,2024-02-16,2038-11-29,Ongoing,No,3931134,3,,Active,Car,None,Yes,21840.0,Anita Mehta,32,F,Savings,703,Corporate,Lucknow
+Bank,C1893,L101,Education Loan,Overseas Study,4468166,14.1,24,2021-08-12,2023-08-02,Ongoing,No,4468166,3,,Active,None,Father,No,186174.0,Suresh Iyer,44,M,Current,778,Corporate,Bangalore
+Bank,C1555,L1327,Education Loan,Overseas Study,2608495,13.2,240,2022-12-21,2042-09-07,Ongoing,No,2608495,6,,Active,None,None,Yes,10869.0,Sunita Mehta,57,M,Savings,601,Retail,Jaipur
+Bank,C1407,L979,Car Loan,Vehicle Purchase,2825027,13.3,240,2025-03-31,2044-12-16,Defaulted,Yes,2825027,3,2024-10-10,Recovery,Car,Wife,Yes,11771.0,Rahul Sharma,24,F,Savings,695,Retail,Jaipur
+Bank,C1652,L1725,Personal Loan,Medical Expenses,4641337,14.5,60,2022-06-29,2027-06-03,Ongoing,No,4641337,3,,Active,None,Husband,Yes,77356.0,Arjun Rathi,42,F,Savings,684,Retail,Gurugram
+Bank,C692,L1554,Business Loan,Startup Funding,1980121,10.9,180,2019-09-22,2034-07-05,Ongoing,No,1980121,2,,Active,Factory,Brother,Yes,11001.0,Anita Kumar,46,F,Current,716,Retail,Lucknow
+Bank,C270,L1221,Business Loan,Working Capital,1962292,14.7,36,2025-03-02,2028-02-15,Ongoing,No,1962292,1,,Active,Factory,Husband,Yes,54508.0,Meera Nair,47,F,Current,649,SME,Pune
+Bank,C1446,L1079,Home Loan,Residential Property,1359615,12.7,96,2021-05-23,2029-04-11,Ongoing,No,1359615,3,,Active,House,Brother,Yes,14163.0,Vikram Singh,34,M,Savings,612,Corporate,Mumbai
+Bank,C360,L1224,Education Loan,Higher Education,1509723,13.4,180,2022-07-21,2037-05-03,Closed,No,0,0,,Closed,None,Husband,No,8387.0,Neha Rathi,31,F,Current,749,Corporate,Lucknow
+Bank,C214,L768,Home Loan,Residential Property,3311526,9.3,48,2024-02-25,2028-02-04,Closed,No,0,0,,Closed,House,Mother,No,68990.0,Rohit Desai,52,F,Current,610,Corporate,Gurugram
+Bank,C766,L1860,Business Loan,Startup Funding,1962343,9.0,120,2021-08-09,2031-06-18,Ongoing,No,1962343,4,,Active,Factory,Mother,No,16353.0,Rajesh Kapoor,25,F,Current,729,SME,Ahmedabad
+Bank,C761,L771,Education Loan,Overseas Study,3953163,8.8,24,2020-08-09,2022-07-30,Ongoing,No,3953163,6,,Active,None,Brother,No,164715.0,Kunal Malhotra,44,F,Current,671,Retail,Kolkata
+Bank,C1707,L1,Car Loan,Vehicle Purchase,2641312,7.4,240,2023-05-24,2043-02-08,Closed,No,0,0,,Closed,Car,Husband,Yes,11005.0,Meera Gupta,50,M,Savings,747,Corporate,Hyderabad
+Bank,C1648,L1788,Education Loan,Higher Education,4667257,13.8,180,2021-12-10,2036-09-22,Ongoing,No,4667257,3,,Active,None,Brother,No,25929.0,Rajesh Patel,41,M,Savings,723,Retail,Jaipur
+Bank,C729,L774,Business Loan,Business Expansion,4247985,8.8,180,2022-05-27,2037-03-09,Defaulted,No,4247985,5,2026-12-15,Recovery,Factory,Father,No,23600.0,Megha Nair,40,F,Savings,652,Corporate,Gurugram
+Bank,C27,L1793,Personal Loan,Wedding Expenses,2317281,14.7,240,2019-11-01,2039-07-19,Ongoing,No,2317281,6,,Active,None,Husband,No,9655.0,Deepak Patel,25,M,Savings,715,Corporate,Delhi
+Bank,C61,L1959,Home Loan,Residential Property,4296240,13.3,36,2019-10-18,2022-10-02,Ongoing,No,4296240,5,,Active,House,Mother,No,119340.0,Kunal Gupta,30,F,Savings,779,SME,Pune
+Bank,C1296,L1339,Personal Loan,Wedding Expenses,3306460,9.1,60,2019-05-06,2024-04-09,Ongoing,No,3306460,3,,Active,None,Mother,No,55108.0,Suresh Kumar,28,F,Savings,790,Retail,Patna
+Bank,C318,L336,Business Loan,Business Expansion,1357130,12.1,48,2019-07-31,2023-07-10,Closed,No,0,0,,Closed,Factory,Father,No,28274.0,Deepak Malhotra,53,F,Savings,686,Corporate,Delhi
+Bank,C1684,L1247,Education Loan,Overseas Study,4182479,7.1,24,2021-06-22,2023-06-12,Defaulted,Yes,4182479,4,2024-06-26,Recovery,None,Father,No,174270.0,Megha Mehta,30,M,Savings,793,SME,Hyderabad
+Bank,C584,L1261,Business Loan,Business Expansion,2334262,14.3,36,2023-02-05,2026-01-20,Ongoing,No,2334262,1,,Active,Factory,Brother,No,64841.0,Anjali Rathi,45,F,Savings,777,Retail,Hyderabad
+Bank,C745,L756,Home Loan,Residential Property,3168101,9.2,60,2021-09-01,2026-08-06,Ongoing,No,3168101,5,,Active,House,None,Yes,52802.0,Rajesh Bansal,30,M,Current,734,Retail,Hyderabad
+Bank,C1858,L1092,Car Loan,Vehicle Purchase,539099,7.0,36,2021-03-22,2024-03-06,Ongoing,No,539099,3,,Active,Car,None,No,14975.0,Anjali Verma,53,M,Current,797,Corporate,Patna
+Bank,C1743,L1096,Business Loan,Working Capital,4911037,14.8,240,2024-02-25,2043-11-12,Ongoing,No,4911037,1,,Active,Factory,Mother,Yes,20463.0,Sunita Bansal,43,F,Current,768,Retail,Lucknow
+Bank,C586,L605,Business Loan,Startup Funding,2162722,13.9,24,2021-06-03,2023-05-24,Ongoing,No,2162722,5,,Active,Factory,Husband,No,90113.0,Anjali Joshi,35,M,Current,769,Retail,Jaipur
+Bank,C478,L1586,Business Loan,Business Expansion,4809789,9.0,120,2022-10-29,2032-09-06,Closed,No,0,0,,Closed,Factory,Mother,No,40082.0,Deepak Patel,43,F,Savings,781,SME,Pune
+Bank,C608,L1780,Personal Loan,Medical Expenses,3403174,10.5,120,2021-01-12,2030-11-21,Defaulted,Yes,3403174,5,2025-04-28,Recovery,None,None,No,28360.0,Neha Desai,42,F,Savings,620,Retail,Ahmedabad
+Bank,C45,L720,Education Loan,Overseas Study,3767698,10.9,60,2021-02-04,2026-01-09,Defaulted,Yes,3767698,3,2026-03-28,Recovery,None,Father,Yes,62795.0,Arjun Kapoor,41,M,Savings,792,Corporate,Mumbai
+Bank,C928,L1051,Home Loan,Renovation,4547546,12.7,60,2019-01-18,2023-12-23,Ongoing,No,4547546,6,,Active,House,Wife,Yes,75792.0,Deepak Malhotra,46,M,Savings,778,Corporate,Delhi
+Bank,C306,L1988,Car Loan,Vehicle Purchase,768315,10.1,60,2024-11-26,2029-10-31,Ongoing,No,768315,2,,Active,Car,None,No,12805.0,Rohit Rathi,44,F,Savings,612,SME,Bangalore
+Bank,C509,L1905,Business Loan,Business Expansion,2953321,14.6,36,2024-08-14,2027-07-30,Ongoing,No,2953321,5,,Active,Factory,Husband,Yes,82037.0,Meera Desai,54,M,Current,732,Corporate,Lucknow
+Bank,C1053,L784,Education Loan,Overseas Study,2500843,8.3,36,2021-06-17,2024-06-01,Ongoing,No,2500843,2,,Active,None,None,No,69468.0,Rohit Kapoor,57,M,Current,781,SME,Pune
+Bank,C1767,L1328,Home Loan,Renovation,3890754,9.4,96,2022-03-21,2030-02-07,Ongoing,No,3890754,4,,Active,House,None,Yes,40529.0,Rohit Verma,40,M,Current,606,SME,Ahmedabad
+Bank,C964,L1745,Home Loan,Renovation,2503089,9.4,120,2021-05-17,2031-03-26,Ongoing,No,2503089,4,,Active,House,Brother,No,20859.0,Rahul Iyer,22,F,Savings,754,SME,Chennai
+Bank,C376,L1654,Business Loan,Working Capital,4365974,9.0,48,2019-07-23,2023-07-02,Ongoing,No,4365974,1,,Active,Factory,Brother,Yes,90958.0,Anjali Kumar,40,F,Savings,783,SME,Chennai
+Bank,C1320,L1526,Business Loan,Working Capital,371183,12.6,60,2025-10-01,2030-09-05,Closed,No,0,0,,Closed,Factory,Wife,Yes,6186.0,Megha Bansal,60,F,Savings,633,Retail,Kolkata
+Bank,C532,L1905,Home Loan,Renovation,812877,10.6,120,2024-03-08,2034-01-15,Ongoing,No,812877,2,,Active,House,Husband,Yes,6774.0,Arjun Rao,37,F,Savings,729,SME,Ahmedabad
+Bank,C1927,L856,Car Loan,Vehicle Purchase,4913025,12.4,24,2019-07-22,2021-07-11,Ongoing,No,4913025,4,,Active,Car,Brother,Yes,204709.0,Shreya Rao,21,F,Savings,704,Retail,Mumbai
+Bank,C90,L169,Business Loan,Business Expansion,579777,14.5,60,2022-06-13,2027-05-18,Ongoing,No,579777,0,,Active,Factory,Husband,No,9663.0,Neha Verma,41,M,Current,791,SME,Hyderabad
+Bank,C1643,L1986,Car Loan,Vehicle Purchase,1584593,13.6,180,2022-05-30,2037-03-12,Ongoing,No,1584593,3,,Active,Car,Wife,No,8803.0,Rahul Desai,57,F,Current,748,Corporate,Hyderabad
+Bank,C926,L390,Home Loan,Residential Property,1448631,10.1,60,2024-01-01,2028-12-05,Ongoing,No,1448631,0,,Active,House,Wife,No,24144.0,Deepak Rathi,59,M,Savings,763,Corporate,Hyderabad
+Bank,C1214,L1961,Business Loan,Business Expansion,4620456,7.7,240,2025-04-22,2045-01-07,Closed,No,0,0,,Closed,Factory,None,No,19252.0,Rahul Kumar,28,M,Savings,708,Retail,Bangalore
+Bank,C809,L1393,Education Loan,Overseas Study,1491621,12.6,60,2020-01-30,2025-01-03,Ongoing,No,1491621,1,,Active,None,Father,No,24860.0,Rohit Gupta,31,M,Savings,624,Corporate,Delhi
+Bank,C1616,L1873,Personal Loan,Medical Expenses,549092,11.6,240,2021-03-26,2040-12-11,Ongoing,No,549092,4,,Active,None,Brother,No,2288.0,Kunal Verma,32,M,Current,765,Retail,Ahmedabad
+Bank,C445,L742,Home Loan,Residential Property,1471024,12.5,36,2021-06-21,2024-06-05,Ongoing,No,1471024,3,,Active,House,Brother,No,40862.0,Neha Patel,24,F,Current,729,SME,Delhi
+Bank,C1656,L529,Home Loan,Renovation,1597323,9.2,36,2022-09-23,2025-09-07,Defaulted,Yes,1597323,4,2024-12-11,Recovery,House,Wife,Yes,44370.0,Sneha Gupta,43,F,Current,662,Retail,Delhi
+Bank,C653,L664,Home Loan,Renovation,3115194,14.8,60,2022-01-04,2026-12-09,Ongoing,No,3115194,3,,Active,House,Father,No,51920.0,Vikram Patel,42,F,Current,727,SME,Chennai
+Bank,C346,L1757,Car Loan,Vehicle Purchase,520597,8.5,120,2022-01-11,2031-11-20,Defaulted,No,520597,0,2024-05-14,Recovery,Car,None,No,4338.0,Pooja Rathi,36,F,Current,796,Corporate,Gurugram
+Bank,C154,L747,Car Loan,Vehicle Purchase,2441229,12.5,36,2022-06-22,2025-06-06,Ongoing,No,2441229,6,,Active,Car,Brother,No,67812.0,Vikram Nair,50,F,Current,664,SME,Hyderabad
+Bank,C1181,L1837,Personal Loan,Debt Consolidation,3132395,11.8,36,2019-10-25,2022-10-09,Closed,No,0,0,,Closed,None,Wife,Yes,87011.0,Amit Desai,33,F,Current,708,SME,Kolkata
+Bank,C1328,L958,Education Loan,Higher Education,2129454,10.9,48,2020-11-27,2024-11-06,Defaulted,No,2129454,2,2024-11-22,Recovery,None,Father,Yes,44364.0,Sneha Kumar,44,M,Current,750,Corporate,Delhi
+Bank,C1469,L1470,Car Loan,Vehicle Purchase,3916204,9.1,60,2022-01-28,2027-01-02,Ongoing,No,3916204,3,,Active,Car,Mother,Yes,65270.0,Kunal Malhotra,55,M,Savings,620,Retail,Bangalore
+Bank,C1854,L404,Education Loan,Overseas Study,3525251,10.6,96,2019-02-05,2026-12-25,Ongoing,No,3525251,3,,Active,None,None,No,36721.0,Neha Kumar,38,F,Savings,659,Corporate,Patna
+Bank,C268,L1072,Home Loan,Renovation,3023082,10.8,24,2020-10-03,2022-09-23,Ongoing,No,3023082,1,,Active,House,Mother,Yes,125962.0,Sunita Rathi,22,M,Current,649,Retail,Kolkata
+Bank,C423,L1974,Personal Loan,Debt Consolidation,228133,8.0,96,2021-05-25,2029-04-13,Defaulted,No,228133,2,2024-07-06,Recovery,None,Mother,Yes,2376.0,Sneha Rathi,51,M,Current,640,SME,Kolkata
+Bank,C1801,L1894,Personal Loan,Wedding Expenses,3901227,7.0,24,2023-01-26,2025-01-15,Closed,No,0,0,,Closed,None,Wife,No,162551.0,Rajesh Bansal,41,F,Current,789,Corporate,Chennai
+Bank,C1718,L522,Home Loan,Renovation,3118627,13.2,120,2025-04-04,2035-02-11,Ongoing,No,3118627,2,,Active,House,None,Yes,25989.0,Shalini Patel,44,F,Savings,633,Retail,Lucknow
+Bank,C1018,L914,Home Loan,Renovation,3582635,11.5,24,2020-04-16,2022-04-06,Ongoing,No,3582635,4,,Active,House,Brother,Yes,149276.0,Deepak Bansal,33,F,Savings,693,Corporate,Gurugram
+Bank,C583,L850,Home Loan,Renovation,2237214,8.4,60,2019-04-07,2024-03-11,Closed,No,0,0,,Closed,House,None,No,37287.0,Sneha Malhotra,33,M,Current,778,Retail,Gurugram
+Bank,C1720,L1740,Home Loan,Residential Property,943495,7.9,48,2025-01-12,2028-12-22,Ongoing,No,943495,5,,Active,House,Mother,Yes,19656.0,Anjali Joshi,31,M,Current,663,SME,Kolkata
+Bank,C866,L1128,Education Loan,Overseas Study,2582584,7.2,180,2020-04-06,2035-01-18,Closed,No,0,0,,Closed,None,Mother,No,14348.0,Suresh Nair,33,F,Current,678,Corporate,Bangalore
+Bank,C196,L1500,Business Loan,Startup Funding,357327,10.1,240,2019-12-07,2039-08-24,Defaulted,Yes,357327,2,2025-11-27,Recovery,Factory,Father,Yes,1489.0,Anita Desai,32,M,Current,677,SME,Patna
+Bank,C287,L260,Business Loan,Startup Funding,2559518,14.1,240,2024-05-13,2044-01-29,Ongoing,No,2559518,2,,Active,Factory,Wife,No,10665.0,Deepak Sharma,56,F,Savings,690,Corporate,Kolkata
+Bank,C1225,L1610,Car Loan,Vehicle Purchase,1951635,11.7,24,2020-02-22,2022-02-11,Ongoing,No,1951635,2,,Active,Car,Mother,Yes,81318.0,Kunal Desai,39,F,Current,633,Corporate,Chennai
+Bank,C1523,L1714,Personal Loan,Medical Expenses,1343472,13.8,240,2022-06-24,2042-03-11,Ongoing,No,1343472,4,,Active,None,Wife,No,5598.0,Sneha Gupta,45,M,Savings,730,Corporate,Jaipur
+Bank,C223,L559,Education Loan,Overseas Study,2914204,9.0,36,2025-03-06,2028-02-19,Closed,No,0,0,,Closed,None,Brother,No,80950.0,Rajesh Desai,52,F,Current,721,Retail,Bangalore
+Bank,C1526,L1897,Personal Loan,Debt Consolidation,4690683,12.4,36,2020-07-24,2023-07-09,Ongoing,No,4690683,2,,Active,None,Brother,No,130297.0,Sunita Singh,58,F,Current,613,Retail,Chennai
+Bank,C308,L1908,Home Loan,Residential Property,4169582,14.1,36,2020-01-11,2022-12-26,Closed,No,0,0,,Closed,House,Father,No,115822.0,Meera Desai,56,M,Current,616,SME,Delhi
+Bank,C518,L1287,Education Loan,Higher Education,987587,13.7,48,2024-09-07,2028-08-17,Ongoing,No,987587,0,,Active,None,Brother,Yes,20575.0,Sneha Rao,47,F,Savings,768,Corporate,Chennai
+Bank,C1398,L697,Home Loan,Residential Property,2678854,8.0,240,2024-08-28,2044-05-15,Ongoing,No,2678854,1,,Active,House,None,Yes,11162.0,Sunita Rathi,23,M,Savings,636,Corporate,Mumbai
+Bank,C343,L1096,Business Loan,Business Expansion,3448386,9.7,48,2025-09-19,2029-08-29,Defaulted,No,3448386,4,2026-12-08,Recovery,Factory,Mother,Yes,71841.0,Deepak Sharma,31,M,Savings,750,SME,Hyderabad
+Bank,C1638,L386,Home Loan,Residential Property,794939,9.3,180,2024-12-31,2039-10-14,Defaulted,Yes,794939,5,2025-01-01,Recovery,House,Mother,Yes,4416.0,Megha Desai,38,F,Savings,779,Retail,Hyderabad
+Bank,C1203,L1691,Car Loan,Vehicle Purchase,3590029,10.8,60,2024-05-09,2029-04-13,Closed,No,0,0,,Closed,Car,Brother,No,59834.0,Sunita Mehta,24,F,Current,730,Retail,Pune
+Bank,C330,L995,Education Loan,Higher Education,2356570,8.9,60,2019-06-12,2024-05-16,Ongoing,No,2356570,0,,Active,None,Wife,Yes,39276.0,Pooja Verma,39,F,Current,661,SME,Bangalore
+Bank,C1975,L415,Personal Loan,Debt Consolidation,3633728,7.9,96,2019-06-03,2027-04-22,Ongoing,No,3633728,3,,Active,None,Brother,Yes,37851.0,Rohit Kumar,54,M,Savings,732,Corporate,Lucknow
+Bank,C557,L1874,Car Loan,Vehicle Purchase,3546554,10.7,180,2022-06-16,2037-03-29,Ongoing,No,3546554,5,,Active,Car,Husband,No,19703.0,Amit Kapoor,48,M,Current,686,Retail,Mumbai
+Bank,C1997,L1238,Car Loan,Vehicle Purchase,3290973,12.9,36,2022-04-06,2025-03-21,Ongoing,No,3290973,1,,Active,Car,Father,No,91416.0,Deepak Joshi,48,M,Current,779,Retail,Kolkata
+Bank,C194,L845,Business Loan,Business Expansion,1147201,12.9,24,2025-01-30,2027-01-20,Ongoing,No,1147201,0,,Active,Factory,Mother,No,47800.0,Anita Mehta,48,F,Current,687,Retail,Ahmedabad
+Bank,C1760,L1406,Business Loan,Working Capital,3429264,13.3,48,2021-05-24,2025-05-03,Ongoing,No,3429264,0,,Active,Factory,None,No,71443.0,Megha Rathi,32,M,Current,778,Corporate,Delhi
+Bank,C458,L976,Home Loan,Residential Property,4560397,10.6,60,2020-08-01,2025-07-06,Ongoing,No,4560397,3,,Active,House,Husband,Yes,76007.0,Anita Sharma,48,F,Current,710,Corporate,Jaipur
+Bank,C159,L1211,Home Loan,Renovation,2055312,14.0,36,2019-02-24,2022-02-08,Closed,No,0,0,,Closed,House,None,Yes,57092.0,Vikram Mehta,37,F,Savings,786,SME,Chennai
+Bank,C93,L42,Car Loan,Vehicle Purchase,3435477,13.1,60,2022-11-26,2027-10-31,Ongoing,No,3435477,2,,Active,Car,Wife,Yes,57258.0,Megha Verma,51,M,Current,706,Corporate,Kolkata
+Bank,C428,L500,Business Loan,Startup Funding,867005,10.7,240,2019-02-24,2038-11-11,Closed,No,0,0,,Closed,Factory,None,No,3613.0,Vikram Rathi,51,M,Savings,625,SME,Ahmedabad
+Bank,C1550,L1966,Business Loan,Working Capital,2913250,11.9,96,2020-09-20,2028-08-09,Ongoing,No,2913250,2,,Active,Factory,Father,No,30346.0,Sunita Sharma,46,F,Savings,746,SME,Gurugram
+Bank,C348,L1192,Education Loan,Higher Education,509380,8.8,36,2024-05-05,2027-04-20,Ongoing,No,509380,6,,Active,None,Husband,Yes,14149.0,Rohit Gupta,31,F,Savings,752,SME,Pune
+Bank,C1321,L1086,Home Loan,Residential Property,4748696,13.3,180,2023-07-09,2038-04-21,Closed,No,0,0,,Closed,House,None,Yes,26382.0,Deepak Singh,46,M,Current,622,Corporate,Patna
+Bank,C535,L1861,Business Loan,Business Expansion,2025734,11.2,24,2021-02-27,2023-02-17,Ongoing,No,2025734,4,,Active,Factory,Wife,Yes,84406.0,Rahul Bansal,40,F,Savings,617,Corporate,Gurugram
+Bank,C639,L205,Education Loan,Overseas Study,1991641,8.8,120,2019-01-07,2028-11-15,Defaulted,Yes,1991641,1,2025-02-03,Recovery,None,Wife,No,16597.0,Anjali Kumar,28,F,Current,672,Corporate,Hyderabad
+Bank,C865,L1637,Business Loan,Startup Funding,4301791,12.8,24,2024-07-19,2026-07-09,Closed,No,0,0,,Closed,Factory,Husband,No,179241.0,Sunita Rao,24,M,Current,698,Corporate,Pune
+Bank,C269,L1376,Business Loan,Startup Funding,2889604,9.0,180,2021-01-31,2035-11-14,Defaulted,Yes,2889604,4,2024-02-06,Recovery,Factory,Wife,No,16053.0,Suresh Rathi,31,F,Savings,620,Corporate,Ahmedabad
+Bank,C975,L435,Business Loan,Business Expansion,1966161,11.3,24,2025-04-17,2027-04-07,Ongoing,No,1966161,4,,Active,Factory,Wife,No,81923.0,Kunal Mehta,60,F,Current,717,Retail,Lucknow
+Bank,C1090,L1584,Home Loan,Renovation,2950804,10.7,120,2023-07-01,2033-05-09,Ongoing,No,2950804,6,,Active,House,None,Yes,24590.0,Anjali Singh,23,F,Current,700,Retail,Lucknow
+Bank,C1576,L1277,Business Loan,Startup Funding,308908,7.1,180,2022-06-27,2037-04-09,Ongoing,No,308908,1,,Active,Factory,Father,Yes,1716.0,Arjun Rathi,35,M,Savings,624,Corporate,Jaipur
+Bank,C1613,L1450,Car Loan,Vehicle Purchase,4731240,12.0,36,2019-10-10,2022-09-24,Ongoing,No,4731240,0,,Active,Car,Husband,Yes,131423.0,Sneha Nair,50,M,Current,654,Corporate,Chennai
+Bank,C1261,L1498,Car Loan,Vehicle Purchase,1962367,11.7,180,2021-03-30,2036-01-11,Closed,No,0,0,,Closed,Car,Mother,Yes,10902.0,Arjun Rathi,36,M,Savings,642,Corporate,Bangalore
+Bank,C1021,L463,Home Loan,Renovation,3753568,13.3,48,2025-07-25,2029-07-04,Defaulted,Yes,3753568,4,2026-04-25,Recovery,House,None,No,78199.0,Pooja Gupta,40,M,Savings,760,Retail,Chennai
+Bank,C784,L427,Home Loan,Renovation,4565596,8.3,60,2021-03-04,2026-02-06,Ongoing,No,4565596,0,,Active,House,Brother,No,76093.0,Kunal Kumar,28,M,Savings,705,Corporate,Kolkata
+Bank,C211,L716,Car Loan,Vehicle Purchase,3649087,15.0,24,2024-04-26,2026-04-16,Ongoing,No,3649087,6,,Active,Car,Father,No,152045.0,Amit Joshi,54,F,Savings,742,Retail,Patna
+Bank,C105,L261,Education Loan,Higher Education,4514309,14.1,180,2022-07-17,2037-04-29,Defaulted,Yes,4514309,0,2025-01-16,Recovery,None,Wife,No,25079.0,Rahul Mehta,41,M,Savings,646,SME,Mumbai
+Bank,C31,L428,Personal Loan,Medical Expenses,1583946,14.2,36,2024-11-21,2027-11-06,Closed,No,0,0,,Closed,None,Husband,No,43998.0,Anita Malhotra,57,F,Savings,611,SME,Delhi
+Bank,C1364,L70,Education Loan,Higher Education,1666599,12.6,180,2022-01-05,2036-10-18,Ongoing,No,1666599,0,,Active,None,Father,Yes,9259.0,Suresh Singh,23,M,Current,744,Retail,Pune
+Bank,C792,L135,Home Loan,Renovation,2172994,14.3,180,2024-11-30,2039-09-13,Closed,No,0,0,,Closed,House,Father,Yes,12072.0,Rohit Verma,32,F,Savings,696,Corporate,Delhi
+Bank,C1667,L1191,Business Loan,Business Expansion,1342639,7.4,36,2025-11-26,2028-11-10,Ongoing,No,1342639,3,,Active,Factory,None,Yes,37296.0,Deepak Rathi,51,F,Savings,749,Corporate,Gurugram
+Bank,C1141,L1569,Personal Loan,Debt Consolidation,4570862,10.2,60,2021-12-30,2026-12-04,Ongoing,No,4570862,0,,Active,None,Father,No,76181.0,Deepak Desai,57,M,Current,757,SME,Patna
+Bank,C985,L1351,Business Loan,Startup Funding,1965710,12.3,120,2023-12-04,2033-10-12,Defaulted,Yes,1965710,6,2025-06-27,Recovery,Factory,None,No,16381.0,Vikram Kapoor,49,F,Current,694,Corporate,Bangalore
+Bank,C1173,L1579,Business Loan,Startup Funding,2957760,14.9,180,2022-02-17,2036-11-30,Ongoing,No,2957760,4,,Active,Factory,Wife,No,16432.0,Shalini Mehta,58,F,Current,652,Corporate,Hyderabad
+Bank,C328,L1087,Business Loan,Working Capital,3139211,9.3,240,2025-07-11,2045-03-28,Defaulted,Yes,3139211,3,2024-03-17,Recovery,Factory,Father,No,13080.0,Shreya Gupta,43,M,Current,772,Corporate,Ahmedabad
+Bank,C1687,L1072,Education Loan,Higher Education,443677,10.3,240,2019-09-17,2039-06-04,Defaulted,Yes,443677,1,2026-10-13,Recovery,None,Father,No,1849.0,Vikram Malhotra,22,M,Current,794,Corporate,Chennai
+Bank,C896,L749,Home Loan,Residential Property,3638488,12.0,120,2020-06-02,2030-04-11,Ongoing,No,3638488,6,,Active,House,Father,No,30321.0,Kunal Kapoor,41,M,Current,629,Corporate,Lucknow
+Bank,C968,L1865,Business Loan,Business Expansion,2059429,13.5,48,2022-04-27,2026-04-06,Ongoing,No,2059429,1,,Active,Factory,None,Yes,42905.0,Meera Rathi,51,F,Current,678,Corporate,Delhi
+Bank,C1612,L849,Personal Loan,Debt Consolidation,2988056,7.3,96,2024-02-13,2032-01-02,Defaulted,Yes,2988056,2,2024-12-03,Recovery,None,Wife,No,31126.0,Amit Kumar,52,M,Savings,800,SME,Jaipur
+Bank,C1424,L559,Home Loan,Residential Property,3638868,11.5,36,2021-12-04,2024-11-18,Closed,No,0,0,,Closed,House,Husband,No,101080.0,Rohit Singh,57,M,Current,670,SME,Ahmedabad
+Bank,C1132,L1337,Car Loan,Vehicle Purchase,3329341,10.8,48,2024-07-12,2028-06-21,Closed,No,0,0,,Closed,Car,Brother,No,69361.0,Megha Rao,26,F,Savings,714,Corporate,Bangalore
+Bank,C48,L1114,Car Loan,Vehicle Purchase,3473326,7.8,48,2019-07-01,2023-06-10,Ongoing,No,3473326,0,,Active,Car,Brother,Yes,72361.0,Rohit Iyer,22,M,Current,679,SME,Kolkata
+Bank,C239,L1776,Personal Loan,Debt Consolidation,2859168,10.8,48,2020-04-05,2024-03-15,Ongoing,No,2859168,5,,Active,None,Husband,No,59566.0,Rohit Desai,57,M,Savings,667,Retail,Lucknow
+Bank,C409,L478,Personal Loan,Debt Consolidation,4035155,12.5,120,2021-02-14,2030-12-24,Ongoing,No,4035155,4,,Active,None,Husband,Yes,33626.0,Neha Verma,54,F,Savings,707,Corporate,Delhi
+Bank,C664,L1157,Business Loan,Business Expansion,3647703,14.6,180,2024-08-25,2039-06-08,Defaulted,Yes,3647703,0,2026-12-17,Recovery,Factory,Brother,Yes,20265.0,Meera Joshi,51,F,Savings,712,Retail,Chennai
+Bank,C1614,L40,Car Loan,Vehicle Purchase,1012772,7.8,180,2022-08-09,2037-05-22,Ongoing,No,1012772,3,,Active,Car,Wife,Yes,5627.0,Arjun Patel,44,F,Savings,640,SME,Hyderabad
+Bank,C1388,L1798,Business Loan,Working Capital,1638212,9.6,60,2022-07-28,2027-07-02,Ongoing,No,1638212,5,,Active,Factory,None,Yes,27304.0,Arjun Rao,45,F,Current,698,Corporate,Lucknow
+Bank,C368,L892,Car Loan,Vehicle Purchase,3541166,10.6,120,2021-05-08,2031-03-17,Ongoing,No,3541166,5,,Active,Car,Husband,Yes,29510.0,Shalini Verma,23,M,Current,705,SME,Jaipur
+Bank,C1523,L1263,Education Loan,Overseas Study,4892857,11.5,96,2022-04-03,2030-02-20,Ongoing,No,4892857,6,,Active,None,Wife,Yes,50967.0,Rahul Gupta,59,M,Current,634,Retail,Pune
+Bank,C658,L133,Personal Loan,Debt Consolidation,356839,10.1,24,2022-08-11,2024-07-31,Ongoing,No,356839,4,,Active,None,Wife,Yes,14868.0,Vikram Sharma,59,M,Savings,666,SME,Jaipur
+Bank,C1737,L350,Personal Loan,Wedding Expenses,4171770,8.6,24,2020-10-26,2022-10-16,Ongoing,No,4171770,4,,Active,None,None,No,173824.0,Shreya Sharma,26,F,Savings,616,SME,Jaipur
+Bank,C804,L1196,Education Loan,Overseas Study,4016414,12.7,24,2021-11-17,2023-11-07,Ongoing,No,4016414,6,,Active,None,Mother,Yes,167351.0,Pooja Malhotra,40,F,Current,710,Retail,Pune
+Bank,C11,L1072,Car Loan,Vehicle Purchase,344697,7.1,24,2025-04-12,2027-04-02,Ongoing,No,344697,2,,Active,Car,Father,No,14362.0,Sunita Nair,59,M,Current,702,SME,Gurugram
+Bank,C1073,L88,Business Loan,Startup Funding,2600302,10.7,24,2022-02-16,2024-02-06,Ongoing,No,2600302,2,,Active,Factory,Wife,Yes,108346.0,Shalini Rao,24,F,Savings,781,Corporate,Hyderabad
+Bank,C689,L194,Home Loan,Residential Property,3434908,7.7,120,2022-04-06,2032-02-13,Ongoing,No,3434908,4,,Active,House,Father,No,28624.0,Rahul Joshi,29,F,Current,608,SME,Lucknow
+Bank,C1194,L90,Home Loan,Residential Property,4990867,10.7,60,2023-05-22,2028-04-25,Ongoing,No,4990867,3,,Active,House,Wife,No,83181.0,Sunita Verma,41,M,Current,625,Retail,Delhi
+Bank,C444,L1088,Car Loan,Vehicle Purchase,1802664,7.2,48,2019-04-06,2023-03-16,Ongoing,No,1802664,6,,Active,Car,Brother,No,37556.0,Sneha Bansal,21,M,Current,650,Retail,Patna
+Bank,C460,L1439,Home Loan,Renovation,1346059,9.1,48,2019-08-23,2023-08-02,Ongoing,No,1346059,0,,Active,House,Husband,No,28043.0,Rohit Kapoor,30,F,Current,633,SME,Kolkata
+Bank,C250,L667,Personal Loan,Medical Expenses,2891150,7.9,96,2019-08-14,2027-07-03,Defaulted,Yes,2891150,2,2025-04-20,Recovery,None,Brother,Yes,30116.0,Deepak Mehta,60,M,Savings,762,Retail,Chennai
+Bank,C792,L872,Home Loan,Renovation,2593308,12.7,240,2020-10-29,2040-07-16,Ongoing,No,2593308,4,,Active,House,Mother,No,10805.0,Arjun Nair,30,F,Savings,695,Corporate,Mumbai
+Bank,C1988,L61,Personal Loan,Medical Expenses,1846823,8.9,180,2025-10-02,2040-07-15,Defaulted,Yes,1846823,3,2024-04-24,Recovery,None,Mother,No,10260.0,Shalini Patel,49,M,Savings,787,Retail,Bangalore
+Bank,C1537,L761,Business Loan,Startup Funding,922202,15.0,36,2024-07-24,2027-07-09,Ongoing,No,922202,2,,Active,Factory,Mother,Yes,25617.0,Rohit Rao,26,F,Current,622,SME,Pune
+Bank,C1520,L1046,Personal Loan,Medical Expenses,1527628,10.4,240,2021-11-16,2041-08-03,Ongoing,No,1527628,6,,Active,None,Father,No,6365.0,Sunita Singh,21,M,Savings,788,Corporate,Kolkata
+Bank,C789,L374,Home Loan,Renovation,2878469,9.6,24,2021-09-03,2023-08-24,Ongoing,No,2878469,1,,Active,House,Brother,Yes,119936.0,Megha Malhotra,50,F,Savings,751,SME,Hyderabad
+Bank,C275,L859,Car Loan,Vehicle Purchase,2120498,9.0,240,2023-05-23,2043-02-07,Ongoing,No,2120498,6,,Active,Car,Mother,Yes,8835.0,Deepak Patel,34,F,Savings,658,SME,Delhi
+Bank,C1221,L300,Car Loan,Vehicle Purchase,3767445,14.8,60,2024-11-28,2029-11-02,Ongoing,No,3767445,0,,Active,Car,Brother,Yes,62791.0,Shreya Joshi,32,M,Current,680,SME,Patna
+Bank,C573,L355,Personal Loan,Medical Expenses,4626553,8.3,96,2020-11-18,2028-10-07,Closed,No,0,0,,Closed,None,Brother,Yes,48193.0,Megha Verma,56,F,Savings,671,SME,Chennai
+NBFC,C1805,L26,Personal Loan,Wedding Expenses,1856941,9.2,48,2024-10-20,2028-09-29,Ongoing,No,1856941,3,,Active,None,Mother,No,38686.0,Rohit Sharma,21,M,Current,694,Corporate,Jaipur
+NBFC,C443,L1163,Education Loan,Higher Education,2230497,7.7,24,2023-08-13,2025-08-02,Ongoing,No,2230497,2,,Active,None,Husband,No,92937.0,Meera Sharma,38,M,Savings,624,Retail,Jaipur
+NBFC,C784,L399,Business Loan,Working Capital,2113701,10.5,120,2025-12-03,2035-10-12,Ongoing,No,2113701,2,,Active,Factory,None,Yes,17614.0,Shreya Mehta,48,F,Savings,663,SME,Chennai
+NBFC,C1247,L627,Home Loan,Residential Property,1406649,8.4,60,2020-04-10,2025-03-15,Ongoing,No,1406649,0,,Active,House,Wife,No,23444.0,Meera Kapoor,38,M,Savings,770,Retail,Patna
+NBFC,C1251,L1205,Business Loan,Business Expansion,2156754,13.8,24,2019-11-19,2021-11-08,Ongoing,No,2156754,5,,Active,Factory,Mother,Yes,89865.0,Megha Patel,21,M,Savings,629,Corporate,Lucknow
+NBFC,C615,L1602,Car Loan,Vehicle Purchase,3348553,12.3,180,2022-11-11,2037-08-24,Ongoing,No,3348553,4,,Active,Car,Wife,No,18603.0,Rajesh Joshi,57,F,Current,605,Retail,Chennai
+NBFC,C305,L146,Personal Loan,Debt Consolidation,3012887,12.4,120,2024-11-28,2034-10-07,Ongoing,No,3012887,3,,Active,None,None,Yes,25107.0,Deepak Verma,45,M,Savings,762,Retail,Lucknow
+NBFC,C271,L1718,Car Loan,Vehicle Purchase,3909032,12.7,48,2023-11-19,2027-10-29,Ongoing,No,3909032,2,,Active,Car,None,No,81438.0,Suresh Sharma,51,F,Current,769,Retail,Kolkata
+NBFC,C480,L216,Personal Loan,Medical Expenses,1010900,7.0,48,2020-08-22,2024-08-01,Ongoing,No,1010900,3,,Active,None,Wife,No,21060.0,Amit Bansal,31,F,Savings,656,Corporate,Patna
+NBFC,C1858,L735,Education Loan,Overseas Study,1216478,12.2,96,2019-04-12,2027-03-01,Ongoing,No,1216478,3,,Active,None,Father,Yes,12672.0,Deepak Singh,40,F,Savings,637,Corporate,Hyderabad
+NBFC,C289,L83,Business Loan,Working Capital,2271985,10.5,96,2025-01-27,2032-12-16,Ongoing,No,2271985,4,,Active,Factory,Father,Yes,23667.0,Rajesh Rathi,21,F,Current,743,SME,Pune
+NBFC,C769,L182,Home Loan,Residential Property,3301241,13.4,60,2025-01-19,2029-12-24,Ongoing,No,3301241,5,,Active,House,None,Yes,55021.0,Megha Bansal,56,M,Current,666,SME,Lucknow
+NBFC,C1895,L1578,Business Loan,Business Expansion,1009394,14.1,60,2021-07-27,2026-07-01,Ongoing,No,1009394,0,,Active,Factory,Husband,No,16823.0,Rajesh Joshi,53,F,Current,656,Retail,Jaipur
+NBFC,C1777,L1956,Car Loan,Vehicle Purchase,1570202,13.8,120,2025-12-25,2035-11-03,Ongoing,No,1570202,2,,Active,Car,None,No,13085.0,Sneha Rathi,34,M,Savings,621,Retail,Ahmedabad
+NBFC,C1676,L66,Personal Loan,Medical Expenses,3839063,14.8,240,2021-09-25,2041-06-12,Ongoing,No,3839063,5,,Active,None,Mother,No,15996.0,Meera Patel,59,F,Savings,790,Corporate,Ahmedabad
+NBFC,C1345,L1081,Car Loan,Vehicle Purchase,4479748,13.1,48,2021-12-22,2025-12-01,Ongoing,No,4479748,6,,Active,Car,Brother,No,93328.0,Vikram Bansal,47,F,Current,703,Retail,Ahmedabad
+NBFC,C1476,L247,Personal Loan,Medical Expenses,2840237,10.2,60,2025-12-19,2030-11-23,Closed,No,0,0,,Closed,None,Husband,No,47337.0,Arjun Kumar,54,M,Savings,672,Corporate,Bangalore
+NBFC,C926,L1036,Business Loan,Startup Funding,4111367,14.1,24,2021-06-12,2023-06-02,Ongoing,No,4111367,5,,Active,Factory,None,Yes,171307.0,Rajesh Bansal,21,F,Current,730,Corporate,Mumbai
+NBFC,C9,L1485,Personal Loan,Medical Expenses,4815189,13.4,36,2022-09-20,2025-09-04,Ongoing,No,4815189,3,,Active,None,Mother,Yes,133755.0,Kunal Gupta,31,M,Current,773,Retail,Gurugram
+NBFC,C615,L26,Education Loan,Higher Education,4779693,14.0,240,2024-02-14,2043-11-01,Ongoing,No,4779693,3,,Active,None,Wife,Yes,19915.0,Megha Mehta,34,M,Current,605,Corporate,Pune
+NBFC,C194,L1424,Business Loan,Working Capital,4910413,7.7,24,2023-09-21,2025-09-10,Ongoing,No,4910413,5,,Active,Factory,Brother,No,204601.0,Arjun Rathi,37,M,Current,603,Corporate,Pune
+NBFC,C789,L985,Home Loan,Renovation,3725691,9.8,24,2023-08-13,2025-08-02,Ongoing,No,3725691,1,,Active,House,None,Yes,155237.0,Kunal Bansal,33,M,Savings,733,Corporate,Jaipur
+NBFC,C235,L841,Education Loan,Overseas Study,2861142,14.0,96,2021-01-22,2028-12-11,Ongoing,No,2861142,0,,Active,None,Father,Yes,29804.0,Sunita Patel,59,M,Current,663,SME,Kolkata
+NBFC,C1544,L1029,Car Loan,Vehicle Purchase,4307458,13.1,96,2022-04-09,2030-02-26,Ongoing,No,4307458,4,,Active,Car,Father,No,44869.0,Sunita Verma,30,M,Savings,679,SME,Mumbai
+NBFC,C206,L1221,Business Loan,Business Expansion,1937759,11.5,24,2019-11-15,2021-11-04,Ongoing,No,1937759,1,,Active,Factory,None,Yes,80740.0,Megha Kapoor,52,M,Current,615,Retail,Patna
+NBFC,C664,L1547,Business Loan,Working Capital,1697987,14.1,240,2021-12-25,2041-09-11,Ongoing,No,1697987,4,,Active,Factory,Mother,No,7075.0,Pooja Rathi,21,F,Savings,611,Corporate,Lucknow
+NBFC,C1316,L819,Business Loan,Business Expansion,4236522,11.3,36,2019-11-05,2022-10-20,Ongoing,No,4236522,3,,Active,Factory,Father,No,117681.0,Pooja Patel,52,M,Savings,637,Retail,Jaipur
+NBFC,C647,L1400,Personal Loan,Medical Expenses,1793805,9.7,36,2022-04-11,2025-03-26,Ongoing,No,1793805,6,,Active,None,Brother,Yes,49828.0,Vikram Iyer,21,F,Savings,702,SME,Chennai
+NBFC,C1267,L1759,Personal Loan,Debt Consolidation,2940191,8.4,96,2024-03-22,2032-02-09,Ongoing,No,2940191,3,,Active,None,Mother,Yes,30627.0,Arjun Malhotra,60,M,Savings,698,Corporate,Chennai
+NBFC,C1951,L588,Business Loan,Working Capital,2631176,13.0,120,2020-08-14,2030-06-23,Defaulted,No,2631176,6,2026-01-13,Recovery,Factory,None,No,21926.0,Kunal Patel,25,F,Current,716,Retail,Chennai
+NBFC,C1625,L1139,Home Loan,Residential Property,3728740,9.8,48,2024-05-28,2028-05-07,Ongoing,No,3728740,3,,Active,House,Father,Yes,77682.0,Suresh Desai,26,F,Current,700,SME,Bangalore
+NBFC,C360,L824,Personal Loan,Debt Consolidation,4929693,12.0,240,2022-10-01,2042-06-18,Closed,No,0,0,,Closed,None,None,Yes,20540.0,Meera Gupta,22,M,Savings,727,Corporate,Hyderabad
+NBFC,C423,L865,Car Loan,Vehicle Purchase,2901726,14.9,96,2019-10-26,2027-09-14,Ongoing,No,2901726,1,,Active,Car,Mother,Yes,30226.0,Arjun Singh,36,M,Savings,702,SME,Kolkata
+NBFC,C553,L722,Business Loan,Working Capital,451449,10.5,48,2019-02-12,2023-01-22,Closed,No,0,0,,Closed,Factory,Mother,No,9405.0,Neha Mehta,35,F,Current,699,Corporate,Hyderabad
+NBFC,C11,L1780,Home Loan,Renovation,246362,8.8,96,2022-12-19,2030-11-07,Ongoing,No,246362,3,,Active,House,None,Yes,2566.0,Shalini Kapoor,28,F,Savings,698,SME,Kolkata
+NBFC,C1933,L469,Education Loan,Overseas Study,3369100,12.2,96,2019-04-07,2027-02-24,Closed,No,0,0,,Closed,None,Husband,Yes,35095.0,Suresh Desai,46,M,Current,601,Corporate,Hyderabad
+NBFC,C863,L481,Home Loan,Renovation,4375370,12.0,96,2021-03-26,2029-02-12,Ongoing,No,4375370,2,,Active,House,Husband,Yes,45577.0,Shreya Verma,55,M,Savings,660,Corporate,Hyderabad
+NBFC,C1930,L478,Personal Loan,Wedding Expenses,3791383,13.2,36,2024-05-03,2027-04-18,Ongoing,No,3791383,2,,Active,None,None,Yes,105316.0,Meera Mehta,47,F,Current,750,Corporate,Delhi
+NBFC,C1077,L559,Home Loan,Residential Property,1672849,8.7,24,2020-11-01,2022-10-22,Closed,No,0,0,,Closed,House,Mother,Yes,69702.0,Neha Joshi,25,M,Current,680,SME,Hyderabad
+NBFC,C134,L9,Education Loan,Overseas Study,2252484,9.7,24,2020-09-02,2022-08-23,Ongoing,No,2252484,0,,Active,None,Wife,Yes,93854.0,Deepak Gupta,21,F,Savings,729,Retail,Patna
+NBFC,C239,L643,Personal Loan,Medical Expenses,727835,8.6,240,2023-06-05,2043-02-20,Ongoing,No,727835,2,,Active,None,Father,Yes,3033.0,Pooja Gupta,51,M,Savings,678,Retail,Mumbai
+NBFC,C1947,L1677,Education Loan,Higher Education,2878114,7.9,24,2023-03-02,2025-02-19,Closed,No,0,0,,Closed,None,Mother,No,119921.0,Suresh Mehta,31,F,Savings,631,Corporate,Pune
+NBFC,C1839,L901,Home Loan,Renovation,4485328,8.3,36,2024-03-22,2027-03-07,Closed,No,0,0,,Closed,House,None,Yes,124592.0,Rohit Nair,39,M,Current,762,Retail,Ahmedabad
+NBFC,C1468,L201,Education Loan,Higher Education,623496,15.0,36,2020-05-21,2023-05-06,Ongoing,No,623496,2,,Active,None,Father,No,17319.0,Arjun Mehta,41,M,Current,648,Corporate,Lucknow
+NBFC,C867,L1400,Business Loan,Working Capital,3291865,12.9,96,2024-05-31,2032-04-19,Ongoing,No,3291865,4,,Active,Factory,Husband,Yes,34290.0,Shreya Joshi,43,M,Current,641,Corporate,Bangalore
+NBFC,C1537,L1972,Home Loan,Residential Property,2121174,11.6,240,2022-03-04,2041-11-19,Ongoing,No,2121174,6,,Active,House,Mother,Yes,8838.0,Sneha Iyer,36,M,Savings,766,Corporate,Patna
+NBFC,C746,L1494,Car Loan,Vehicle Purchase,3993297,12.1,24,2024-08-17,2026-08-07,Defaulted,Yes,3993297,5,2025-01-20,Recovery,Car,Brother,No,166387.0,Kunal Mehta,52,F,Current,688,Corporate,Ahmedabad
+NBFC,C1607,L445,Home Loan,Residential Property,4723039,9.9,24,2025-09-07,2027-08-28,Defaulted,No,4723039,4,2025-01-20,Recovery,House,Mother,Yes,196793.0,Neha Gupta,39,F,Savings,785,SME,Hyderabad
+NBFC,C67,L1266,Business Loan,Business Expansion,2336328,11.1,48,2021-10-12,2025-09-21,Ongoing,No,2336328,6,,Active,Factory,Husband,No,48674.0,Deepak Kapoor,54,M,Savings,705,SME,Jaipur
+NBFC,C280,L1035,Home Loan,Residential Property,4216636,12.3,48,2019-06-18,2023-05-28,Ongoing,No,4216636,0,,Active,House,Brother,Yes,87847.0,Vikram Sharma,46,M,Savings,601,Corporate,Pune
+NBFC,C1563,L61,Personal Loan,Debt Consolidation,3045322,14.3,36,2021-07-01,2024-06-15,Ongoing,No,3045322,3,,Active,None,Brother,No,84592.0,Megha Joshi,41,F,Savings,734,SME,Ahmedabad
+NBFC,C1222,L1655,Business Loan,Working Capital,1684722,14.9,180,2024-03-28,2039-01-09,Ongoing,No,1684722,1,,Active,Factory,Father,No,9360.0,Anita Nair,25,F,Savings,693,Retail,Gurugram
+NBFC,C679,L115,Education Loan,Overseas Study,2461555,8.0,96,2023-08-27,2031-07-16,Defaulted,Yes,2461555,3,2025-07-16,Recovery,None,Wife,No,25641.0,Suresh Rao,48,F,Current,794,Corporate,Lucknow
+NBFC,C648,L1359,Home Loan,Residential Property,2398388,10.4,60,2023-12-05,2028-11-08,Closed,No,0,0,,Closed,House,Wife,Yes,39973.0,Anjali Mehta,25,M,Current,751,Retail,Patna
+NBFC,C296,L670,Business Loan,Business Expansion,1861761,9.4,24,2024-09-01,2026-08-22,Closed,No,0,0,,Closed,Factory,Husband,No,77573.0,Amit Nair,54,M,Savings,658,SME,Bangalore
+NBFC,C1753,L1274,Personal Loan,Debt Consolidation,3006230,10.2,36,2019-01-05,2021-12-20,Ongoing,No,3006230,3,,Active,None,Father,No,83506.0,Deepak Nair,51,F,Current,726,SME,Ahmedabad
+NBFC,C1806,L1719,Car Loan,Vehicle Purchase,1951217,13.7,36,2019-10-04,2022-09-18,Defaulted,Yes,1951217,0,2026-11-28,Recovery,Car,None,No,54200.0,Suresh Sharma,42,M,Current,627,Corporate,Ahmedabad
+NBFC,C1380,L443,Home Loan,Residential Property,2928009,11.5,120,2020-01-26,2029-12-04,Closed,No,0,0,,Closed,House,None,No,24400.0,Suresh Malhotra,49,M,Current,619,Corporate,Bangalore
+NBFC,C1535,L239,Business Loan,Business Expansion,1448155,10.6,60,2019-08-08,2024-07-12,Ongoing,No,1448155,1,,Active,Factory,Husband,Yes,24136.0,Megha Gupta,41,M,Current,603,Corporate,Hyderabad
+NBFC,C1713,L126,Home Loan,Renovation,2783526,9.7,36,2024-12-31,2027-12-16,Ongoing,No,2783526,5,,Active,House,Father,No,77320.0,Arjun Malhotra,38,F,Savings,753,Corporate,Patna
+NBFC,C421,L1839,Car Loan,Vehicle Purchase,4247013,10.1,60,2021-02-23,2026-01-28,Ongoing,No,4247013,3,,Active,Car,None,No,70784.0,Megha Iyer,25,F,Current,767,SME,Delhi
+NBFC,C1630,L1256,Car Loan,Vehicle Purchase,3026745,12.3,96,2024-07-22,2032-06-10,Ongoing,No,3026745,0,,Active,Car,Husband,Yes,31529.0,Sneha Nair,39,M,Savings,678,SME,Mumbai
+NBFC,C1620,L820,Car Loan,Vehicle Purchase,3663117,10.1,240,2019-04-29,2039-01-14,Ongoing,No,3663117,4,,Active,Car,Father,Yes,15263.0,Shalini Gupta,42,F,Current,658,Corporate,Delhi
+NBFC,C130,L1004,Home Loan,Renovation,1305524,14.6,48,2021-05-22,2025-05-01,Ongoing,No,1305524,2,,Active,House,Wife,No,27198.0,Shreya Mehta,38,F,Savings,747,SME,Lucknow
+NBFC,C70,L817,Business Loan,Business Expansion,1160820,10.2,240,2024-07-23,2044-04-09,Ongoing,No,1160820,2,,Active,Factory,None,Yes,4837.0,Arjun Nair,37,F,Current,727,Corporate,Chennai
+NBFC,C788,L460,Home Loan,Renovation,4704802,12.3,96,2021-10-14,2029-09-02,Defaulted,Yes,4704802,0,2026-12-11,Recovery,House,Mother,Yes,49008.0,Suresh Bansal,52,M,Savings,771,Corporate,Ahmedabad
+NBFC,C1668,L1716,Education Loan,Overseas Study,1477800,9.8,36,2019-06-24,2022-06-08,Closed,No,0,0,,Closed,None,Husband,Yes,41050.0,Rohit Nair,38,F,Savings,709,Retail,Bangalore
+NBFC,C1699,L1546,Education Loan,Higher Education,3488265,12.2,96,2022-01-17,2029-12-06,Closed,No,0,0,,Closed,None,None,Yes,36336.0,Shreya Kapoor,31,F,Savings,771,Corporate,Lucknow
+NBFC,C213,L1919,Business Loan,Working Capital,872416,7.2,120,2022-06-02,2032-04-10,Ongoing,No,872416,4,,Active,Factory,Wife,No,7270.0,Amit Rao,44,M,Current,723,SME,Lucknow
+NBFC,C791,L1650,Education Loan,Higher Education,4584850,7.5,60,2025-08-04,2030-07-09,Ongoing,No,4584850,1,,Active,None,None,Yes,76414.0,Sneha Verma,60,M,Current,753,Corporate,Jaipur
+NBFC,C1822,L57,Business Loan,Working Capital,868652,14.8,120,2023-08-06,2033-06-14,Ongoing,No,868652,4,,Active,Factory,Wife,Yes,7239.0,Arjun Rao,30,F,Current,721,SME,Ahmedabad
+NBFC,C1349,L1033,Business Loan,Business Expansion,1304429,14.3,36,2024-06-05,2027-05-21,Closed,No,0,0,,Closed,Factory,Husband,Yes,36234.0,Arjun Rao,46,M,Savings,715,Corporate,Lucknow
+NBFC,C1320,L339,Business Loan,Startup Funding,347146,12.8,24,2022-02-21,2024-02-11,Ongoing,No,347146,3,,Active,Factory,Brother,No,14464.0,Vikram Rao,54,F,Current,615,SME,Delhi
+NBFC,C1575,L1392,Business Loan,Working Capital,1683706,13.3,180,2021-04-03,2036-01-15,Closed,No,0,0,,Closed,Factory,Wife,Yes,9354.0,Kunal Malhotra,33,F,Savings,735,SME,Jaipur
+NBFC,C1565,L538,Car Loan,Vehicle Purchase,2949807,11.8,60,2024-04-09,2029-03-14,Ongoing,No,2949807,6,,Active,Car,Brother,Yes,49163.0,Kunal Mehta,54,M,Current,717,SME,Patna
+NBFC,C9,L159,Car Loan,Vehicle Purchase,2530052,11.0,24,2020-08-24,2022-08-14,Ongoing,No,2530052,6,,Active,Car,Wife,No,105419.0,Shreya Desai,34,F,Savings,784,SME,Hyderabad
+NBFC,C435,L12,Car Loan,Vehicle Purchase,2772679,14.3,24,2020-10-28,2022-10-18,Ongoing,No,2772679,3,,Active,Car,Mother,Yes,115528.0,Shreya Singh,52,M,Current,630,SME,Hyderabad
+NBFC,C875,L533,Business Loan,Startup Funding,439362,8.6,96,2023-02-12,2031-01-01,Defaulted,Yes,439362,5,2025-01-21,Recovery,Factory,Mother,No,4577.0,Sneha Desai,33,F,Current,753,Retail,Chennai
+NBFC,C458,L45,Personal Loan,Wedding Expenses,3445537,11.7,48,2021-10-08,2025-09-17,Ongoing,No,3445537,1,,Active,None,Father,Yes,71782.0,Shreya Kapoor,43,F,Savings,608,Retail,Hyderabad
+NBFC,C1627,L177,Car Loan,Vehicle Purchase,4621913,13.8,240,2022-02-09,2041-10-27,Ongoing,No,4621913,1,,Active,Car,Wife,No,19258.0,Megha Verma,44,F,Current,627,Retail,Mumbai
+NBFC,C880,L839,Home Loan,Renovation,1685730,10.2,24,2021-07-09,2023-06-29,Ongoing,No,1685730,0,,Active,House,Brother,Yes,70239.0,Pooja Patel,34,M,Current,714,Retail,Kolkata
+NBFC,C615,L1490,Home Loan,Renovation,1219586,7.1,96,2019-06-06,2027-04-25,Defaulted,Yes,1219586,6,2026-05-17,Recovery,House,None,No,12704.0,Deepak Patel,29,F,Current,664,SME,Pune
+NBFC,C912,L1672,Personal Loan,Medical Expenses,2151057,7.4,240,2024-09-20,2044-06-07,Ongoing,No,2151057,5,,Active,None,None,Yes,8963.0,Pooja Desai,27,F,Current,743,SME,Gurugram
+NBFC,C1865,L1762,Business Loan,Startup Funding,3380458,13.0,36,2024-06-21,2027-06-06,Ongoing,No,3380458,2,,Active,Factory,Mother,Yes,93902.0,Vikram Nair,24,F,Savings,730,Retail,Delhi
+NBFC,C1485,L5,Education Loan,Overseas Study,1977851,7.9,180,2019-04-23,2034-02-03,Defaulted,Yes,1977851,2,2026-04-16,Recovery,None,Wife,No,10988.0,Shalini Nair,58,M,Savings,652,SME,Mumbai
+NBFC,C825,L535,Education Loan,Overseas Study,747752,12.5,60,2024-11-03,2029-10-08,Closed,No,0,0,,Closed,None,Husband,Yes,12463.0,Shalini Bansal,33,F,Current,668,Corporate,Ahmedabad
+NBFC,C1195,L1280,Home Loan,Residential Property,3381059,13.6,120,2020-05-29,2030-04-07,Ongoing,No,3381059,2,,Active,House,None,Yes,28175.0,Megha Rao,28,M,Current,726,Corporate,Kolkata
+NBFC,C662,L1960,Business Loan,Startup Funding,1348378,11.5,24,2020-06-13,2022-06-03,Ongoing,No,1348378,5,,Active,Factory,Wife,No,56182.0,Kunal Sharma,24,F,Current,747,SME,Hyderabad
+NBFC,C757,L1880,Personal Loan,Medical Expenses,4791120,11.4,36,2021-02-12,2024-01-28,Ongoing,No,4791120,4,,Active,None,Brother,No,133087.0,Suresh Gupta,51,M,Current,752,Retail,Jaipur
+NBFC,C1510,L1936,Home Loan,Renovation,2633850,8.1,96,2022-03-15,2030-02-01,Ongoing,No,2633850,0,,Active,House,Wife,No,27436.0,Rahul Rao,47,F,Savings,638,Retail,Lucknow
+NBFC,C1643,L1616,Education Loan,Overseas Study,4743365,10.2,60,2024-03-22,2029-02-24,Ongoing,No,4743365,1,,Active,None,None,Yes,79056.0,Vikram Iyer,47,F,Savings,698,SME,Mumbai
+NBFC,C1014,L1222,Personal Loan,Wedding Expenses,529875,13.0,36,2021-01-12,2023-12-28,Closed,No,0,0,,Closed,None,Mother,Yes,14719.0,Rahul Bansal,58,M,Current,697,Corporate,Gurugram
+NBFC,C72,L1825,Car Loan,Vehicle Purchase,800320,13.3,96,2022-10-19,2030-09-07,Ongoing,No,800320,1,,Active,Car,Wife,No,8337.0,Sunita Mehta,30,M,Current,691,SME,Bangalore
+NBFC,C1348,L749,Car Loan,Vehicle Purchase,1184376,8.9,96,2023-04-04,2031-02-21,Ongoing,No,1184376,3,,Active,Car,Wife,No,12337.0,Shalini Rathi,27,M,Current,719,Retail,Mumbai
+NBFC,C278,L501,Personal Loan,Debt Consolidation,4769211,12.9,120,2021-10-08,2031-08-17,Ongoing,No,4769211,5,,Active,None,Mother,No,39743.0,Deepak Nair,48,M,Savings,659,SME,Kolkata
+NBFC,C440,L574,Home Loan,Renovation,3060317,7.0,36,2019-09-06,2022-08-21,Closed,No,0,0,,Closed,House,Husband,Yes,85009.0,Megha Verma,47,F,Savings,749,Corporate,Pune
+NBFC,C117,L1095,Business Loan,Business Expansion,2313268,12.0,60,2019-01-14,2023-12-19,Defaulted,Yes,2313268,3,2026-12-28,Recovery,Factory,Mother,Yes,38554.0,Neha Gupta,40,M,Savings,736,Retail,Delhi
+NBFC,C514,L1613,Car Loan,Vehicle Purchase,1337255,12.2,180,2020-08-29,2035-06-12,Closed,No,0,0,,Closed,Car,Father,Yes,7429.0,Anjali Kumar,40,F,Current,653,SME,Kolkata
+NBFC,C967,L1439,Car Loan,Vehicle Purchase,3221722,9.3,180,2022-07-29,2037-05-11,Ongoing,No,3221722,6,,Active,Car,None,Yes,17898.0,Rahul Rao,35,F,Savings,733,Retail,Bangalore
+NBFC,C1892,L905,Business Loan,Working Capital,4357987,13.0,120,2022-05-05,2032-03-13,Ongoing,No,4357987,0,,Active,Factory,Brother,Yes,36317.0,Suresh Mehta,39,F,Savings,701,Corporate,Pune
+NBFC,C906,L1202,Business Loan,Startup Funding,3635333,12.3,240,2020-08-28,2040-05-15,Closed,No,0,0,,Closed,Factory,Father,Yes,15147.0,Sneha Sharma,41,F,Current,628,SME,Chennai
+NBFC,C123,L624,Personal Loan,Medical Expenses,346643,11.6,60,2021-02-07,2026-01-12,Ongoing,No,346643,1,,Active,None,Wife,Yes,5777.0,Rahul Iyer,46,F,Savings,699,Retail,Delhi
+NBFC,C1811,L1917,Car Loan,Vehicle Purchase,715334,14.5,24,2024-10-28,2026-10-18,Defaulted,No,715334,2,2024-04-06,Recovery,Car,Father,No,29806.0,Vikram Iyer,30,F,Savings,735,Corporate,Bangalore
+NBFC,C1067,L1528,Home Loan,Residential Property,1944378,12.4,96,2025-03-05,2033-01-22,Ongoing,No,1944378,4,,Active,House,None,No,20254.0,Amit Nair,60,M,Current,632,Retail,Mumbai
+NBFC,C1904,L1421,Business Loan,Working Capital,1826394,12.1,180,2023-08-31,2038-06-13,Ongoing,No,1826394,0,,Active,Factory,Wife,Yes,10147.0,Megha Joshi,51,F,Savings,724,Retail,Kolkata
+NBFC,C1163,L169,Car Loan,Vehicle Purchase,4203489,8.0,60,2023-02-21,2028-01-26,Ongoing,No,4203489,5,,Active,Car,Wife,Yes,70058.0,Megha Malhotra,51,M,Current,725,Corporate,Mumbai
+NBFC,C295,L1467,Business Loan,Business Expansion,581216,8.6,24,2019-12-19,2021-12-08,Ongoing,No,581216,4,,Active,Factory,Wife,No,24217.0,Sunita Joshi,34,F,Current,659,Retail,Delhi
+NBFC,C1018,L638,Education Loan,Overseas Study,1905262,14.6,36,2025-10-22,2028-10-06,Ongoing,No,1905262,0,,Active,None,Brother,Yes,52924.0,Megha Joshi,46,F,Savings,607,Retail,Mumbai
+NBFC,C984,L1290,Education Loan,Higher Education,1531708,14.5,120,2019-06-13,2029-04-21,Ongoing,No,1531708,5,,Active,None,Wife,Yes,12764.0,Arjun Rathi,33,M,Savings,662,Retail,Gurugram
+NBFC,C450,L50,Personal Loan,Medical Expenses,1369479,7.8,240,2023-02-16,2042-11-03,Ongoing,No,1369479,3,,Active,None,Father,No,5706.0,Shreya Nair,38,F,Current,645,Corporate,Hyderabad
+NBFC,C1448,L967,Home Loan,Renovation,1046792,7.3,96,2023-08-16,2031-07-05,Ongoing,No,1046792,6,,Active,House,Husband,Yes,10904.0,Shalini Singh,35,M,Savings,738,Retail,Bangalore
+NBFC,C1142,L770,Education Loan,Higher Education,1267147,11.4,36,2020-06-18,2023-06-03,Ongoing,No,1267147,2,,Active,None,None,No,35199.0,Amit Rao,32,M,Savings,620,Retail,Lucknow
+NBFC,C1679,L1498,Personal Loan,Medical Expenses,3763037,14.8,24,2025-07-06,2027-06-26,Ongoing,No,3763037,0,,Active,None,Mother,No,156793.0,Rohit Rao,55,F,Current,775,Retail,Hyderabad
+NBFC,C1658,L1604,Personal Loan,Medical Expenses,1857074,10.7,240,2024-10-23,2044-07-10,Closed,No,0,0,,Closed,None,Wife,Yes,7738.0,Rohit Kumar,44,F,Savings,735,Corporate,Ahmedabad
+NBFC,C1955,L650,Personal Loan,Wedding Expenses,2768928,11.3,240,2021-09-03,2041-05-21,Ongoing,No,2768928,1,,Active,None,None,No,11537.0,Deepak Verma,36,F,Current,686,SME,Patna
+NBFC,C1983,L352,Education Loan,Higher Education,4906244,12.3,96,2020-12-22,2028-11-10,Ongoing,No,4906244,0,,Active,None,Father,Yes,51107.0,Rahul Rathi,60,F,Savings,662,SME,Mumbai
+NBFC,C538,L681,Education Loan,Overseas Study,4102191,14.9,180,2019-05-10,2034-02-20,Ongoing,No,4102191,3,,Active,None,Father,No,22790.0,Deepak Sharma,40,F,Current,634,SME,Gurugram
+NBFC,C147,L1535,Car Loan,Vehicle Purchase,1387145,12.6,180,2019-06-25,2034-04-07,Ongoing,No,1387145,0,,Active,Car,None,No,7706.0,Megha Verma,36,F,Savings,626,Corporate,Ahmedabad
+NBFC,C364,L387,Personal Loan,Debt Consolidation,3997497,10.1,96,2024-01-23,2031-12-12,Closed,No,0,0,,Closed,None,None,Yes,41641.0,Sneha Nair,52,F,Savings,784,Corporate,Ahmedabad
+NBFC,C1780,L1166,Home Loan,Renovation,3994403,12.3,60,2023-12-20,2028-11-23,Ongoing,No,3994403,5,,Active,House,Wife,No,66573.0,Megha Rao,55,M,Current,664,Corporate,Jaipur
+NBFC,C1458,L1052,Personal Loan,Medical Expenses,4310934,9.0,120,2024-03-03,2034-01-10,Defaulted,Yes,4310934,1,2024-05-29,Recovery,None,Brother,No,35924.0,Rohit Joshi,32,F,Savings,714,Retail,Delhi
+NBFC,C1911,L919,Car Loan,Vehicle Purchase,3756849,13.0,96,2024-11-27,2032-10-16,Ongoing,No,3756849,2,,Active,Car,Brother,Yes,39134.0,Vikram Kapoor,30,M,Savings,720,Corporate,Gurugram
+NBFC,C1289,L49,Car Loan,Vehicle Purchase,2226831,12.4,48,2023-05-27,2027-05-06,Ongoing,No,2226831,2,,Active,Car,Father,No,46392.0,Vikram Iyer,22,F,Current,780,Corporate,Bangalore
+NBFC,C1328,L336,Education Loan,Higher Education,200561,9.5,36,2019-08-23,2022-08-07,Ongoing,No,200561,6,,Active,None,Father,Yes,5571.0,Kunal Rathi,36,M,Savings,753,SME,Patna
+NBFC,C1281,L1918,Car Loan,Vehicle Purchase,3307813,12.6,96,2023-09-20,2031-08-09,Defaulted,Yes,3307813,5,2026-08-10,Recovery,Car,Brother,No,34456.0,Sneha Iyer,43,M,Savings,681,SME,Delhi
+NBFC,C970,L1648,Education Loan,Higher Education,4035819,8.5,120,2022-06-08,2032-04-16,Ongoing,No,4035819,1,,Active,None,Brother,No,33632.0,Meera Kumar,44,F,Current,650,Corporate,Patna
+NBFC,C1364,L316,Education Loan,Higher Education,3244804,9.2,96,2022-11-22,2030-10-11,Ongoing,No,3244804,6,,Active,None,Father,No,33800.0,Meera Verma,39,M,Current,732,Retail,Bangalore
+NBFC,C133,L1174,Home Loan,Residential Property,3452742,11.1,48,2022-02-17,2026-01-27,Ongoing,No,3452742,5,,Active,House,Wife,Yes,71932.0,Neha Patel,47,M,Current,776,SME,Gurugram
+NBFC,C315,L723,Education Loan,Overseas Study,785893,12.6,60,2021-09-16,2026-08-21,Closed,No,0,0,,Closed,None,Father,No,13098.0,Kunal Rao,31,F,Savings,668,Corporate,Ahmedabad
+NBFC,C455,L1374,Education Loan,Overseas Study,282041,10.6,240,2022-02-01,2041-10-19,Ongoing,No,282041,2,,Active,None,Brother,Yes,1175.0,Anjali Nair,21,M,Current,629,Corporate,Lucknow
+NBFC,C698,L1335,Personal Loan,Wedding Expenses,2429517,12.4,36,2020-04-23,2023-04-08,Closed,No,0,0,,Closed,None,Husband,No,67487.0,Meera Rao,47,F,Savings,765,SME,Delhi
+NBFC,C1376,L394,Car Loan,Vehicle Purchase,3968905,11.8,48,2024-12-16,2028-11-25,Ongoing,No,3968905,2,,Active,Car,None,No,82686.0,Rahul Desai,25,M,Current,603,SME,Patna
+NBFC,C782,L60,Car Loan,Vehicle Purchase,1487470,9.8,120,2023-10-04,2033-08-12,Closed,No,0,0,,Closed,Car,Mother,Yes,12396.0,Arjun Rao,43,F,Savings,743,Corporate,Bangalore
+NBFC,C1997,L1452,Education Loan,Overseas Study,4272296,7.2,36,2022-03-13,2025-02-25,Closed,No,0,0,,Closed,None,Mother,No,118675.0,Vikram Singh,34,M,Current,671,Corporate,Chennai
+NBFC,C687,L774,Car Loan,Vehicle Purchase,4241700,10.3,96,2020-12-20,2028-11-08,Ongoing,No,4241700,3,,Active,Car,None,No,44184.0,Vikram Kapoor,56,M,Current,663,Corporate,Ahmedabad
+NBFC,C2000,L1444,Education Loan,Overseas Study,429375,7.5,36,2022-11-20,2025-11-04,Ongoing,No,429375,0,,Active,None,Husband,Yes,11927.0,Suresh Patel,58,F,Current,653,Retail,Hyderabad
+NBFC,C1988,L1757,Car Loan,Vehicle Purchase,2990404,8.0,240,2025-09-20,2045-06-07,Ongoing,No,2990404,2,,Active,Car,Father,No,12460.0,Amit Sharma,58,M,Current,733,Corporate,Bangalore
+NBFC,C837,L22,Education Loan,Overseas Study,3488473,9.3,96,2021-12-24,2029-11-12,Ongoing,No,3488473,3,,Active,None,None,No,36338.0,Meera Desai,52,F,Current,677,Corporate,Patna
+NBFC,C1050,L1057,Education Loan,Higher Education,3316553,12.4,60,2022-04-09,2027-03-14,Ongoing,No,3316553,3,,Active,None,Brother,Yes,55276.0,Sunita Joshi,35,M,Current,630,Corporate,Jaipur
+NBFC,C513,L662,Car Loan,Vehicle Purchase,742334,13.7,48,2020-06-29,2024-06-08,Ongoing,No,742334,4,,Active,Car,Husband,No,15465.0,Vikram Desai,58,F,Current,657,SME,Jaipur
+NBFC,C1264,L401,Education Loan,Overseas Study,2455533,8.7,240,2020-04-17,2040-01-03,Ongoing,No,2455533,4,,Active,None,Mother,Yes,10231.0,Rahul Mehta,45,M,Current,714,SME,Patna
+NBFC,C1654,L998,Car Loan,Vehicle Purchase,593008,11.3,96,2021-01-19,2028-12-08,Closed,No,0,0,,Closed,Car,Mother,No,6177.0,Shreya Patel,44,F,Current,657,Corporate,Chennai
+NBFC,C505,L1258,Personal Loan,Wedding Expenses,3020813,12.0,48,2019-02-10,2023-01-20,Ongoing,No,3020813,5,,Active,None,Husband,Yes,62934.0,Kunal Iyer,43,F,Current,713,Corporate,Patna
+NBFC,C1100,L1151,Home Loan,Renovation,3437250,9.4,24,2021-10-26,2023-10-16,Ongoing,No,3437250,0,,Active,House,Father,No,143219.0,Rohit Kumar,26,M,Current,779,SME,Bangalore
+NBFC,C206,L1606,Home Loan,Residential Property,2380064,14.8,120,2019-08-22,2029-06-30,Ongoing,No,2380064,2,,Active,House,Father,Yes,19834.0,Amit Verma,32,F,Current,690,Corporate,Chennai
+NBFC,C191,L1468,Car Loan,Vehicle Purchase,4252948,7.4,60,2022-06-10,2027-05-15,Closed,No,0,0,,Closed,Car,Brother,No,70882.0,Arjun Rathi,55,M,Current,725,Corporate,Bangalore
+NBFC,C420,L1966,Education Loan,Overseas Study,903865,7.8,240,2024-06-20,2044-03-07,Ongoing,No,903865,1,,Active,None,Mother,No,3766.0,Kunal Kapoor,26,F,Savings,763,SME,Bangalore
+NBFC,C1446,L1792,Education Loan,Overseas Study,1041679,12.7,24,2022-12-04,2024-11-23,Closed,No,0,0,,Closed,None,Father,Yes,43403.0,Amit Singh,33,M,Current,688,SME,Mumbai
+NBFC,C125,L706,Education Loan,Higher Education,1999647,8.3,48,2021-08-17,2025-07-27,Ongoing,No,1999647,1,,Active,None,Wife,Yes,41659.0,Deepak Singh,41,F,Savings,781,Corporate,Kolkata
+NBFC,C676,L362,Education Loan,Overseas Study,4089955,12.8,60,2022-11-24,2027-10-29,Closed,No,0,0,,Closed,None,None,No,68166.0,Rahul Desai,54,M,Savings,779,SME,Mumbai
+NBFC,C1374,L157,Business Loan,Startup Funding,2945982,10.9,120,2020-12-21,2030-10-30,Closed,No,0,0,,Closed,Factory,Brother,Yes,24550.0,Meera Kapoor,29,F,Savings,759,SME,Lucknow
+NBFC,C943,L569,Education Loan,Overseas Study,407670,7.7,60,2025-04-19,2030-03-24,Ongoing,No,407670,4,,Active,None,Wife,Yes,6794.0,Shreya Mehta,49,M,Current,673,Corporate,Hyderabad
+NBFC,C543,L624,Personal Loan,Wedding Expenses,4693840,9.6,36,2024-12-15,2027-11-30,Closed,No,0,0,,Closed,None,Father,No,130384.0,Vikram Kumar,29,F,Savings,783,Retail,Chennai
+NBFC,C936,L1697,Education Loan,Overseas Study,3129490,12.1,96,2023-07-18,2031-06-06,Ongoing,No,3129490,3,,Active,None,Husband,Yes,32599.0,Arjun Mehta,21,F,Current,666,Retail,Lucknow
+NBFC,C1407,L850,Business Loan,Startup Funding,1388094,11.0,24,2021-04-27,2023-04-17,Ongoing,No,1388094,4,,Active,Factory,None,Yes,57837.0,Deepak Sharma,22,M,Savings,662,SME,Kolkata
+NBFC,C565,L1236,Car Loan,Vehicle Purchase,2755818,12.7,240,2021-12-02,2041-08-19,Defaulted,Yes,2755818,1,2025-02-13,Recovery,Car,Father,Yes,11483.0,Meera Rao,43,F,Savings,717,SME,Delhi
+NBFC,C216,L1969,Education Loan,Overseas Study,363068,14.1,96,2021-09-16,2029-08-05,Ongoing,No,363068,5,,Active,None,None,No,3782.0,Amit Patel,21,M,Savings,667,SME,Jaipur
+NBFC,C1665,L1508,Car Loan,Vehicle Purchase,743151,9.6,96,2019-06-10,2027-04-29,Ongoing,No,743151,0,,Active,Car,Wife,Yes,7741.0,Shreya Bansal,28,F,Savings,761,Corporate,Pune
+NBFC,C1707,L232,Home Loan,Renovation,2925235,14.7,96,2022-05-27,2030-04-15,Ongoing,No,2925235,5,,Active,House,Brother,Yes,30471.0,Vikram Rao,41,F,Current,786,Corporate,Chennai
+NBFC,C290,L695,Car Loan,Vehicle Purchase,926614,13.4,120,2019-01-05,2028-11-13,Closed,No,0,0,,Closed,Car,Father,Yes,7722.0,Neha Patel,57,F,Current,738,SME,Ahmedabad
+NBFC,C457,L1697,Business Loan,Business Expansion,2603356,10.0,96,2025-05-01,2033-03-20,Ongoing,No,2603356,0,,Active,Factory,Wife,No,27118.0,Amit Sharma,42,M,Current,728,SME,Hyderabad
+NBFC,C1100,L205,Business Loan,Business Expansion,4604639,10.1,36,2021-10-29,2024-10-13,Defaulted,Yes,4604639,1,2024-11-18,Recovery,Factory,None,No,127907.0,Shalini Malhotra,49,F,Savings,667,SME,Lucknow
+NBFC,C1200,L277,Education Loan,Higher Education,4374844,12.2,120,2021-07-05,2031-05-14,Ongoing,No,4374844,6,,Active,None,Husband,No,36457.0,Megha Verma,24,M,Savings,740,SME,Pune
+NBFC,C1513,L69,Personal Loan,Debt Consolidation,2817047,7.3,48,2025-01-11,2028-12-21,Ongoing,No,2817047,5,,Active,None,Brother,No,58688.0,Anita Malhotra,32,F,Current,662,Retail,Pune
+NBFC,C329,L520,Home Loan,Residential Property,788520,11.3,60,2021-09-16,2026-08-21,Ongoing,No,788520,1,,Active,House,Husband,Yes,13142.0,Arjun Mehta,52,F,Savings,678,Corporate,Patna
+NBFC,C1229,L1158,Business Loan,Startup Funding,2631172,13.7,48,2019-07-05,2023-06-14,Ongoing,No,2631172,3,,Active,Factory,Mother,No,54816.0,Shalini Joshi,24,M,Current,785,SME,Pune
+NBFC,C1411,L747,Home Loan,Residential Property,735999,7.6,180,2023-06-12,2038-03-25,Ongoing,No,735999,4,,Active,House,Brother,Yes,4089.0,Suresh Rathi,23,M,Savings,702,Corporate,Hyderabad
+NBFC,C647,L1055,Education Loan,Higher Education,3561189,11.5,96,2025-09-29,2033-08-18,Ongoing,No,3561189,6,,Active,None,Father,Yes,37096.0,Neha Rao,36,F,Current,722,Corporate,Delhi
+NBFC,C1539,L1424,Business Loan,Working Capital,1678613,14.7,48,2025-07-05,2029-06-14,Closed,No,0,0,,Closed,Factory,Father,No,34971.0,Megha Malhotra,60,F,Current,628,Corporate,Delhi
+NBFC,C485,L1891,Personal Loan,Medical Expenses,1331152,14.4,240,2021-08-10,2041-04-27,Ongoing,No,1331152,0,,Active,None,None,Yes,5546.0,Meera Singh,27,F,Current,617,Retail,Bangalore
+NBFC,C600,L1495,Home Loan,Residential Property,3517872,12.1,24,2022-05-05,2024-04-24,Closed,No,0,0,,Closed,House,Husband,No,146578.0,Shalini Gupta,57,F,Savings,616,Corporate,Patna
+NBFC,C425,L1616,Home Loan,Renovation,4806297,8.1,240,2024-07-16,2044-04-02,Ongoing,No,4806297,1,,Active,House,None,No,20026.0,Rahul Nair,58,F,Savings,700,Retail,Hyderabad
+NBFC,C1053,L936,Car Loan,Vehicle Purchase,651802,13.6,96,2022-03-28,2030-02-14,Ongoing,No,651802,2,,Active,Car,Brother,No,6790.0,Kunal Kumar,42,M,Savings,631,Retail,Lucknow
+NBFC,C69,L1225,Personal Loan,Debt Consolidation,4710163,14.5,180,2023-03-28,2038-01-08,Ongoing,No,4710163,2,,Active,None,Mother,Yes,26168.0,Anjali Nair,31,M,Savings,796,Corporate,Hyderabad
+NBFC,C1241,L581,Home Loan,Renovation,1053169,13.7,96,2025-02-03,2032-12-23,Closed,No,0,0,,Closed,House,Mother,No,10971.0,Rajesh Joshi,49,F,Current,614,Corporate,Mumbai
+NBFC,C1689,L1892,Car Loan,Vehicle Purchase,2515645,14.7,240,2019-06-06,2039-02-21,Ongoing,No,2515645,6,,Active,Car,Husband,Yes,10482.0,Shreya Joshi,36,M,Savings,603,Retail,Patna
+NBFC,C1708,L1103,Personal Loan,Wedding Expenses,2286827,13.5,48,2024-09-11,2028-08-21,Ongoing,No,2286827,5,,Active,None,Wife,No,47642.0,Rajesh Sharma,25,F,Current,688,Retail,Ahmedabad
+NBFC,C1754,L1703,Car Loan,Vehicle Purchase,2121379,7.9,96,2023-01-24,2030-12-13,Ongoing,No,2121379,4,,Active,Car,Brother,Yes,22098.0,Neha Patel,47,F,Current,789,Retail,Lucknow
+NBFC,C175,L37,Car Loan,Vehicle Purchase,308912,11.8,24,2024-01-09,2025-12-29,Defaulted,No,308912,4,2024-06-06,Recovery,Car,None,No,12871.0,Suresh Kapoor,40,M,Savings,646,Corporate,Hyderabad
+NBFC,C1564,L1368,Personal Loan,Medical Expenses,2531094,8.8,36,2024-05-17,2027-05-02,Ongoing,No,2531094,4,,Active,None,Mother,No,70308.0,Shalini Rathi,46,M,Current,670,Retail,Lucknow
+NBFC,C1586,L502,Car Loan,Vehicle Purchase,3761987,8.9,120,2022-09-20,2032-07-29,Ongoing,No,3761987,1,,Active,Car,Wife,No,31350.0,Deepak Rao,41,M,Savings,778,SME,Chennai
+NBFC,C1038,L1937,Education Loan,Overseas Study,2029301,13.5,180,2025-01-01,2039-10-15,Ongoing,No,2029301,1,,Active,None,None,Yes,11274.0,Anjali Malhotra,33,F,Savings,628,SME,Pune
+NBFC,C132,L1012,Education Loan,Higher Education,923500,8.3,240,2024-10-03,2044-06-20,Ongoing,No,923500,5,,Active,None,Mother,Yes,3848.0,Megha Singh,44,F,Current,680,Corporate,Lucknow
+NBFC,C395,L1883,Car Loan,Vehicle Purchase,4363308,13.5,96,2023-11-02,2031-09-21,Ongoing,No,4363308,0,,Active,Car,Father,Yes,45451.0,Amit Nair,58,M,Current,713,Retail,Gurugram
+NBFC,C1836,L1481,Business Loan,Business Expansion,1541717,14.2,240,2020-09-12,2040-05-30,Ongoing,No,1541717,5,,Active,Factory,Husband,No,6424.0,Rohit Joshi,31,F,Current,691,Corporate,Ahmedabad
+NBFC,C73,L81,Car Loan,Vehicle Purchase,3532106,8.6,60,2022-06-05,2027-05-10,Closed,No,0,0,,Closed,Car,Husband,No,58868.0,Rahul Gupta,21,M,Savings,649,SME,Ahmedabad
+NBFC,C1008,L1857,Car Loan,Vehicle Purchase,3834634,10.1,120,2020-02-29,2030-01-07,Ongoing,No,3834634,4,,Active,Car,Brother,Yes,31955.0,Megha Malhotra,49,F,Current,628,SME,Lucknow
+NBFC,C1407,L1463,Business Loan,Business Expansion,4966836,12.5,96,2022-09-09,2030-07-29,Ongoing,No,4966836,2,,Active,Factory,Mother,Yes,51738.0,Anita Gupta,58,F,Current,722,Retail,Mumbai
+NBFC,C1570,L796,Education Loan,Higher Education,1157436,10.2,24,2024-09-16,2026-09-06,Defaulted,No,1157436,5,2024-10-21,Recovery,None,Mother,Yes,48226.0,Deepak Sharma,57,M,Savings,789,Corporate,Patna
+NBFC,C795,L1222,Business Loan,Business Expansion,521182,14.6,180,2020-09-15,2035-06-29,Closed,No,0,0,,Closed,Factory,Wife,No,2895.0,Rajesh Gupta,51,F,Current,664,SME,Gurugram
+NBFC,C87,L1597,Personal Loan,Wedding Expenses,1712174,11.7,96,2021-03-29,2029-02-15,Defaulted,Yes,1712174,4,2026-07-28,Recovery,None,None,Yes,17835.0,Sunita Rao,43,M,Current,724,SME,Ahmedabad
+NBFC,C743,L386,Car Loan,Vehicle Purchase,3898643,8.1,24,2020-02-07,2022-01-27,Defaulted,Yes,3898643,6,2026-07-07,Recovery,Car,None,No,162443.0,Rohit Malhotra,25,F,Current,633,SME,Chennai
+NBFC,C213,L759,Personal Loan,Wedding Expenses,1898571,10.4,36,2019-01-21,2022-01-05,Closed,No,0,0,,Closed,None,Mother,Yes,52738.0,Suresh Rathi,40,M,Current,609,Corporate,Patna
+NBFC,C1489,L426,Education Loan,Higher Education,4388647,10.2,240,2020-09-21,2040-06-08,Ongoing,No,4388647,2,,Active,None,Mother,Yes,18286.0,Deepak Iyer,37,M,Savings,714,SME,Ahmedabad
+NBFC,C1274,L1020,Home Loan,Residential Property,326922,11.0,48,2024-05-26,2028-05-05,Closed,No,0,0,,Closed,House,None,Yes,6811.0,Suresh Mehta,47,M,Current,636,Retail,Ahmedabad
+NBFC,C1181,L827,Home Loan,Residential Property,2351337,9.6,120,2020-05-22,2030-03-31,Ongoing,No,2351337,3,,Active,House,Husband,Yes,19594.0,Arjun Joshi,23,M,Savings,713,Retail,Lucknow
+NBFC,C956,L885,Car Loan,Vehicle Purchase,4477461,10.7,36,2019-03-27,2022-03-11,Ongoing,No,4477461,1,,Active,Car,Wife,Yes,124374.0,Pooja Rao,23,M,Savings,700,Retail,Jaipur
+NBFC,C1940,L888,Education Loan,Higher Education,2877037,9.9,60,2020-06-02,2025-05-07,Ongoing,No,2877037,1,,Active,None,Wife,No,47951.0,Rajesh Patel,33,F,Savings,734,SME,Hyderabad
+NBFC,C291,L1794,Personal Loan,Wedding Expenses,4750856,7.7,24,2020-02-26,2022-02-15,Ongoing,No,4750856,4,,Active,None,Wife,Yes,197952.0,Rajesh Iyer,49,F,Savings,695,Retail,Jaipur
+NBFC,C1327,L325,Education Loan,Higher Education,1967693,14.4,96,2023-03-30,2031-02-16,Ongoing,No,1967693,6,,Active,None,Wife,No,20497.0,Sneha Gupta,52,M,Current,761,Retail,Kolkata
+NBFC,C938,L834,Business Loan,Working Capital,762603,10.6,180,2021-11-23,2036-09-05,Ongoing,No,762603,0,,Active,Factory,Mother,Yes,4237.0,Rahul Singh,53,F,Savings,743,SME,Delhi
+NBFC,C62,L1051,Education Loan,Higher Education,250597,8.6,24,2019-04-22,2021-04-11,Ongoing,No,250597,4,,Active,None,Brother,No,10442.0,Rohit Nair,39,M,Savings,607,Corporate,Patna
+NBFC,C1886,L679,Car Loan,Vehicle Purchase,1373305,7.9,24,2023-09-08,2025-08-28,Ongoing,No,1373305,5,,Active,Car,None,Yes,57221.0,Megha Joshi,49,F,Current,734,Retail,Bangalore
+NBFC,C628,L1526,Home Loan,Residential Property,2528386,12.3,48,2019-08-18,2023-07-28,Ongoing,No,2528386,4,,Active,House,Father,Yes,52675.0,Shalini Nair,42,M,Current,634,SME,Kolkata
+NBFC,C1948,L445,Education Loan,Overseas Study,3268850,14.7,120,2023-06-15,2033-04-23,Closed,No,0,0,,Closed,None,Father,Yes,27240.0,Kunal Nair,46,M,Current,641,Corporate,Ahmedabad
+NBFC,C768,L967,Home Loan,Residential Property,3487440,12.4,120,2024-05-03,2034-03-12,Ongoing,No,3487440,2,,Active,House,Father,No,29062.0,Kunal Singh,22,F,Current,711,SME,Pune
+NBFC,C1271,L1241,Education Loan,Higher Education,265882,14.7,96,2022-10-16,2030-09-04,Ongoing,No,265882,5,,Active,None,Wife,Yes,2770.0,Rohit Sharma,52,M,Savings,650,Corporate,Lucknow
+NBFC,C1039,L1377,Home Loan,Renovation,2324130,11.8,240,2025-08-23,2045-05-10,Ongoing,No,2324130,4,,Active,House,Mother,No,9684.0,Amit Rao,57,F,Savings,675,SME,Mumbai
+NBFC,C1748,L1382,Personal Loan,Wedding Expenses,2167844,7.6,96,2025-05-22,2033-04-10,Closed,No,0,0,,Closed,None,Husband,No,22582.0,Megha Malhotra,34,M,Savings,784,SME,Delhi
+NBFC,C244,L1580,Car Loan,Vehicle Purchase,3304492,11.6,48,2021-05-26,2025-05-05,Ongoing,No,3304492,4,,Active,Car,Wife,Yes,68844.0,Suresh Iyer,24,F,Current,624,Retail,Kolkata
+NBFC,C509,L1377,Car Loan,Vehicle Purchase,910207,14.5,36,2022-01-17,2025-01-01,Ongoing,No,910207,2,,Active,Car,Father,No,25284.0,Arjun Malhotra,44,F,Current,701,Retail,Hyderabad
+NBFC,C1024,L1889,Car Loan,Vehicle Purchase,3598622,9.0,180,2019-05-20,2034-03-02,Ongoing,No,3598622,6,,Active,Car,Brother,No,19992.0,Rohit Iyer,43,M,Current,741,SME,Bangalore
+NBFC,C1786,L363,Education Loan,Overseas Study,3271379,14.5,48,2025-03-10,2029-02-17,Ongoing,No,3271379,5,,Active,None,Wife,No,68154.0,Kunal Rathi,55,M,Savings,762,Retail,Patna
+NBFC,C1706,L1152,Business Loan,Business Expansion,872307,10.1,240,2024-03-04,2043-11-20,Ongoing,No,872307,4,,Active,Factory,Father,Yes,3635.0,Megha Rao,22,M,Current,725,Retail,Patna
+NBFC,C650,L1521,Personal Loan,Medical Expenses,1170935,9.0,120,2019-08-23,2029-07-01,Closed,No,0,0,,Closed,None,Brother,No,9758.0,Megha Joshi,30,M,Current,717,Corporate,Kolkata
+NBFC,C1807,L1257,Business Loan,Working Capital,4246118,7.8,120,2025-05-03,2035-03-12,Ongoing,No,4246118,5,,Active,Factory,Brother,Yes,35384.0,Shalini Kumar,51,F,Savings,715,SME,Patna
+NBFC,C226,L490,Business Loan,Working Capital,3193635,13.5,96,2024-12-16,2032-11-04,Defaulted,Yes,3193635,4,2026-04-02,Recovery,Factory,Wife,Yes,33267.0,Kunal Rao,29,M,Current,678,SME,Ahmedabad
+NBFC,C414,L339,Personal Loan,Wedding Expenses,1494235,13.2,48,2021-04-25,2025-04-04,Ongoing,No,1494235,6,,Active,None,Wife,No,31130.0,Shalini Mehta,55,F,Savings,650,SME,Ahmedabad
+NBFC,C443,L343,Personal Loan,Medical Expenses,1784739,13.7,48,2022-07-24,2026-07-03,Ongoing,No,1784739,0,,Active,None,Husband,No,37182.0,Sneha Patel,53,M,Current,686,Retail,Gurugram
+NBFC,C1529,L649,Business Loan,Business Expansion,2248220,9.2,120,2025-02-18,2034-12-28,Ongoing,No,2248220,1,,Active,Factory,None,Yes,18735.0,Meera Joshi,35,F,Current,604,Corporate,Lucknow
+NBFC,C713,L93,Home Loan,Residential Property,1123150,13.8,24,2021-03-16,2023-03-06,Ongoing,No,1123150,0,,Active,House,None,Yes,46798.0,Megha Sharma,48,F,Current,797,SME,Jaipur
+NBFC,C1234,L166,Business Loan,Business Expansion,4372870,14.5,180,2022-07-30,2037-05-12,Ongoing,No,4372870,5,,Active,Factory,Father,Yes,24294.0,Arjun Joshi,42,M,Savings,797,Corporate,Delhi
+NBFC,C836,L1979,Business Loan,Startup Funding,2865055,11.8,24,2025-04-19,2027-04-09,Closed,No,0,0,,Closed,Factory,None,Yes,119377.0,Neha Malhotra,58,F,Current,794,Corporate,Kolkata
+NBFC,C1814,L1416,Personal Loan,Debt Consolidation,3380197,8.7,24,2024-04-02,2026-03-23,Defaulted,Yes,3380197,3,2026-01-07,Recovery,None,Brother,No,140842.0,Shalini Kumar,24,M,Savings,794,Corporate,Patna
+NBFC,C1047,L1349,Personal Loan,Debt Consolidation,3414858,12.7,36,2025-02-19,2028-02-04,Ongoing,No,3414858,3,,Active,None,None,Yes,94857.0,Deepak Mehta,28,F,Current,777,SME,Bangalore
+NBFC,C1487,L155,Home Loan,Residential Property,3507117,12.1,60,2024-05-11,2029-04-15,Ongoing,No,3507117,5,,Active,House,Mother,Yes,58452.0,Sunita Gupta,29,M,Current,715,Corporate,Lucknow
+NBFC,C499,L727,Car Loan,Vehicle Purchase,4369939,14.2,96,2025-04-20,2033-03-09,Ongoing,No,4369939,4,,Active,Car,Brother,No,45520.0,Vikram Bansal,34,F,Current,618,SME,Gurugram
+NBFC,C1524,L1865,Personal Loan,Debt Consolidation,2776074,13.3,24,2019-07-31,2021-07-20,Defaulted,Yes,2776074,5,2025-02-05,Recovery,None,Mother,Yes,115670.0,Shreya Patel,41,M,Savings,735,SME,Ahmedabad
+NBFC,C230,L712,Business Loan,Working Capital,781885,14.2,48,2020-05-15,2024-04-24,Ongoing,No,781885,4,,Active,Factory,Brother,No,16289.0,Anita Gupta,39,F,Current,712,Retail,Ahmedabad
+NBFC,C790,L112,Personal Loan,Debt Consolidation,620349,8.3,240,2023-09-03,2043-05-21,Ongoing,No,620349,4,,Active,None,Husband,No,2585.0,Meera Nair,57,F,Current,657,Corporate,Ahmedabad
+NBFC,C1672,L690,Personal Loan,Medical Expenses,2237889,10.1,180,2024-03-20,2039-01-01,Ongoing,No,2237889,4,,Active,None,Brother,Yes,12433.0,Anita Nair,43,F,Current,764,Corporate,Hyderabad
+NBFC,C1776,L825,Home Loan,Renovation,2411221,11.3,24,2021-03-15,2023-03-05,Closed,No,0,0,,Closed,House,Father,No,100468.0,Amit Rao,48,F,Savings,769,Corporate,Ahmedabad
+NBFC,C585,L223,Car Loan,Vehicle Purchase,1198915,12.1,48,2020-12-17,2024-11-26,Ongoing,No,1198915,5,,Active,Car,None,No,24977.0,Rohit Bansal,49,M,Current,786,SME,Kolkata
+NBFC,C1176,L506,Education Loan,Higher Education,3080663,10.5,36,2022-06-10,2025-05-25,Ongoing,No,3080663,5,,Active,None,Husband,Yes,85574.0,Sneha Iyer,39,M,Savings,800,Corporate,Pune
+NBFC,C1587,L1171,Education Loan,Overseas Study,4494984,10.5,24,2022-03-04,2024-02-22,Ongoing,No,4494984,3,,Active,None,Wife,No,187291.0,Kunal Patel,54,M,Savings,656,SME,Patna
+NBFC,C1648,L531,Home Loan,Residential Property,3745316,10.7,24,2019-06-19,2021-06-08,Ongoing,No,3745316,5,,Active,House,Mother,No,156055.0,Deepak Singh,49,M,Savings,673,Retail,Lucknow
+NBFC,C1339,L761,Car Loan,Vehicle Purchase,2489093,11.3,36,2022-05-06,2025-04-20,Ongoing,No,2489093,2,,Active,Car,Mother,No,69141.0,Arjun Nair,55,F,Current,642,Retail,Delhi
+NBFC,C318,L424,Business Loan,Business Expansion,428755,12.5,60,2021-09-15,2026-08-20,Ongoing,No,428755,6,,Active,Factory,Mother,Yes,7146.0,Vikram Gupta,39,M,Current,747,SME,Pune
+NBFC,C499,L254,Business Loan,Startup Funding,3846373,10.7,48,2025-03-12,2029-02-19,Ongoing,No,3846373,4,,Active,Factory,Brother,No,80133.0,Deepak Kumar,38,M,Current,707,Corporate,Hyderabad
+NBFC,C1442,L1332,Home Loan,Renovation,755277,7.6,24,2019-12-19,2021-12-08,Ongoing,No,755277,3,,Active,House,Brother,No,31470.0,Pooja Patel,45,M,Savings,654,Corporate,Chennai
+NBFC,C1643,L113,Personal Loan,Debt Consolidation,2117620,14.2,120,2023-05-27,2033-04-04,Ongoing,No,2117620,5,,Active,None,None,No,17647.0,Rajesh Patel,38,M,Savings,706,SME,Lucknow
+NBFC,C132,L816,Business Loan,Working Capital,2870909,8.4,96,2020-07-30,2028-06-18,Ongoing,No,2870909,4,,Active,Factory,Brother,Yes,29905.0,Shalini Nair,48,F,Savings,632,Retail,Bangalore
+NBFC,C861,L173,Home Loan,Renovation,2179793,11.3,60,2020-09-27,2025-09-01,Ongoing,No,2179793,6,,Active,House,Brother,Yes,36330.0,Shreya Bansal,45,M,Current,715,SME,Lucknow
+NBFC,C892,L606,Personal Loan,Wedding Expenses,2453214,14.9,120,2022-12-05,2032-10-13,Ongoing,No,2453214,6,,Active,None,Mother,No,20443.0,Pooja Singh,47,F,Current,724,Corporate,Chennai
+NBFC,C1288,L1127,Car Loan,Vehicle Purchase,1367785,12.0,120,2021-11-27,2031-10-06,Closed,No,0,0,,Closed,Car,Wife,No,11398.0,Rohit Gupta,59,M,Current,615,Corporate,Jaipur
+NBFC,C1066,L1711,Education Loan,Higher Education,3105122,13.8,24,2025-11-26,2027-11-16,Defaulted,Yes,3105122,1,2025-07-05,Recovery,None,Mother,No,129380.0,Shalini Rathi,43,F,Savings,608,Retail,Ahmedabad
+NBFC,C262,L1455,Education Loan,Overseas Study,3429880,13.9,60,2019-06-28,2024-06-01,Closed,No,0,0,,Closed,None,Mother,No,57165.0,Rohit Singh,25,F,Savings,637,SME,Ahmedabad
+NBFC,C306,L205,Education Loan,Higher Education,4009781,10.8,180,2019-09-03,2034-06-16,Ongoing,No,4009781,5,,Active,None,None,No,22277.0,Sunita Rao,22,F,Current,773,SME,Mumbai
+NBFC,C142,L1674,Business Loan,Working Capital,1870337,7.4,24,2024-09-21,2026-09-11,Ongoing,No,1870337,6,,Active,Factory,None,Yes,77931.0,Sunita Rao,22,F,Savings,664,Retail,Lucknow
+NBFC,C1540,L754,Car Loan,Vehicle Purchase,3680174,8.3,60,2024-11-09,2029-10-14,Ongoing,No,3680174,0,,Active,Car,Husband,Yes,61336.0,Anjali Kumar,29,M,Savings,660,SME,Lucknow
+P2P Lending,C1287,L1085,Home Loan,Residential Property,1375942,11.3,48,2022-10-01,2026-09-10,Ongoing,No,1375942,5,,Active,House,Husband,Yes,28665.0,Arjun Singh,29,F,Current,724,SME,Ahmedabad
+P2P Lending,C1493,L966,Personal Loan,Wedding Expenses,2773890,7.3,36,2020-07-04,2023-06-19,Ongoing,No,2773890,0,,Active,None,Mother,No,77052.0,Meera Verma,56,F,Savings,621,Retail,Pune
+P2P Lending,C394,L1683,Business Loan,Business Expansion,2524984,10.7,36,2025-04-03,2028-03-18,Ongoing,No,2524984,1,,Active,Factory,Brother,Yes,70138.0,Rajesh Mehta,50,F,Current,626,SME,Bangalore
+P2P Lending,C1618,L262,Home Loan,Renovation,1790655,14.4,240,2022-08-19,2042-05-06,Closed,No,0,0,,Closed,House,Wife,Yes,7461.0,Shreya Bansal,30,M,Savings,687,Retail,Ahmedabad
+P2P Lending,C1738,L887,Car Loan,Vehicle Purchase,4300000,9.2,36,2019-04-22,2022-04-06,Defaulted,Yes,4300000,1,2026-08-17,Recovery,Car,None,No,119444.0,Meera Desai,50,M,Savings,759,Retail,Bangalore
+P2P Lending,C214,L280,Car Loan,Vehicle Purchase,4616481,11.1,48,2024-07-06,2028-06-15,Defaulted,No,4616481,4,2024-02-02,Recovery,Car,None,No,96177.0,Sunita Kumar,55,F,Savings,716,Retail,Mumbai
+P2P Lending,C1992,L278,Home Loan,Renovation,4941452,13.6,96,2023-11-08,2031-09-27,Ongoing,No,4941452,3,,Active,House,Mother,Yes,51473.0,Anjali Joshi,27,M,Current,600,SME,Pune
+P2P Lending,C515,L1659,Personal Loan,Wedding Expenses,3514496,7.1,48,2021-01-15,2024-12-25,Ongoing,No,3514496,4,,Active,None,Father,No,73219.0,Vikram Iyer,46,M,Savings,778,SME,Ahmedabad
+P2P Lending,C1370,L602,Business Loan,Working Capital,3228406,14.5,24,2024-08-26,2026-08-16,Ongoing,No,3228406,2,,Active,Factory,Wife,Yes,134517.0,Deepak Kapoor,46,M,Savings,730,Corporate,Jaipur
+P2P Lending,C14,L270,Car Loan,Vehicle Purchase,2464298,7.5,24,2024-12-12,2026-12-02,Ongoing,No,2464298,4,,Active,Car,Husband,No,102679.0,Megha Rathi,45,F,Current,727,Corporate,Jaipur
+P2P Lending,C1280,L1923,Personal Loan,Medical Expenses,3950564,13.8,120,2019-05-27,2029-04-04,Ongoing,No,3950564,3,,Active,None,None,Yes,32921.0,Suresh Sharma,50,F,Savings,655,Retail,Delhi
+P2P Lending,C342,L701,Personal Loan,Wedding Expenses,737205,12.3,120,2020-09-06,2030-07-16,Ongoing,No,737205,6,,Active,None,Mother,Yes,6143.0,Suresh Kumar,34,M,Current,630,SME,Mumbai
+P2P Lending,C392,L1236,Business Loan,Business Expansion,2488872,12.2,120,2024-01-09,2033-11-17,Ongoing,No,2488872,1,,Active,Factory,Father,No,20741.0,Anita Bansal,46,M,Current,621,SME,Ahmedabad
+P2P Lending,C1931,L546,Personal Loan,Debt Consolidation,3646687,7.0,48,2019-04-20,2023-03-30,Closed,No,0,0,,Closed,None,Wife,No,75973.0,Anjali Kumar,56,F,Current,734,Corporate,Mumbai
+P2P Lending,C551,L267,Home Loan,Renovation,4315106,13.4,36,2025-10-28,2028-10-12,Ongoing,No,4315106,1,,Active,House,Mother,Yes,119864.0,Deepak Kumar,48,F,Savings,779,Corporate,Ahmedabad
+P2P Lending,C117,L1351,Business Loan,Startup Funding,3005713,7.9,48,2019-01-10,2022-12-20,Ongoing,No,3005713,1,,Active,Factory,Mother,Yes,62619.0,Rajesh Gupta,58,F,Current,655,Retail,Delhi
+P2P Lending,C344,L731,Business Loan,Business Expansion,341695,10.9,240,2025-08-05,2045-04-22,Defaulted,Yes,341695,0,2024-11-20,Recovery,Factory,Brother,No,1424.0,Sneha Bansal,38,M,Savings,663,Retail,Bangalore
+P2P Lending,C67,L669,Business Loan,Startup Funding,3335104,13.7,36,2024-10-29,2027-10-14,Ongoing,No,3335104,4,,Active,Factory,Brother,No,92642.0,Suresh Bansal,42,M,Savings,739,Retail,Jaipur
+P2P Lending,C1024,L681,Business Loan,Business Expansion,3420351,10.6,120,2024-01-21,2033-11-29,Ongoing,No,3420351,0,,Active,Factory,Husband,Yes,28503.0,Suresh Malhotra,54,F,Savings,616,SME,Delhi
+P2P Lending,C1461,L194,Business Loan,Working Capital,1626667,14.6,240,2022-06-26,2042-03-13,Ongoing,No,1626667,3,,Active,Factory,Wife,No,6778.0,Sneha Kumar,25,F,Savings,722,Corporate,Jaipur
+P2P Lending,C1865,L503,Home Loan,Renovation,4477929,11.9,48,2021-04-18,2025-03-28,Closed,No,0,0,,Closed,House,Mother,No,93290.0,Anjali Desai,47,M,Savings,711,Corporate,Kolkata
+P2P Lending,C284,L66,Car Loan,Vehicle Purchase,4435716,11.7,48,2020-05-31,2024-05-10,Ongoing,No,4435716,0,,Active,Car,Mother,No,92411.0,Anita Singh,55,F,Current,700,Retail,Mumbai
+P2P Lending,C473,L496,Personal Loan,Medical Expenses,2756258,11.5,120,2019-09-08,2029-07-17,Closed,No,0,0,,Closed,None,None,No,22969.0,Kunal Singh,49,F,Current,724,SME,Chennai
+P2P Lending,C1204,L1475,Personal Loan,Debt Consolidation,2462968,13.9,60,2025-06-09,2030-05-14,Ongoing,No,2462968,0,,Active,None,Wife,Yes,41049.0,Rajesh Bansal,29,F,Current,641,SME,Chennai
+P2P Lending,C1525,L740,Home Loan,Residential Property,3249031,12.2,96,2024-07-26,2032-06-14,Ongoing,No,3249031,1,,Active,House,Father,No,33844.0,Pooja Kumar,27,F,Savings,672,Corporate,Hyderabad
+P2P Lending,C1975,L1695,Business Loan,Startup Funding,555337,10.7,180,2020-12-11,2035-09-24,Closed,No,0,0,,Closed,Factory,Husband,No,3085.0,Shreya Rathi,24,M,Current,691,Corporate,Jaipur
+P2P Lending,C473,L216,Education Loan,Higher Education,2200581,7.3,60,2019-12-01,2024-11-04,Ongoing,No,2200581,3,,Active,None,Wife,No,36676.0,Rajesh Patel,29,F,Current,660,Retail,Lucknow
+P2P Lending,C743,L476,Education Loan,Higher Education,865581,8.5,240,2024-07-19,2044-04-05,Ongoing,No,865581,3,,Active,None,Father,Yes,3607.0,Rahul Verma,44,M,Savings,653,Retail,Pune
+P2P Lending,C408,L686,Education Loan,Overseas Study,2262212,14.4,60,2022-06-17,2027-05-22,Ongoing,No,2262212,6,,Active,None,Father,Yes,37704.0,Kunal Rao,55,M,Current,616,SME,Hyderabad
+P2P Lending,C238,L25,Personal Loan,Wedding Expenses,314543,9.9,48,2022-09-15,2026-08-25,Closed,No,0,0,,Closed,None,Mother,Yes,6553.0,Rohit Nair,33,M,Current,686,Retail,Jaipur
+P2P Lending,C1686,L162,Education Loan,Higher Education,4589140,8.0,48,2021-02-13,2025-01-23,Ongoing,No,4589140,2,,Active,None,Mother,No,95607.0,Anjali Mehta,42,F,Current,605,Corporate,Bangalore
+P2P Lending,C1508,L858,Personal Loan,Debt Consolidation,925694,14.9,24,2021-11-19,2023-11-09,Closed,No,0,0,,Closed,None,None,No,38571.0,Neha Patel,49,M,Savings,791,SME,Mumbai
+P2P Lending,C1410,L574,Education Loan,Overseas Study,496949,14.0,48,2021-05-15,2025-04-24,Ongoing,No,496949,6,,Active,None,Mother,Yes,10353.0,Anjali Kapoor,55,F,Savings,719,Corporate,Pune
+P2P Lending,C1915,L1397,Personal Loan,Wedding Expenses,3067679,9.3,60,2021-07-13,2026-06-17,Defaulted,No,3067679,2,2024-05-27,Recovery,None,Father,No,51128.0,Sunita Kumar,39,M,Savings,676,Retail,Gurugram
+P2P Lending,C1654,L1568,Business Loan,Startup Funding,3038790,10.6,48,2020-08-07,2024-07-17,Closed,No,0,0,,Closed,Factory,Mother,No,63308.0,Pooja Kapoor,30,F,Current,626,SME,Bangalore
+P2P Lending,C1158,L951,Business Loan,Working Capital,724718,11.5,24,2021-10-29,2023-10-19,Ongoing,No,724718,5,,Active,Factory,Wife,No,30197.0,Sunita Iyer,59,F,Current,677,Retail,Kolkata
+P2P Lending,C874,L1432,Personal Loan,Medical Expenses,2209430,7.4,48,2023-08-06,2027-07-16,Defaulted,Yes,2209430,0,2026-05-07,Recovery,None,Husband,No,46030.0,Deepak Patel,38,F,Current,751,SME,Kolkata
+P2P Lending,C1859,L451,Home Loan,Residential Property,1670981,13.4,36,2022-11-03,2025-10-18,Ongoing,No,1670981,1,,Active,House,None,Yes,46416.0,Anita Bansal,43,M,Current,654,SME,Patna
+P2P Lending,C326,L584,Home Loan,Residential Property,1605011,8.2,60,2022-09-20,2027-08-25,Ongoing,No,1605011,0,,Active,House,Mother,No,26750.0,Amit Iyer,43,M,Savings,734,Corporate,Bangalore
+P2P Lending,C1458,L529,Education Loan,Overseas Study,2274749,7.7,60,2021-03-18,2026-02-20,Closed,No,0,0,,Closed,None,Husband,No,37912.0,Meera Nair,46,F,Current,737,SME,Kolkata
+P2P Lending,C99,L653,Business Loan,Startup Funding,3073995,13.4,96,2020-02-28,2028-01-17,Ongoing,No,3073995,2,,Active,Factory,Mother,Yes,32021.0,Anjali Kumar,32,M,Current,748,Retail,Gurugram
+P2P Lending,C1217,L863,Personal Loan,Medical Expenses,1584860,11.0,48,2021-11-26,2025-11-05,Ongoing,No,1584860,2,,Active,None,Wife,No,33018.0,Rahul Singh,39,F,Current,795,SME,Chennai
+P2P Lending,C461,L1294,Home Loan,Renovation,3619650,14.9,48,2020-03-01,2024-02-09,Ongoing,No,3619650,1,,Active,House,Father,No,75409.0,Anita Sharma,44,M,Current,664,SME,Mumbai
+P2P Lending,C530,L1733,Education Loan,Higher Education,4232025,7.0,24,2019-04-06,2021-03-26,Ongoing,No,4232025,5,,Active,None,Mother,Yes,176334.0,Deepak Desai,32,F,Savings,796,Corporate,Chennai
+P2P Lending,C503,L615,Home Loan,Residential Property,2776563,9.6,120,2024-11-04,2034-09-13,Closed,No,0,0,,Closed,House,Mother,Yes,23138.0,Rahul Bansal,56,M,Current,604,Retail,Jaipur
+P2P Lending,C1133,L1097,Business Loan,Business Expansion,1003035,8.5,96,2021-11-09,2029-09-28,Ongoing,No,1003035,0,,Active,Factory,Mother,Yes,10448.0,Shreya Verma,58,F,Savings,697,SME,Lucknow
+P2P Lending,C541,L1299,Car Loan,Vehicle Purchase,4628056,14.8,240,2023-09-26,2043-06-13,Ongoing,No,4628056,1,,Active,Car,Brother,No,19284.0,Rahul Bansal,50,M,Current,736,SME,Lucknow
+P2P Lending,C786,L1423,Car Loan,Vehicle Purchase,1673022,13.9,36,2022-09-25,2025-09-09,Ongoing,No,1673022,5,,Active,Car,Father,Yes,46473.0,Anjali Nair,45,M,Current,701,SME,Hyderabad
+P2P Lending,C542,L1131,Home Loan,Renovation,4836037,11.2,120,2022-11-26,2032-10-04,Ongoing,No,4836037,6,,Active,House,None,Yes,40300.0,Shreya Mehta,35,F,Savings,759,Corporate,Gurugram
+P2P Lending,C618,L685,Business Loan,Startup Funding,1008141,11.8,180,2021-01-10,2035-10-24,Defaulted,No,1008141,5,2024-09-22,Recovery,Factory,Brother,No,5601.0,Arjun Rao,37,M,Current,761,SME,Chennai
+P2P Lending,C260,L493,Car Loan,Vehicle Purchase,3319298,9.0,120,2022-04-25,2032-03-03,Ongoing,No,3319298,5,,Active,Car,None,Yes,27661.0,Sneha Verma,40,M,Savings,622,Corporate,Mumbai
+P2P Lending,C1833,L1735,Education Loan,Higher Education,3115568,14.1,120,2023-09-21,2033-07-30,Ongoing,No,3115568,2,,Active,None,Father,Yes,25963.0,Amit Patel,56,F,Savings,678,SME,Chennai
+P2P Lending,C1332,L1462,Personal Loan,Wedding Expenses,1660573,8.2,48,2022-06-04,2026-05-14,Ongoing,No,1660573,1,,Active,None,Wife,Yes,34595.0,Anjali Nair,53,M,Current,699,SME,Ahmedabad
+P2P Lending,C1942,L865,Home Loan,Renovation,2341218,8.0,36,2023-01-26,2026-01-10,Closed,No,0,0,,Closed,House,Mother,No,65034.0,Pooja Nair,41,M,Savings,611,Retail,Kolkata
+P2P Lending,C960,L1468,Personal Loan,Debt Consolidation,3690236,14.9,240,2022-12-28,2042-09-14,Ongoing,No,3690236,2,,Active,None,Wife,No,15376.0,Sunita Joshi,29,F,Savings,706,Corporate,Pune
+P2P Lending,C157,L459,Education Loan,Overseas Study,3461854,13.0,48,2021-09-18,2025-08-28,Ongoing,No,3461854,6,,Active,None,Brother,Yes,72122.0,Neha Verma,35,M,Current,705,Retail,Ahmedabad
+P2P Lending,C65,L956,Education Loan,Overseas Study,4167616,13.2,36,2025-11-08,2028-10-23,Closed,No,0,0,,Closed,None,None,Yes,115767.0,Shalini Nair,50,F,Current,647,SME,Kolkata
+P2P Lending,C1202,L896,Education Loan,Overseas Study,4075785,9.3,36,2022-09-24,2025-09-08,Ongoing,No,4075785,0,,Active,None,Mother,No,113216.0,Anjali Desai,47,M,Current,710,SME,Hyderabad
+P2P Lending,C1265,L1144,Car Loan,Vehicle Purchase,2800665,11.5,36,2019-06-17,2022-06-01,Ongoing,No,2800665,6,,Active,Car,Wife,No,77796.0,Megha Joshi,36,F,Savings,652,Retail,Kolkata
+P2P Lending,C1628,L540,Home Loan,Residential Property,4116848,11.0,48,2021-03-26,2025-03-05,Closed,No,0,0,,Closed,House,Father,Yes,85768.0,Rahul Bansal,32,F,Savings,647,Retail,Kolkata
+P2P Lending,C875,L503,Education Loan,Overseas Study,3363016,9.0,96,2024-03-21,2032-02-08,Ongoing,No,3363016,4,,Active,None,Wife,Yes,35031.0,Anjali Bansal,43,F,Savings,692,Corporate,Patna
+P2P Lending,C1652,L1271,Education Loan,Overseas Study,428275,12.8,24,2023-05-08,2025-04-27,Ongoing,No,428275,0,,Active,None,Father,Yes,17845.0,Megha Rao,25,F,Savings,795,SME,Gurugram
+P2P Lending,C694,L177,Education Loan,Overseas Study,893384,10.3,180,2022-04-18,2037-01-29,Ongoing,No,893384,4,,Active,None,Father,Yes,4963.0,Neha Malhotra,34,F,Current,770,Retail,Jaipur
+P2P Lending,C1044,L1624,Personal Loan,Medical Expenses,287543,13.5,240,2023-10-24,2043-07-11,Ongoing,No,287543,0,,Active,None,Wife,No,1198.0,Rahul Rao,44,M,Savings,644,Retail,Lucknow
+P2P Lending,C1971,L1365,Home Loan,Residential Property,4108347,9.1,96,2022-06-07,2030-04-26,Ongoing,No,4108347,1,,Active,House,Brother,No,42795.0,Megha Sharma,37,M,Current,607,Retail,Ahmedabad
+P2P Lending,C1941,L1340,Business Loan,Startup Funding,2226816,14.6,240,2020-01-24,2039-10-11,Ongoing,No,2226816,5,,Active,Factory,None,No,9278.0,Rahul Gupta,35,F,Savings,741,Corporate,Gurugram
+P2P Lending,C1242,L299,Business Loan,Startup Funding,4474600,8.0,96,2023-10-19,2031-09-07,Defaulted,Yes,4474600,0,2025-06-21,Recovery,Factory,Father,Yes,46610.0,Pooja Kapoor,47,F,Savings,688,Retail,Bangalore
+P2P Lending,C55,L1296,Education Loan,Overseas Study,3052002,13.0,240,2023-09-10,2043-05-28,Closed,No,0,0,,Closed,None,Husband,No,12717.0,Anita Verma,31,M,Current,703,SME,Chennai
+P2P Lending,C1136,L1706,Business Loan,Startup Funding,3768247,9.5,24,2023-12-26,2025-12-15,Ongoing,No,3768247,4,,Active,Factory,Father,No,157010.0,Sunita Rathi,43,F,Savings,729,Retail,Chennai
+P2P Lending,C1782,L1130,Car Loan,Vehicle Purchase,2540984,8.4,240,2021-08-20,2041-05-07,Ongoing,No,2540984,1,,Active,Car,None,No,10587.0,Meera Rao,33,F,Savings,602,Retail,Chennai
+P2P Lending,C1600,L1577,Business Loan,Startup Funding,2482558,8.3,240,2024-12-30,2044-09-16,Closed,No,0,0,,Closed,Factory,Husband,No,10344.0,Shreya Joshi,30,M,Savings,677,SME,Hyderabad
+P2P Lending,C912,L1674,Business Loan,Startup Funding,3671920,15.0,96,2019-09-13,2027-08-02,Ongoing,No,3671920,2,,Active,Factory,Husband,Yes,38249.0,Vikram Bansal,42,M,Savings,671,Retail,Bangalore
+P2P Lending,C1957,L150,Personal Loan,Medical Expenses,4822925,8.4,96,2023-01-31,2030-12-20,Ongoing,No,4822925,6,,Active,None,Father,Yes,50239.0,Sunita Gupta,38,F,Savings,791,SME,Delhi
+P2P Lending,C1311,L766,Personal Loan,Medical Expenses,1608227,9.1,60,2020-11-26,2025-10-31,Ongoing,No,1608227,5,,Active,None,Mother,Yes,26804.0,Rahul Kumar,26,M,Current,682,Corporate,Lucknow
+P2P Lending,C959,L1497,Business Loan,Startup Funding,3971263,7.6,120,2020-11-20,2030-09-29,Defaulted,Yes,3971263,3,2025-02-06,Recovery,Factory,Mother,Yes,33094.0,Megha Rathi,40,F,Savings,800,Retail,Jaipur
+P2P Lending,C1631,L1229,Car Loan,Vehicle Purchase,2033443,10.2,96,2023-08-16,2031-07-05,Ongoing,No,2033443,3,,Active,Car,Husband,No,21182.0,Megha Singh,26,M,Current,795,SME,Bangalore
+P2P Lending,C1802,L1429,Car Loan,Vehicle Purchase,4041287,15.0,120,2023-12-16,2033-10-24,Ongoing,No,4041287,2,,Active,Car,Husband,No,33677.0,Amit Verma,42,F,Savings,606,Retail,Bangalore
+P2P Lending,C139,L942,Home Loan,Residential Property,1037029,8.8,24,2025-10-29,2027-10-19,Ongoing,No,1037029,2,,Active,House,Mother,No,43210.0,Rohit Desai,38,M,Current,627,SME,Pune
+P2P Lending,C1913,L18,Personal Loan,Debt Consolidation,1784922,11.4,48,2025-12-20,2029-11-29,Closed,No,0,0,,Closed,None,Husband,No,37186.0,Kunal Rao,35,M,Savings,657,Retail,Ahmedabad
+P2P Lending,C1416,L601,Home Loan,Renovation,1825678,14.2,96,2025-03-13,2033-01-30,Defaulted,Yes,1825678,1,2025-11-02,Recovery,House,Mother,No,19017.0,Pooja Desai,42,M,Current,724,Retail,Ahmedabad
+P2P Lending,C1223,L1953,Home Loan,Renovation,2224425,13.6,36,2020-10-13,2023-09-28,Ongoing,No,2224425,1,,Active,House,Wife,Yes,61790.0,Neha Rao,43,M,Current,763,Retail,Pune
+P2P Lending,C218,L1031,Business Loan,Startup Funding,3402539,9.0,240,2023-08-19,2043-05-06,Closed,No,0,0,,Closed,Factory,None,Yes,14177.0,Shalini Rathi,58,M,Savings,736,SME,Gurugram
+P2P Lending,C192,L1253,Education Loan,Overseas Study,3664330,11.0,96,2024-03-14,2032-02-01,Ongoing,No,3664330,4,,Active,None,Brother,Yes,38170.0,Anjali Gupta,52,M,Savings,634,Retail,Ahmedabad
+P2P Lending,C594,L633,Business Loan,Business Expansion,3993023,7.6,120,2022-06-09,2032-04-17,Ongoing,No,3993023,1,,Active,Factory,Brother,No,33275.0,Anita Joshi,43,F,Savings,600,Corporate,Hyderabad
+P2P Lending,C1303,L405,Business Loan,Working Capital,4112668,12.6,240,2019-06-05,2039-02-20,Ongoing,No,4112668,0,,Active,Factory,Father,No,17136.0,Megha Nair,24,F,Current,626,SME,Bangalore
+P2P Lending,C1783,L65,Home Loan,Renovation,2541655,8.3,60,2025-03-27,2030-03-01,Ongoing,No,2541655,1,,Active,House,Brother,No,42361.0,Vikram Sharma,30,M,Savings,622,Corporate,Patna
+P2P Lending,C97,L1428,Education Loan,Higher Education,530079,9.6,96,2020-06-14,2028-05-03,Ongoing,No,530079,1,,Active,None,Mother,Yes,5522.0,Pooja Joshi,59,F,Current,682,SME,Gurugram
+P2P Lending,C643,L169,Car Loan,Vehicle Purchase,3737817,8.3,240,2021-05-31,2041-02-15,Defaulted,Yes,3737817,4,2026-05-23,Recovery,Car,Wife,Yes,15574.0,Suresh Singh,32,M,Current,757,Corporate,Gurugram
+P2P Lending,C967,L818,Education Loan,Higher Education,2556958,9.7,48,2023-02-03,2027-01-13,Ongoing,No,2556958,1,,Active,None,Mother,No,53270.0,Suresh Patel,51,M,Current,721,Corporate,Jaipur
+P2P Lending,C302,L1837,Business Loan,Working Capital,329681,14.3,96,2019-08-02,2027-06-21,Ongoing,No,329681,4,,Active,Factory,None,No,3434.0,Anita Iyer,39,F,Savings,766,SME,Kolkata
+P2P Lending,C1554,L1163,Business Loan,Business Expansion,923566,10.1,120,2021-05-19,2031-03-28,Ongoing,No,923566,6,,Active,Factory,Wife,No,7696.0,Arjun Sharma,26,F,Savings,763,Corporate,Bangalore
+P2P Lending,C246,L164,Personal Loan,Debt Consolidation,1849690,11.1,96,2021-01-31,2028-12-20,Closed,No,0,0,,Closed,None,Wife,Yes,19268.0,Rajesh Desai,43,F,Savings,764,Corporate,Hyderabad
+P2P Lending,C153,L1874,Business Loan,Business Expansion,3597716,10.2,24,2022-07-09,2024-06-28,Closed,No,0,0,,Closed,Factory,Brother,Yes,149905.0,Kunal Verma,45,M,Savings,739,Retail,Hyderabad
+P2P Lending,C1432,L625,Personal Loan,Debt Consolidation,1588834,12.1,96,2020-04-17,2028-03-06,Closed,No,0,0,,Closed,None,Wife,Yes,16550.0,Shreya Mehta,42,M,Current,756,Retail,Ahmedabad
+P2P Lending,C209,L1978,Personal Loan,Medical Expenses,732574,12.6,48,2024-06-05,2028-05-15,Ongoing,No,732574,1,,Active,None,None,Yes,15262.0,Anita Rathi,27,F,Current,638,Retail,Ahmedabad
+P2P Lending,C871,L1344,Business Loan,Working Capital,3605495,12.5,48,2019-08-12,2023-07-22,Ongoing,No,3605495,6,,Active,Factory,Brother,Yes,75114.0,Anjali Mehta,48,M,Savings,763,Corporate,Kolkata
+P2P Lending,C444,L1724,Home Loan,Residential Property,508848,11.1,36,2020-06-12,2023-05-28,Ongoing,No,508848,1,,Active,House,Father,No,14135.0,Rajesh Mehta,59,M,Current,723,Retail,Bangalore
+P2P Lending,C1502,L1825,Car Loan,Vehicle Purchase,473867,11.5,120,2022-12-01,2032-10-09,Ongoing,No,473867,0,,Active,Car,None,Yes,3949.0,Sunita Joshi,35,F,Current,655,Retail,Lucknow
+P2P Lending,C98,L1946,Education Loan,Higher Education,4369249,11.0,96,2019-12-03,2027-10-22,Defaulted,Yes,4369249,6,2026-03-04,Recovery,None,Husband,No,45513.0,Rohit Bansal,38,M,Current,770,Corporate,Lucknow
+P2P Lending,C1220,L1485,Business Loan,Business Expansion,1502940,13.1,60,2020-03-23,2025-02-25,Closed,No,0,0,,Closed,Factory,Mother,No,25049.0,Rajesh Mehta,54,F,Savings,748,SME,Pune
+P2P Lending,C229,L263,Personal Loan,Medical Expenses,1849718,13.5,96,2025-01-09,2032-11-28,Ongoing,No,1849718,2,,Active,None,Wife,Yes,19268.0,Anjali Iyer,51,M,Current,725,SME,Chennai
+P2P Lending,C158,L366,Personal Loan,Wedding Expenses,4967679,11.9,24,2021-12-07,2023-11-27,Defaulted,Yes,4967679,2,2025-06-06,Recovery,None,Husband,No,206987.0,Anjali Patel,60,F,Current,635,Corporate,Kolkata
+P2P Lending,C328,L715,Business Loan,Business Expansion,2314042,13.2,36,2025-05-14,2028-04-28,Ongoing,No,2314042,2,,Active,Factory,Wife,No,64279.0,Shalini Iyer,22,M,Savings,748,Retail,Mumbai
+P2P Lending,C880,L1159,Business Loan,Working Capital,3284890,8.7,240,2021-12-31,2041-09-17,Ongoing,No,3284890,3,,Active,Factory,Brother,No,13687.0,Shalini Sharma,39,F,Savings,746,SME,Patna
+P2P Lending,C1450,L404,Business Loan,Startup Funding,1705891,13.3,36,2020-06-25,2023-06-10,Ongoing,No,1705891,4,,Active,Factory,Husband,No,47386.0,Sunita Verma,37,F,Savings,728,Corporate,Mumbai
+P2P Lending,C488,L1619,Home Loan,Renovation,3425461,9.2,60,2025-12-07,2030-11-11,Ongoing,No,3425461,5,,Active,House,Husband,No,57091.0,Kunal Desai,46,F,Current,769,SME,Kolkata
+P2P Lending,C738,L1721,Car Loan,Vehicle Purchase,2220160,9.4,96,2019-06-11,2027-04-30,Closed,No,0,0,,Closed,Car,Father,No,23127.0,Amit Kumar,37,F,Savings,783,SME,Chennai
+P2P Lending,C1400,L878,Personal Loan,Medical Expenses,2617702,8.5,60,2022-01-05,2026-12-10,Ongoing,No,2617702,0,,Active,None,Father,No,43628.0,Rajesh Malhotra,30,M,Savings,708,SME,Delhi
+P2P Lending,C952,L1765,Business Loan,Working Capital,4560340,13.7,24,2025-08-13,2027-08-03,Ongoing,No,4560340,6,,Active,Factory,Husband,No,190014.0,Amit Bansal,57,F,Savings,657,Retail,Kolkata
+P2P Lending,C1689,L1972,Home Loan,Renovation,1113972,8.9,240,2021-09-14,2041-06-01,Ongoing,No,1113972,0,,Active,House,Wife,No,4642.0,Deepak Gupta,35,M,Savings,790,SME,Ahmedabad
+P2P Lending,C1618,L1885,Business Loan,Working Capital,2817992,12.1,24,2019-11-19,2021-11-08,Ongoing,No,2817992,4,,Active,Factory,Wife,Yes,117416.0,Arjun Desai,44,F,Savings,703,SME,Mumbai
+P2P Lending,C1535,L837,Home Loan,Renovation,1789329,8.7,120,2019-06-02,2029-04-10,Defaulted,Yes,1789329,5,2025-11-30,Recovery,House,Brother,Yes,14911.0,Pooja Rathi,47,F,Current,623,SME,Jaipur
+P2P Lending,C151,L993,Personal Loan,Medical Expenses,3951133,14.8,60,2024-08-15,2029-07-20,Ongoing,No,3951133,2,,Active,None,Wife,No,65852.0,Anjali Patel,52,F,Current,663,Retail,Lucknow
+P2P Lending,C1755,L1756,Car Loan,Vehicle Purchase,613020,14.6,96,2025-03-23,2033-02-09,Closed,No,0,0,,Closed,Car,Mother,No,6386.0,Shreya Gupta,50,M,Savings,710,Corporate,Lucknow
+P2P Lending,C872,L625,Car Loan,Vehicle Purchase,4347643,14.3,24,2025-08-15,2027-08-05,Closed,No,0,0,,Closed,Car,None,Yes,181152.0,Shreya Kapoor,31,F,Current,706,Corporate,Kolkata
+P2P Lending,C302,L676,Car Loan,Vehicle Purchase,2839038,7.8,240,2025-12-08,2045-08-25,Ongoing,No,2839038,0,,Active,Car,None,No,11829.0,Shalini Sharma,56,F,Current,701,SME,Jaipur
+P2P Lending,C837,L1879,Personal Loan,Medical Expenses,534402,13.7,36,2020-06-20,2023-06-05,Ongoing,No,534402,4,,Active,None,Brother,Yes,14844.0,Rajesh Rathi,34,M,Current,712,SME,Delhi
+P2P Lending,C408,L1023,Home Loan,Residential Property,2538553,12.4,96,2023-03-07,2031-01-24,Ongoing,No,2538553,2,,Active,House,Wife,No,26443.0,Neha Patel,56,F,Savings,668,Corporate,Hyderabad
+P2P Lending,C614,L1948,Business Loan,Business Expansion,4388140,13.5,96,2024-05-12,2032-03-31,Ongoing,No,4388140,5,,Active,Factory,Wife,No,45710.0,Megha Kumar,38,F,Current,726,Retail,Chennai
+P2P Lending,C1702,L647,Car Loan,Vehicle Purchase,1425520,11.4,96,2019-11-09,2027-09-28,Ongoing,No,1425520,2,,Active,Car,Mother,Yes,14849.0,Rahul Desai,37,F,Savings,699,Retail,Jaipur
+P2P Lending,C1883,L1354,Car Loan,Vehicle Purchase,2938539,13.8,36,2023-10-20,2026-10-04,Ongoing,No,2938539,3,,Active,Car,Wife,Yes,81626.0,Shreya Mehta,51,F,Savings,770,Retail,Chennai
+P2P Lending,C863,L308,Home Loan,Renovation,1258974,9.1,180,2021-09-22,2036-07-05,Defaulted,Yes,1258974,5,2025-07-20,Recovery,House,Wife,No,6994.0,Anjali Singh,53,M,Savings,613,Corporate,Ahmedabad
+P2P Lending,C894,L1790,Car Loan,Vehicle Purchase,3361070,11.8,60,2024-04-13,2029-03-18,Closed,No,0,0,,Closed,Car,Mother,Yes,56018.0,Rahul Iyer,45,F,Savings,769,Corporate,Hyderabad
+P2P Lending,C843,L280,Home Loan,Residential Property,2932831,10.6,180,2024-12-08,2039-09-21,Defaulted,Yes,2932831,6,2025-02-05,Recovery,House,Mother,Yes,16294.0,Rajesh Verma,31,F,Savings,637,Corporate,Delhi
+P2P Lending,C975,L1418,Car Loan,Vehicle Purchase,3078059,13.7,60,2023-06-26,2028-05-30,Ongoing,No,3078059,0,,Active,Car,Wife,Yes,51301.0,Deepak Sharma,29,M,Savings,684,Corporate,Bangalore
+P2P Lending,C1050,L110,Education Loan,Higher Education,2633385,14.3,120,2023-10-30,2033-09-07,Ongoing,No,2633385,3,,Active,None,Mother,Yes,21945.0,Shreya Nair,48,M,Current,612,Corporate,Mumbai
+P2P Lending,C748,L30,Business Loan,Working Capital,2378524,10.5,60,2024-09-15,2029-08-20,Ongoing,No,2378524,1,,Active,Factory,Wife,Yes,39642.0,Anita Patel,27,M,Savings,623,Retail,Mumbai
+P2P Lending,C1673,L96,Business Loan,Business Expansion,3099875,8.8,180,2024-06-20,2039-04-03,Defaulted,Yes,3099875,2,2024-09-13,Recovery,Factory,None,No,17222.0,Rajesh Joshi,39,M,Savings,675,Retail,Kolkata
+P2P Lending,C11,L767,Education Loan,Overseas Study,501487,8.5,96,2021-08-22,2029-07-11,Ongoing,No,501487,0,,Active,None,Brother,No,5224.0,Sneha Singh,31,M,Savings,779,Retail,Chennai
+P2P Lending,C483,L1786,Car Loan,Vehicle Purchase,700754,7.9,24,2022-08-20,2024-08-09,Ongoing,No,700754,5,,Active,Car,None,Yes,29198.0,Shreya Sharma,42,F,Savings,670,SME,Hyderabad
+P2P Lending,C401,L447,Personal Loan,Wedding Expenses,4781372,10.3,96,2025-03-21,2033-02-07,Ongoing,No,4781372,4,,Active,None,Wife,Yes,49806.0,Rohit Kapoor,38,F,Current,609,Retail,Lucknow
+P2P Lending,C530,L1709,Personal Loan,Wedding Expenses,805638,11.7,48,2021-04-25,2025-04-04,Ongoing,No,805638,4,,Active,None,None,No,16784.0,Sneha Nair,39,F,Savings,755,SME,Lucknow
+P2P Lending,C1127,L704,Business Loan,Business Expansion,4808451,12.4,120,2021-02-22,2031-01-01,Ongoing,No,4808451,2,,Active,Factory,None,Yes,40070.0,Sunita Verma,39,F,Savings,608,SME,Patna
+P2P Lending,C461,L1043,Business Loan,Business Expansion,1505901,11.6,36,2025-11-21,2028-11-05,Ongoing,No,1505901,5,,Active,Factory,Father,No,41831.0,Sneha Rathi,54,F,Savings,723,Retail,Pune
+P2P Lending,C191,L427,Home Loan,Residential Property,1782080,8.2,180,2025-03-18,2039-12-30,Closed,No,0,0,,Closed,House,Father,No,9900.0,Sneha Desai,33,M,Current,699,SME,Kolkata
+P2P Lending,C438,L791,Personal Loan,Wedding Expenses,4847420,14.6,24,2020-08-04,2022-07-25,Ongoing,No,4847420,1,,Active,None,Wife,No,201976.0,Suresh Verma,23,F,Savings,625,Retail,Jaipur
+P2P Lending,C102,L878,Car Loan,Vehicle Purchase,3011370,12.9,96,2019-03-13,2027-01-30,Ongoing,No,3011370,2,,Active,Car,Brother,Yes,31368.0,Rahul Malhotra,32,F,Current,785,Retail,Jaipur
+P2P Lending,C914,L1101,Business Loan,Business Expansion,782599,9.4,48,2025-12-07,2029-11-16,Ongoing,No,782599,4,,Active,Factory,Father,Yes,16304.0,Rohit Gupta,32,F,Current,709,Corporate,Pune
+P2P Lending,C534,L522,Business Loan,Working Capital,287676,7.3,180,2024-08-03,2039-05-17,Ongoing,No,287676,0,,Active,Factory,Father,No,1598.0,Shreya Singh,29,M,Savings,700,Retail,Ahmedabad
+P2P Lending,C1378,L27,Education Loan,Higher Education,3349775,13.2,24,2024-03-26,2026-03-16,Closed,No,0,0,,Closed,None,Husband,Yes,139574.0,Meera Kumar,51,F,Current,649,Retail,Pune
+P2P Lending,C442,L601,Education Loan,Overseas Study,3445306,14.2,24,2025-08-10,2027-07-31,Ongoing,No,3445306,1,,Active,None,Mother,No,143554.0,Anita Iyer,34,M,Savings,636,Retail,Jaipur
+P2P Lending,C1465,L1841,Education Loan,Overseas Study,401495,11.1,180,2022-02-08,2036-11-21,Ongoing,No,401495,6,,Active,None,Brother,Yes,2231.0,Pooja Rao,46,M,Savings,682,SME,Jaipur
+P2P Lending,C1270,L1656,Education Loan,Higher Education,615980,8.3,180,2022-12-31,2037-10-13,Ongoing,No,615980,0,,Active,None,Brother,No,3422.0,Anita Desai,34,F,Savings,716,Retail,Gurugram
+P2P Lending,C1466,L646,Car Loan,Vehicle Purchase,1105439,14.8,24,2021-02-18,2023-02-08,Ongoing,No,1105439,3,,Active,Car,Wife,No,46060.0,Meera Bansal,41,F,Savings,735,Retail,Mumbai
+P2P Lending,C594,L1737,Car Loan,Vehicle Purchase,2550596,12.2,120,2019-02-19,2028-12-28,Ongoing,No,2550596,5,,Active,Car,None,No,21255.0,Anjali Patel,45,M,Savings,793,SME,Ahmedabad
+P2P Lending,C155,L993,Education Loan,Higher Education,2822813,10.2,60,2023-05-20,2028-04-23,Ongoing,No,2822813,3,,Active,None,Husband,Yes,47047.0,Anjali Iyer,32,F,Current,641,Corporate,Chennai
+P2P Lending,C1082,L1984,Personal Loan,Debt Consolidation,1401506,14.0,120,2020-06-16,2030-04-25,Defaulted,Yes,1401506,3,2025-04-30,Recovery,None,Brother,Yes,11679.0,Kunal Desai,23,M,Current,634,Corporate,Hyderabad
+P2P Lending,C964,L906,Education Loan,Higher Education,3813680,9.8,180,2019-03-01,2033-12-12,Closed,No,0,0,,Closed,None,Father,Yes,21187.0,Suresh Singh,45,M,Savings,675,Retail,Gurugram
+P2P Lending,C1169,L1075,Education Loan,Overseas Study,243105,9.3,240,2019-12-01,2039-08-18,Ongoing,No,243105,3,,Active,None,Wife,Yes,1013.0,Meera Patel,46,F,Current,602,SME,Bangalore
+P2P Lending,C1789,L23,Business Loan,Startup Funding,4520380,7.7,36,2020-10-15,2023-09-30,Closed,No,0,0,,Closed,Factory,Father,No,125566.0,Anita Malhotra,55,F,Savings,711,Retail,Jaipur
+P2P Lending,C490,L1462,Education Loan,Higher Education,1948348,14.8,36,2021-11-17,2024-11-01,Closed,No,0,0,,Closed,None,None,Yes,54121.0,Shreya Joshi,21,F,Savings,614,Retail,Kolkata
+P2P Lending,C487,L444,Home Loan,Residential Property,3409874,9.0,96,2025-07-02,2033-05-21,Closed,No,0,0,,Closed,House,None,No,35520.0,Megha Kapoor,54,M,Current,698,Corporate,Ahmedabad
+P2P Lending,C1795,L1434,Business Loan,Startup Funding,1875473,13.1,60,2024-03-04,2029-02-06,Closed,No,0,0,,Closed,Factory,Husband,No,31258.0,Rajesh Singh,56,M,Savings,702,Corporate,Pune
+P2P Lending,C723,L786,Education Loan,Overseas Study,1295525,8.5,48,2019-08-13,2023-07-23,Ongoing,No,1295525,3,,Active,None,Brother,Yes,26990.0,Rohit Nair,31,F,Current,797,Corporate,Ahmedabad
+P2P Lending,C1031,L262,Education Loan,Overseas Study,1596450,8.1,120,2024-05-26,2034-04-04,Ongoing,No,1596450,1,,Active,None,None,No,13304.0,Anita Gupta,23,F,Savings,606,Retail,Hyderabad
+P2P Lending,C248,L1857,Car Loan,Vehicle Purchase,3097158,11.3,120,2024-05-08,2034-03-17,Ongoing,No,3097158,3,,Active,Car,Mother,Yes,25810.0,Shreya Joshi,22,F,Current,757,Retail,Delhi
+P2P Lending,C1645,L1938,Car Loan,Vehicle Purchase,941762,10.2,48,2021-04-11,2025-03-21,Ongoing,No,941762,2,,Active,Car,Wife,Yes,19620.0,Arjun Bansal,34,F,Current,615,Corporate,Mumbai
+P2P Lending,C892,L92,Education Loan,Higher Education,876563,12.9,180,2025-04-12,2040-01-24,Ongoing,No,876563,1,,Active,None,Father,No,4870.0,Deepak Desai,54,F,Savings,697,SME,Delhi
+P2P Lending,C599,L474,Car Loan,Vehicle Purchase,2164268,11.4,240,2023-06-04,2043-02-19,Closed,No,0,0,,Closed,Car,Mother,No,9018.0,Rahul Nair,39,M,Savings,787,Retail,Delhi
+P2P Lending,C869,L1970,Car Loan,Vehicle Purchase,2563522,10.0,60,2024-09-04,2029-08-09,Ongoing,No,2563522,5,,Active,Car,Wife,Yes,42725.0,Neha Mehta,35,M,Current,630,SME,Gurugram
+P2P Lending,C1023,L1254,Education Loan,Overseas Study,4320892,14.7,180,2022-06-06,2037-03-19,Ongoing,No,4320892,3,,Active,None,Wife,No,24005.0,Rajesh Nair,57,F,Current,633,Retail,Pune
+P2P Lending,C1936,L863,Business Loan,Business Expansion,245083,12.6,180,2024-10-02,2039-07-16,Ongoing,No,245083,2,,Active,Factory,None,Yes,1362.0,Neha Desai,34,M,Savings,646,Retail,Jaipur
+P2P Lending,C611,L479,Personal Loan,Debt Consolidation,530429,14.5,240,2024-09-16,2044-06-03,Ongoing,No,530429,4,,Active,None,Father,Yes,2210.0,Deepak Bansal,21,F,Savings,766,Corporate,Mumbai
+P2P Lending,C1898,L1745,Education Loan,Overseas Study,2770512,10.6,60,2024-03-30,2029-03-04,Ongoing,No,2770512,1,,Active,None,Wife,No,46175.0,Neha Mehta,56,M,Current,631,SME,Pune
+P2P Lending,C1236,L1943,Home Loan,Residential Property,3989325,11.0,120,2020-06-15,2030-04-24,Closed,No,0,0,,Closed,House,Husband,Yes,33244.0,Rohit Mehta,58,M,Current,619,Retail,Kolkata
+P2P Lending,C921,L416,Car Loan,Vehicle Purchase,4098086,12.1,240,2025-10-23,2045-07-10,Ongoing,No,4098086,6,,Active,Car,Mother,Yes,17075.0,Sneha Mehta,52,F,Savings,763,Retail,Patna
+P2P Lending,C788,L1844,Car Loan,Vehicle Purchase,2753289,7.8,60,2023-01-09,2027-12-14,Ongoing,No,2753289,5,,Active,Car,Wife,Yes,45888.0,Neha Mehta,52,M,Savings,672,Corporate,Chennai
+P2P Lending,C1457,L1949,Personal Loan,Medical Expenses,4209738,10.1,36,2020-01-27,2023-01-11,Ongoing,No,4209738,4,,Active,None,Father,Yes,116937.0,Pooja Rao,36,F,Current,707,SME,Mumbai
+P2P Lending,C629,L948,Business Loan,Working Capital,2953628,14.4,96,2024-09-08,2032-07-28,Ongoing,No,2953628,3,,Active,Factory,Mother,No,30767.0,Amit Bansal,48,M,Savings,624,Retail,Jaipur
+P2P Lending,C1780,L1598,Personal Loan,Debt Consolidation,522128,12.4,60,2020-04-03,2025-03-08,Ongoing,No,522128,1,,Active,None,Wife,Yes,8702.0,Anita Singh,24,M,Savings,621,Corporate,Chennai
+P2P Lending,C15,L1489,Personal Loan,Wedding Expenses,1850926,9.6,24,2022-01-16,2024-01-06,Ongoing,No,1850926,1,,Active,None,Husband,No,77122.0,Rohit Kumar,52,M,Current,653,Retail,Chennai
+P2P Lending,C617,L1738,Car Loan,Vehicle Purchase,742857,11.9,24,2025-08-04,2027-07-25,Ongoing,No,742857,3,,Active,Car,None,No,30952.0,Sunita Malhotra,25,F,Current,800,SME,Ahmedabad
+P2P Lending,C109,L765,Education Loan,Overseas Study,938230,13.0,240,2020-08-27,2040-05-14,Ongoing,No,938230,4,,Active,None,None,Yes,3909.0,Vikram Joshi,36,M,Savings,734,Corporate,Bangalore
+P2P Lending,C1982,L519,Home Loan,Renovation,2896454,7.0,60,2023-02-16,2028-01-21,Ongoing,No,2896454,6,,Active,House,Wife,Yes,48274.0,Anjali Rathi,40,M,Current,776,Retail,Pune
+P2P Lending,C992,L635,Car Loan,Vehicle Purchase,4940053,9.0,24,2021-11-05,2023-10-26,Closed,No,0,0,,Closed,Car,Husband,No,205836.0,Rajesh Kapoor,31,M,Current,783,Corporate,Bangalore
+P2P Lending,C1768,L1705,Education Loan,Overseas Study,877534,12.1,240,2024-11-03,2044-07-21,Ongoing,No,877534,1,,Active,None,Father,Yes,3656.0,Anjali Bansal,26,M,Current,671,SME,Lucknow
+P2P Lending,C1139,L291,Business Loan,Startup Funding,1949851,10.9,180,2020-05-30,2035-03-13,Ongoing,No,1949851,0,,Active,Factory,None,No,10833.0,Sneha Sharma,42,M,Savings,798,Retail,Chennai
+P2P Lending,C372,L1971,Personal Loan,Wedding Expenses,4699383,13.4,60,2023-07-29,2028-07-02,Closed,No,0,0,,Closed,None,Husband,No,78323.0,Shalini Rathi,27,F,Current,615,Retail,Pune
+P2P Lending,C429,L483,Personal Loan,Wedding Expenses,1328858,11.8,60,2025-01-09,2029-12-14,Ongoing,No,1328858,5,,Active,None,Brother,Yes,22148.0,Anjali Malhotra,33,F,Current,644,SME,Patna
+P2P Lending,C928,L1744,Home Loan,Residential Property,1645276,10.7,96,2024-03-31,2032-02-18,Ongoing,No,1645276,0,,Active,House,None,Yes,17138.0,Rajesh Desai,41,M,Savings,752,Corporate,Delhi
+P2P Lending,C457,L84,Business Loan,Startup Funding,1537947,8.2,24,2021-02-24,2023-02-14,Ongoing,No,1537947,2,,Active,Factory,Mother,No,64081.0,Shalini Mehta,48,F,Savings,797,Retail,Ahmedabad
+P2P Lending,C390,L1345,Car Loan,Vehicle Purchase,1668132,13.5,60,2024-11-28,2029-11-02,Ongoing,No,1668132,5,,Active,Car,Husband,No,27802.0,Pooja Desai,31,M,Current,738,Corporate,Pune
+P2P Lending,C1949,L1091,Business Loan,Business Expansion,1242296,8.5,240,2023-10-06,2043-06-23,Ongoing,No,1242296,5,,Active,Factory,Wife,Yes,5176.0,Suresh Singh,57,F,Savings,663,SME,Patna
+P2P Lending,C1973,L209,Personal Loan,Debt Consolidation,4977582,9.6,36,2023-04-16,2026-03-31,Ongoing,No,4977582,4,,Active,None,Wife,Yes,138266.0,Megha Sharma,52,M,Current,728,Corporate,Jaipur
+P2P Lending,C1138,L1031,Personal Loan,Wedding Expenses,3550523,13.5,180,2024-12-14,2039-09-27,Ongoing,No,3550523,2,,Active,None,Brother,Yes,19725.0,Pooja Kumar,43,F,Savings,706,Corporate,Chennai
+P2P Lending,C1078,L1813,Personal Loan,Debt Consolidation,1783156,11.4,48,2021-08-25,2025-08-04,Ongoing,No,1783156,0,,Active,None,Brother,Yes,37149.0,Suresh Bansal,21,F,Current,640,Corporate,Kolkata
+P2P Lending,C338,L1130,Car Loan,Vehicle Purchase,4368967,9.5,60,2025-12-26,2030-11-30,Ongoing,No,4368967,4,,Active,Car,Mother,No,72816.0,Meera Rathi,39,F,Current,695,Corporate,Gurugram
+P2P Lending,C1751,L367,Home Loan,Renovation,4479832,11.8,120,2025-08-20,2035-06-29,Ongoing,No,4479832,4,,Active,House,Mother,No,37332.0,Suresh Kumar,27,M,Current,716,Corporate,Patna
+P2P Lending,C811,L941,Personal Loan,Medical Expenses,2656534,14.9,36,2022-08-24,2025-08-08,Ongoing,No,2656534,0,,Active,None,None,Yes,73793.0,Neha Mehta,39,M,Current,726,Corporate,Chennai
+P2P Lending,C785,L248,Personal Loan,Medical Expenses,4793943,11.2,120,2019-08-24,2029-07-02,Ongoing,No,4793943,5,,Active,None,None,No,39950.0,Arjun Iyer,60,M,Current,669,Retail,Mumbai
+P2P Lending,C1855,L177,Education Loan,Overseas Study,3285755,10.8,120,2025-08-29,2035-07-08,Ongoing,No,3285755,1,,Active,None,Husband,No,27381.0,Pooja Kumar,25,M,Current,746,SME,Kolkata
+P2P Lending,C845,L141,Car Loan,Vehicle Purchase,1263178,12.8,180,2024-06-06,2039-03-20,Closed,No,0,0,,Closed,Car,Brother,No,7018.0,Vikram Mehta,47,M,Savings,687,Retail,Lucknow
+P2P Lending,C636,L1613,Car Loan,Vehicle Purchase,4630807,14.1,60,2022-10-13,2027-09-17,Closed,No,0,0,,Closed,Car,Husband,Yes,77180.0,Anita Sharma,24,F,Savings,616,Corporate,Mumbai
+P2P Lending,C1532,L357,Education Loan,Higher Education,403498,8.3,180,2019-11-05,2034-08-18,Ongoing,No,403498,4,,Active,None,Brother,No,2242.0,Rajesh Sharma,28,F,Savings,744,Corporate,Mumbai
+P2P Lending,C254,L1371,Personal Loan,Wedding Expenses,511010,13.8,120,2023-04-23,2033-03-01,Ongoing,No,511010,1,,Active,None,Brother,Yes,4258.0,Kunal Kapoor,55,M,Savings,611,Corporate,Lucknow
+P2P Lending,C1916,L1450,Education Loan,Higher Education,3869261,10.8,48,2022-02-02,2026-01-12,Closed,No,0,0,,Closed,None,Brother,Yes,80610.0,Megha Mehta,21,M,Current,658,Retail,Ahmedabad
+P2P Lending,C491,L63,Home Loan,Residential Property,3922622,12.8,24,2020-06-18,2022-06-08,Ongoing,No,3922622,5,,Active,House,None,Yes,163443.0,Vikram Rao,58,M,Savings,631,SME,Pune
+P2P Lending,C1612,L664,Personal Loan,Debt Consolidation,1499725,14.0,24,2023-11-30,2025-11-19,Ongoing,No,1499725,2,,Active,None,Wife,No,62489.0,Sneha Desai,27,M,Current,668,SME,Ahmedabad
+P2P Lending,C1845,L903,Education Loan,Overseas Study,208419,7.5,96,2023-05-09,2031-03-28,Ongoing,No,208419,5,,Active,None,Wife,Yes,2171.0,Pooja Kumar,29,M,Savings,728,Retail,Bangalore
+P2P Lending,C1943,L867,Personal Loan,Medical Expenses,1952429,12.9,240,2020-04-19,2040-01-05,Ongoing,No,1952429,3,,Active,None,Mother,Yes,8135.0,Meera Joshi,48,F,Current,685,SME,Hyderabad
+P2P Lending,C587,L1075,Home Loan,Residential Property,1563093,10.1,48,2019-11-25,2023-11-04,Ongoing,No,1563093,4,,Active,House,Father,Yes,32564.0,Amit Rao,40,F,Savings,745,Retail,Bangalore
+P2P Lending,C1824,L1518,Education Loan,Higher Education,2666460,14.5,96,2021-12-09,2029-10-28,Ongoing,No,2666460,1,,Active,None,Wife,No,27776.0,Anita Bansal,56,F,Current,799,SME,Delhi
+P2P Lending,C80,L1960,Personal Loan,Debt Consolidation,4890903,10.4,24,2021-03-30,2023-03-20,Defaulted,Yes,4890903,1,2026-01-01,Recovery,None,None,Yes,203788.0,Rajesh Nair,55,F,Current,673,SME,Ahmedabad
+P2P Lending,C424,L1707,Home Loan,Residential Property,2662673,10.1,120,2023-08-21,2033-06-29,Ongoing,No,2662673,3,,Active,House,None,Yes,22189.0,Anita Joshi,49,M,Savings,780,SME,Gurugram
+P2P Lending,C390,L722,Education Loan,Overseas Study,3146691,13.3,96,2022-01-29,2029-12-18,Ongoing,No,3146691,3,,Active,None,Mother,No,32778.0,Amit Mehta,59,F,Current,758,Retail,Gurugram
+P2P Lending,C1326,L1082,Education Loan,Overseas Study,670728,10.9,48,2023-10-14,2027-09-23,Closed,No,0,0,,Closed,None,Husband,Yes,13974.0,Amit Kapoor,26,F,Current,641,Retail,Chennai
+P2P Lending,C1720,L167,Education Loan,Overseas Study,4410409,9.2,120,2024-08-18,2034-06-27,Defaulted,Yes,4410409,0,2026-03-03,Recovery,None,Wife,Yes,36753.0,Neha Verma,29,M,Savings,792,Corporate,Chennai
+P2P Lending,C1989,L1121,Education Loan,Overseas Study,3726516,11.1,48,2023-07-22,2027-07-01,Ongoing,No,3726516,6,,Active,None,Mother,Yes,77636.0,Pooja Rathi,50,M,Savings,793,SME,Pune
+P2P Lending,C1424,L932,Education Loan,Overseas Study,3652586,9.9,120,2024-01-02,2033-11-10,Defaulted,Yes,3652586,2,2024-06-13,Recovery,None,Father,No,30438.0,Rohit Gupta,53,M,Current,751,SME,Gurugram
+P2P Lending,C1100,L1475,Personal Loan,Wedding Expenses,2844181,8.1,96,2023-01-09,2030-11-28,Ongoing,No,2844181,1,,Active,None,Mother,No,29627.0,Sneha Singh,38,M,Current,759,Retail,Gurugram
+P2P Lending,C184,L1470,Home Loan,Residential Property,3839682,15.0,120,2025-09-09,2035-07-19,Defaulted,No,3839682,6,2025-01-09,Recovery,House,Brother,Yes,31997.0,Rajesh Patel,32,M,Current,649,Corporate,Gurugram
+P2P Lending,C1305,L1554,Car Loan,Vehicle Purchase,561528,11.7,60,2020-07-13,2025-06-17,Ongoing,No,561528,3,,Active,Car,Husband,Yes,9359.0,Arjun Verma,50,F,Savings,740,Retail,Gurugram
+P2P Lending,C996,L1999,Home Loan,Residential Property,2821465,10.8,48,2022-04-06,2026-03-16,Ongoing,No,2821465,0,,Active,House,Mother,Yes,58781.0,Megha Mehta,47,M,Current,764,SME,Pune
+P2P Lending,C453,L154,Personal Loan,Wedding Expenses,2098513,9.8,240,2021-01-01,2040-09-18,Closed,No,0,0,,Closed,None,Husband,Yes,8744.0,Anita Iyer,41,M,Savings,601,SME,Ahmedabad
+P2P Lending,C164,L1112,Car Loan,Vehicle Purchase,1472758,11.5,36,2025-06-15,2028-05-30,Ongoing,No,1472758,5,,Active,Car,Wife,Yes,40910.0,Anita Nair,35,F,Savings,660,SME,Chennai
+P2P Lending,C1997,L1337,Personal Loan,Debt Consolidation,3545369,11.9,24,2022-09-13,2024-09-02,Closed,No,0,0,,Closed,None,Brother,No,147724.0,Deepak Gupta,54,M,Savings,603,Retail,Patna
+P2P Lending,C222,L1920,Home Loan,Renovation,1382366,7.4,96,2020-05-30,2028-04-18,Closed,No,0,0,,Closed,House,Wife,No,14400.0,Arjun Rao,44,M,Savings,774,Retail,Lucknow
+P2P Lending,C861,L1166,Home Loan,Residential Property,749841,9.0,48,2024-04-27,2028-04-06,Defaulted,No,749841,6,2026-03-27,Recovery,House,Brother,Yes,15622.0,Rahul Rathi,29,F,Current,661,Corporate,Kolkata
+P2P Lending,C1567,L271,Home Loan,Residential Property,1374143,10.7,36,2024-02-23,2027-02-07,Ongoing,No,1374143,0,,Active,House,Brother,Yes,38171.0,Shalini Verma,50,F,Savings,708,Retail,Ahmedabad
+P2P Lending,C1863,L594,Car Loan,Vehicle Purchase,4578187,11.5,24,2019-03-17,2021-03-06,Closed,No,0,0,,Closed,Car,Brother,No,190758.0,Megha Mehta,32,F,Savings,666,SME,Jaipur
+P2P Lending,C842,L680,Home Loan,Residential Property,680499,13.6,36,2023-01-25,2026-01-09,Ongoing,No,680499,0,,Active,House,Wife,Yes,18903.0,Neha Iyer,49,F,Savings,783,Corporate,Gurugram
+P2P Lending,C990,L1658,Car Loan,Vehicle Purchase,1894401,7.8,36,2021-01-08,2023-12-24,Ongoing,No,1894401,2,,Active,Car,Brother,No,52622.0,Sunita Gupta,39,F,Current,654,Corporate,Jaipur
+P2P Lending,C96,L102,Business Loan,Working Capital,4774370,9.1,48,2021-11-03,2025-10-13,Ongoing,No,4774370,0,,Active,Factory,None,No,99466.0,Anita Malhotra,40,F,Current,639,Retail,Ahmedabad
+P2P Lending,C973,L278,Education Loan,Higher Education,2047499,9.2,48,2023-07-18,2027-06-27,Ongoing,No,2047499,0,,Active,None,None,Yes,42656.0,Arjun Verma,58,M,Current,669,Corporate,Mumbai
+P2P Lending,C604,L954,Business Loan,Startup Funding,2877147,9.1,240,2023-09-19,2043-06-06,Defaulted,Yes,2877147,6,2025-01-16,Recovery,Factory,Wife,No,11988.0,Rohit Rao,59,F,Savings,632,SME,Hyderabad
+P2P Lending,C158,L665,Home Loan,Renovation,862816,7.1,180,2023-06-26,2038-04-08,Defaulted,No,862816,3,2026-10-11,Recovery,House,Mother,No,4793.0,Vikram Singh,23,M,Current,659,Retail,Mumbai
+P2P Lending,C368,L1827,Car Loan,Vehicle Purchase,314353,9.1,48,2025-03-18,2029-02-25,Ongoing,No,314353,1,,Active,Car,Husband,No,6549.0,Sneha Rao,53,M,Current,678,Retail,Bangalore
+P2P Lending,C1792,L1709,Car Loan,Vehicle Purchase,3226215,12.3,96,2022-12-10,2030-10-29,Ongoing,No,3226215,3,,Active,Car,Father,Yes,33606.0,Anjali Kapoor,44,F,Current,782,SME,Ahmedabad
+P2P Lending,C242,L1275,Home Loan,Renovation,3103474,9.6,48,2020-07-05,2024-06-14,Closed,No,0,0,,Closed,House,Wife,No,64656.0,Neha Sharma,28,M,Savings,724,SME,Ahmedabad
+P2P Lending,C1396,L453,Home Loan,Residential Property,3003395,9.5,60,2022-02-08,2027-01-13,Ongoing,No,3003395,1,,Active,House,Wife,No,50057.0,Shreya Patel,29,M,Savings,692,SME,Mumbai
+P2P Lending,C1200,L1778,Education Loan,Overseas Study,1315958,8.4,180,2019-11-29,2034-09-11,Ongoing,No,1315958,4,,Active,None,Wife,Yes,7311.0,Kunal Gupta,40,M,Current,707,Corporate,Pune
+P2P Lending,C1902,L811,Business Loan,Working Capital,632878,11.2,96,2022-09-28,2030-08-17,Ongoing,No,632878,1,,Active,Factory,Brother,No,6592.0,Shreya Desai,43,M,Current,626,Retail,Gurugram
+P2P Lending,C414,L349,Car Loan,Vehicle Purchase,3828829,9.9,48,2020-05-04,2024-04-13,Ongoing,No,3828829,0,,Active,Car,Mother,Yes,79767.0,Anjali Nair,50,M,Current,679,Retail,Bangalore
+P2P Lending,C1818,L874,Home Loan,Renovation,2629412,11.6,36,2020-08-22,2023-08-07,Ongoing,No,2629412,6,,Active,House,Mother,Yes,73039.0,Neha Sharma,29,F,Savings,782,SME,Pune
+P2P Lending,C1592,L1473,Personal Loan,Debt Consolidation,438682,14.0,96,2025-11-15,2033-10-04,Ongoing,No,438682,5,,Active,None,Father,No,4570.0,Vikram Iyer,44,M,Current,774,Retail,Jaipur
+P2P Lending,C484,L291,Business Loan,Business Expansion,1858616,11.3,24,2022-06-21,2024-06-10,Ongoing,No,1858616,1,,Active,Factory,None,No,77442.0,Shalini Rao,49,M,Current,605,Retail,Chennai
+P2P Lending,C1097,L742,Car Loan,Vehicle Purchase,3863957,10.6,60,2022-11-21,2027-10-26,Ongoing,No,3863957,4,,Active,Car,None,Yes,64399.0,Vikram Rathi,47,F,Current,757,Corporate,Mumbai
+P2P Lending,C1594,L564,Personal Loan,Medical Expenses,1941619,10.4,180,2022-11-23,2037-09-05,Ongoing,No,1941619,4,,Active,None,None,Yes,10787.0,Sneha Kumar,23,F,Current,640,Retail,Patna
+P2P Lending,C980,L899,Car Loan,Vehicle Purchase,2439786,14.5,60,2019-01-27,2024-01-01,Closed,No,0,0,,Closed,Car,Mother,No,40663.0,Shalini Rathi,46,M,Savings,777,SME,Chennai
+P2P Lending,C1388,L1710,Business Loan,Business Expansion,2954760,14.4,96,2020-04-04,2028-02-22,Ongoing,No,2954760,4,,Active,Factory,None,No,30779.0,Pooja Rao,21,F,Current,683,SME,Lucknow
+P2P Lending,C156,L984,Personal Loan,Medical Expenses,4824476,12.6,24,2022-03-24,2024-03-13,Ongoing,No,4824476,3,,Active,None,Wife,No,201020.0,Arjun Malhotra,44,F,Current,680,Corporate,Gurugram
+P2P Lending,C945,L1466,Home Loan,Residential Property,277482,8.7,120,2020-03-10,2030-01-17,Ongoing,No,277482,5,,Active,House,Wife,Yes,2312.0,Anjali Mehta,39,F,Savings,618,Corporate,Gurugram
+P2P Lending,C1333,L1758,Business Loan,Startup Funding,1854602,7.9,36,2022-10-04,2025-09-18,Ongoing,No,1854602,1,,Active,Factory,Husband,Yes,51517.0,Deepak Bansal,53,M,Current,646,SME,Pune
+P2P Lending,C1966,L434,Personal Loan,Wedding Expenses,4181153,13.8,60,2025-11-27,2030-11-01,Ongoing,No,4181153,4,,Active,None,Father,No,69686.0,Rajesh Joshi,26,M,Savings,678,SME,Gurugram
+P2P Lending,C1202,L323,Home Loan,Residential Property,3233313,8.7,24,2023-10-01,2025-09-20,Ongoing,No,3233313,2,,Active,House,None,No,134721.0,Suresh Desai,28,F,Current,674,Retail,Mumbai
+P2P Lending,C139,L58,Business Loan,Startup Funding,2932815,13.5,96,2021-02-11,2028-12-31,Closed,No,0,0,,Closed,Factory,Wife,Yes,30550.0,Anjali Malhotra,33,F,Current,601,Corporate,Chennai
+P2P Lending,C277,L179,Education Loan,Overseas Study,1775047,9.8,60,2019-10-28,2024-10-01,Ongoing,No,1775047,0,,Active,None,Brother,Yes,29584.0,Arjun Sharma,52,M,Current,676,Retail,Patna
+P2P Lending,C307,L1384,Business Loan,Business Expansion,3083707,13.1,48,2023-07-05,2027-06-14,Closed,No,0,0,,Closed,Factory,Wife,Yes,64244.0,Anjali Sharma,37,M,Savings,767,Retail,Patna
+P2P Lending,C592,L105,Business Loan,Startup Funding,570766,13.8,120,2020-06-30,2030-05-09,Ongoing,No,570766,0,,Active,Factory,None,No,4756.0,Rahul Malhotra,22,M,Current,657,Corporate,Mumbai
+P2P Lending,C321,L1204,Business Loan,Business Expansion,2570651,12.1,96,2020-03-25,2028-02-12,Closed,No,0,0,,Closed,Factory,Wife,Yes,26778.0,Shalini Rao,58,M,Current,673,SME,Ahmedabad
