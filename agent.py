@@ -1,7 +1,7 @@
-# agent.py
 import json, os, re, sqlite3
-from typing import TypedDict, Dict, Any
-from langgraph.graph import StateGraph, START, END
+from typing import TypedDict, Dict, Any, Optional
+
+from langgraph.graph import StateGraph, END
 from langgraph.checkpoint.sqlite import SqliteSaver
 
 from dataset import LOAN_APPLICATIONS
@@ -9,41 +9,58 @@ from rag_core import answer_query
 from guardrails import input_guardrail, apply_rag_output_guardrail, FALLBACK
 from schemas import AgentResponse
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH = os.path.join(BASE_DIR, "checkpoints.sqlite")
-HISTORY_FILE = os.path.join(BASE_DIR, "conversation_history.json")
-
-RAG_STRATEGY = "sentence"       
-RAG_THRESHOLD = 0.2480           
+RAG_STRATEGY = "sentence"
+RAG_THRESHOLD = 0.2480
 ESCALATION_THRESHOLD = 0.65
+DB_PATH = "checkpoints.sqlite"
 
-APPLICATION_INDEX = {str(x["record_id"]): x for x in LOAN_APPLICATIONS}
+
+NODE_COUNTS = {
+    "classify": 0,
+    "rag": 0,
+    "lookup": 0,
+    "final": 0
+}
 
 
 class AgentState(TypedDict, total=False):
     query: str
     thread_id: str
     intent: str
-    record_id: str
-    tool_result: Dict[str, Any]
-    rag_result: Dict[str, Any]
-    response: Dict[str, Any]
+    record_id: Optional[str]
+    lookup_result: dict
+    rag_result: dict
+    response: dict
+
+
+def extract_record_id(text: str):
+    match = re.search(r"\bREC\d{4}\b", text.upper())
+    return match.group(0) if match else None
 
 
 def check_loan_application_status(record_id: str) -> dict:
-    """Return application status, loan amount and escalation score."""
-    record = APPLICATION_INDEX.get(str(record_id))
-    if not record:
-        return {"found": False, "record_id": record_id, "message": "Loan application not found."}
+    record = next(
+        (x for x in LOAN_APPLICATIONS if x["record_id"] == record_id),
+        None
+    )
 
-    days = max(0, min(int(record["days_since_created"]), 30))
+    if not record:
+        return {
+            "found": False,
+            "record_id": record_id
+        }
+
+    recency = 1 - min(record["days_since_created"], 30) / 30
     fraud = 1.0 if record["flagged_for_fraud_review"] else 0.0
-    recency = 1.0 - (days / 30)
-    score = round((0.60 * fraud) + (0.40 * recency), 3)
+
+    score = round(
+        0.60 * fraud + 0.40 * recency,
+        3
+    )
 
     return {
         "found": True,
-        "record_id": str(record["record_id"]),
+        "record_id": record["record_id"],
         "status": record["status"],
         "loan_amount_inr": record["loan_amount_inr"],
         "escalation_score": score,
@@ -51,63 +68,99 @@ def check_loan_application_status(record_id: str) -> dict:
     }
 
 
-def extract_record_id(query: str) -> str:
-    match = re.search(r"\bREC\d+\b", query.upper())
-    return match.group(0) if match else ""
-
-
 def classify_node(state: AgentState):
+    NODE_COUNTS["classify"] += 1
+
     query = state["query"].lower()
-    terms = ["loan status", "application status", "check application",
-             "track application", "record id", "record_id"]
-    state["intent"] = "lookup" if any(x in query for x in terms) else "rag"
+
+    terms = [
+        "loan status",
+        "application status",
+        "check application",
+        "track application",
+        "record id",
+        "record_id"
+    ]
+
+    state["intent"] = (
+        "lookup"
+        if any(term in query for term in terms)
+        else "rag"
+    )
+
     if state["intent"] == "lookup":
-        state["record_id"] = extract_record_id(state["query"])
+        state["record_id"] = extract_record_id(
+            state["query"]
+        )
+
     return state
 
 
-def route_intent(state: AgentState):
-    return state["intent"]
-
-
 def lookup_node(state: AgentState):
-    record_id = state.get("record_id", "")
-    state["tool_result"] = (
-        check_loan_application_status(record_id)
-        if record_id
-        else {"found": False, "message": "Please provide a valid record ID such as REC0001."}
-    )
+    NODE_COUNTS["lookup"] += 1
+
+    record_id = state.get("record_id")
+
+    if not record_id:
+        state["lookup_result"] = {
+            "found": False,
+            "record_id": None
+        }
+    else:
+        state["lookup_result"] = (
+            check_loan_application_status(record_id)
+        )
+
     return state
 
 
 def rag_node(state: AgentState):
+    NODE_COUNTS["rag"] += 1
+
     state["rag_result"] = answer_query(
         query=state["query"],
         strategy=RAG_STRATEGY,
         top_k=3,
         similarity_threshold=RAG_THRESHOLD
     )
+
     return state
 
 
-def final_node(state):
+def final_node(state: AgentState):
+    NODE_COUNTS["final"] += 1
+
     if state["intent"] == "lookup":
+
         result = state["lookup_result"]
 
         if not result["found"]:
             answer = "Loan application record not found."
+
         else:
             answer = (
-                f'Application {result["record_id"]} is {result["status"]}. '
-                f'Loan amount: INR {result["loan_amount_inr"]:,}. '
-                f'Escalation score: {result["escalation_score"]:.3f}.'
+                f'Application {result["record_id"]} '
+                f'is {result["status"]}. '
+                f'Loan amount: INR '
+                f'{result["loan_amount_inr"]:,}. '
+                f'Escalation score: '
+                f'{result["escalation_score"]:.3f}.'
             )
 
         source = "loan_status_tool"
 
     else:
-        guarded = apply_rag_output_guardrail(state["rag_result"])
-        answer = guarded.get("answer", FALLBACK) if isinstance(guarded, dict) else guarded
+
+        guarded = apply_rag_output_guardrail(
+            state["rag_result"]
+        )
+
+        answer = (
+            guarded.get("answer", FALLBACK)
+            if isinstance(guarded, dict)
+            else guarded
+        )
+
         source = "knowledge_base"
 
     return {
@@ -119,90 +172,113 @@ def final_node(state):
         }
     }
 
+
+def route_node(state: AgentState):
+    return state["intent"]
+
+
 def create_builder():
     builder = StateGraph(AgentState)
-    builder.add_node("classify", classify_node)
-    builder.add_node("lookup", lookup_node)
-    builder.add_node("rag", rag_node)
-    builder.add_node("finalize", final_node)
 
-    builder.add_edge(START, "classify")
-    builder.add_conditional_edges("classify", route_intent, {
-        "lookup": "lookup",
-        "rag": "rag"
-    })
-    builder.add_edge("lookup", "finalize")
-    builder.add_edge("rag", "finalize")
-    builder.add_edge("finalize", END)
+    builder.add_node(
+        "classify",
+        classify_node
+    )
+
+    builder.add_node(
+        "lookup",
+        lookup_node
+    )
+
+    builder.add_node(
+        "rag",
+        rag_node
+    )
+
+    builder.add_node(
+        "final",
+        final_node
+    )
+
+    builder.set_entry_point(
+        "classify"
+    )
+
+    builder.add_conditional_edges(
+        "classify",
+        route_node,
+        {
+            "lookup": "lookup",
+            "rag": "rag"
+        }
+    )
+
+    builder.add_edge(
+        "lookup",
+        "final"
+    )
+
+    builder.add_edge(
+        "rag",
+        "final"
+    )
+
+    builder.add_edge(
+        "final",
+        END
+    )
+
     return builder
 
 
-db_connection = sqlite3.connect(DB_PATH, check_same_thread=False)
-checkpointer = SqliteSaver(db_connection)
-agent_graph = create_builder().compile(checkpointer=checkpointer)
+db_connection = sqlite3.connect(
+    DB_PATH,
+    check_same_thread=False
+)
+
+checkpointer = SqliteSaver(
+    db_connection
+)
+
+agent_graph = create_builder().compile(
+    checkpointer=checkpointer
+)
 
 
-def load_history():
-    if not os.path.exists(HISTORY_FILE):
-        return {}
-    try:
-        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except (OSError, json.JSONDecodeError):
-        return {}
+def run_agent(
+    query: str,
+    thread_id: str = "default"
+):
+    safe_query = input_guardrail(query)
 
+    if isinstance(safe_query, dict):
+        safe_query = safe_query.get(
+            "query",
+            safe_query.get("masked_text", query)
+        )
 
-def save_history(history):
-    with open(HISTORY_FILE, "w", encoding="utf-8") as f:
-        json.dump(history, f, indent=2, ensure_ascii=False)
+    state = {
+        "query": safe_query,
+        "thread_id": thread_id
+    }
 
-
-def add_history(thread_id, role, content):
-    history = load_history()
-    history.setdefault(thread_id, []).append({"role": role, "content": content})
-    save_history(history)
-
-
-def reset_history(thread_id):
-    history = load_history()
-    history.pop(thread_id, None)
-    save_history(history)
-
-
-def run_agent(query: str, thread_id: str = "default"):
-    guard = input_guardrail(query)
-
-    if not guard["allowed"]:
-        response = {
-            "answer": guard["response"],
-            "intent": "rag",
-            "source": "guardrail",
-            "thread_id": thread_id
+    result = agent_graph.invoke(
+        state,
+        config={
+            "configurable": {
+                "thread_id": thread_id
+            }
         }
-        return AgentResponse.model_validate(response).model_dump()
-
-    safe_query = guard["text"]
-    add_history(thread_id, "user", safe_query)
-
-    config = {"configurable": {"thread_id": thread_id}}
-    state = agent_graph.invoke(
-        {"query": safe_query, "thread_id": thread_id},
-        config=config
     )
 
-    response = AgentResponse.model_validate(state["response"]).model_dump()
-    add_history(thread_id, "assistant", response["answer"])
-    return response
+    return result["response"]
 
 
 def build_interrupt_graph():
-    """Graph used only for interruption/resume testing."""
     return create_builder().compile(
         checkpointer=checkpointer,
-        interrupt_after=["rag", "lookup"]
+        interrupt_after=[
+            "rag",
+            "lookup"
+        ]
     )
-
-
-if __name__ == "__main__":
-    print(run_agent("What documents are required for KYC?", "demo-1"))
-    print(run_agent("Check application status for REC0001", "demo-2"))
