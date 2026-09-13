@@ -1,384 +1,204 @@
-import json
-import os
-import re
-import sqlite3
-from typing import Any, Dict, List, Optional, TypedDict
-
+# agent.py
+import json, os, re, sqlite3
+from typing import TypedDict, Dict, Any
+from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.sqlite import SqliteSaver
-from langgraph.graph import END, StateGraph
 
-from guardrails import (
-    detect_prompt_injection,
-    mask_pii,
-    verify_groundedness,
-)
-from rag_core import retrieve_with_scores
-from schemas import AgentStructuredResponse
+from dataset import LOAN_APPLICATIONS
+from rag_core import answer_query
+from guardrails import input_guardrail, apply_rag_output_guardrail
+from schemas import AgentResponse
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "checkpoints.sqlite")
+HISTORY_FILE = os.path.join(BASE_DIR, "conversation_history.json")
 
-DATASET_PATH = "data/loan_applications.json"
+RAG_STRATEGY = "sentence"       # replace after evaluation
+RAG_THRESHOLD = None           # replace with calibrated value
+ESCALATION_THRESHOLD = 0.65
 
-RAG_COLLECTION = "fixed_chunks"
-SIMILARITY_THRESHOLD = 0.4569
+APPLICATION_INDEX = {str(x["record_id"]): x for x in LOAN_APPLICATIONS}
 
-ESCALATION_THRESHOLD = 0.55
-
-def check_loan_application_status(
-    record_id: str
-) -> Dict[str, Any]:
-
-    if not os.path.exists(DATASET_PATH):
-        return {"error": "Dataset not found."}
-
-    with open(DATASET_PATH, "r", encoding="utf-8") as file:
-        dataset = json.load(file)
-
-    record = next(
-        (
-            row
-            for row in dataset
-            if row["record_id"].upper() == record_id.upper()
-        ),
-        None,
-    )
-
-    if record is None:
-        return {
-            "error": f"Application ID '{record_id}' not found."
-        }
-
-    fraud_score = (
-        0.60
-        if record["flagged_for_fraud_review"]
-        else 0.0
-    )
-
-    recency_score = (
-        0.40
-        * min(
-            record["days_since_created"] / 30.0,
-            1.0,
-        )
-    )
-
-    escalation_score = round(
-        fraud_score + recency_score,
-        3,
-    )
-
-    return {
-        "record_id": record["record_id"],
-        "category": record["category"],
-        "status": record["status"],
-        "loan_amount_inr": record["loan_amount_inr"],
-        "days_since_created": record["days_since_created"],
-        "flagged_for_fraud_review":
-            record["flagged_for_fraud_review"],
-        "escalation_score": escalation_score,
-        "escalation_recommended":
-            escalation_score >= ESCALATION_THRESHOLD,
-    }
 
 class AgentState(TypedDict, total=False):
     query: str
-    masked_query: str
+    thread_id: str
     intent: str
-    context: List[Dict]
-    tool_result: Dict
-    response: Dict
-    conversation_history: List[str]
-    guardrail_triggered: bool
-    error_message: Optional[str]
+    record_id: str
+    tool_result: Dict[str, Any]
+    rag_result: Dict[str, Any]
+    response: Dict[str, Any]
 
-def input_guardrail_node(
-    state: AgentState
-) -> AgentState:
 
-    raw_query = state["query"]
+def check_loan_application_status(record_id: str) -> dict:
+    """Return application status, loan amount and escalation score."""
+    record = APPLICATION_INDEX.get(str(record_id))
+    if not record:
+        return {"found": False, "record_id": record_id, "message": "Loan application not found."}
 
-    if detect_prompt_injection(raw_query):
+    days = max(0, min(int(record["days_since_created"]), 30))
+    fraud = 1.0 if record["flagged_for_fraud_review"] else 0.0
+    recency = 1.0 - (days / 30)
+    score = round((0.60 * fraud) + (0.40 * recency), 3)
 
-        state["guardrail_triggered"] = True
+    return {
+        "found": True,
+        "record_id": str(record["record_id"]),
+        "status": record["status"],
+        "loan_amount_inr": record["loan_amount_inr"],
+        "escalation_score": score,
+        "needs_escalation": score >= ESCALATION_THRESHOLD
+    }
 
-        state["response"] = AgentStructuredResponse(
-            query=mask_pii(raw_query),
-            intent="SECURITY_VIOLATION",
-            answer=(
-                "Request blocked because a prompt "
-                "injection pattern was detected."
-            ),
-            sources=[],
-            escalation_recommended=False,
-            escalation_score=0.0,
-            grounded=False,
-        ).model_dump()
 
-        return state
+def extract_record_id(query: str) -> str:
+    match = re.search(r"\bREC\d+\b", query.upper())
+    return match.group(0) if match else ""
 
-    masked_query = mask_pii(raw_query)
 
-    state["masked_query"] = masked_query
-    state["guardrail_triggered"] = False
-
-    if (
-        re.search(
-            r"CRD-LN-\d+",
-            masked_query,
-            re.IGNORECASE,
-        )
-        or "application status" in masked_query.lower()
-    ):
-        state["intent"] = "APPLICATION_LOOKUP"
-
-    else:
-        state["intent"] = "POLICY_QUERY"
-
+def classify_node(state: AgentState):
+    query = state["query"].lower()
+    terms = ["loan status", "application status", "check application",
+             "track application", "record id", "record_id"]
+    state["intent"] = "lookup" if any(x in query for x in terms) else "rag"
+    if state["intent"] == "lookup":
+        state["record_id"] = extract_record_id(state["query"])
     return state
 
-def rag_retrieval_node(
-    state: AgentState
-) -> AgentState:
 
-    retrieved = retrieve_with_scores(
-        RAG_COLLECTION,
-        state["masked_query"],
+def route_intent(state: AgentState):
+    return state["intent"]
+
+
+def lookup_node(state: AgentState):
+    record_id = state.get("record_id", "")
+    state["tool_result"] = (
+        check_loan_application_status(record_id)
+        if record_id
+        else {"found": False, "message": "Please provide a valid record ID such as REC0001."}
+    )
+    return state
+
+
+def rag_node(state: AgentState):
+    state["rag_result"] = answer_query(
+        query=state["query"],
+        strategy=RAG_STRATEGY,
         top_k=3,
+        similarity_threshold=RAG_THRESHOLD
     )
-
-    state["context"] = [
-        item
-        for item in retrieved
-        if item["similarity"] >= SIMILARITY_THRESHOLD
-    ]
-
     return state
 
-def application_lookup_node(
-    state: AgentState
-) -> AgentState:
 
-    match = re.search(
-        r"CRD-LN-\d+",
-        state["masked_query"],
-        re.IGNORECASE,
-    )
-
-    if match:
-        record_id = match.group(0).upper()
-
-        state["tool_result"] = (
-            check_loan_application_status(record_id)
-        )
-
-    else:
-        state["tool_result"] = {
-            "error": (
-                "No valid application ID provided. "
-                "Expected format: CRD-LN-XXXX."
+def final_node(state: AgentState):
+    if state["intent"] == "lookup":
+        result = state["tool_result"]
+        if result.get("found"):
+            answer = (
+                f"Application {result['record_id']} is {result['status']}. "
+                f"Loan amount: INR {result['loan_amount_inr']:,}. "
+                f"Escalation score: {result['escalation_score']:.3f}."
             )
+        else:
+            answer = result.get("message", "Loan application not found.")
+        source = "loan_status_tool"
+    else:
+        answer = apply_rag_output_guardrail(state["rag_result"])
+        source = "knowledge_base"
+
+    state["response"] = {
+        "answer": answer,
+        "intent": state["intent"],
+        "source": source,
+        "thread_id": state.get("thread_id", "default")
+    }
+    return state
+
+
+def create_builder():
+    builder = StateGraph(AgentState)
+    builder.add_node("classify", classify_node)
+    builder.add_node("lookup", lookup_node)
+    builder.add_node("rag", rag_node)
+    builder.add_node("finalize", final_node)
+
+    builder.add_edge(START, "classify")
+    builder.add_conditional_edges("classify", route_intent, {
+        "lookup": "lookup",
+        "rag": "rag"
+    })
+    builder.add_edge("lookup", "finalize")
+    builder.add_edge("rag", "finalize")
+    builder.add_edge("finalize", END)
+    return builder
+
+
+db_connection = sqlite3.connect(DB_PATH, check_same_thread=False)
+checkpointer = SqliteSaver(db_connection)
+agent_graph = create_builder().compile(checkpointer=checkpointer)
+
+
+def load_history():
+    if not os.path.exists(HISTORY_FILE):
+        return {}
+    try:
+        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def save_history(history):
+    with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(history, f, indent=2, ensure_ascii=False)
+
+
+def add_history(thread_id, role, content):
+    history = load_history()
+    history.setdefault(thread_id, []).append({"role": role, "content": content})
+    save_history(history)
+
+
+def reset_history(thread_id):
+    history = load_history()
+    history.pop(thread_id, None)
+    save_history(history)
+
+
+def run_agent(query: str, thread_id: str = "default"):
+    guard = input_guardrail(query)
+
+    if not guard["allowed"]:
+        response = {
+            "answer": guard["response"],
+            "intent": "rag",
+            "source": "guardrail",
+            "thread_id": thread_id
         }
+        return AgentResponse.model_validate(response).model_dump()
 
-    return state
+    safe_query = guard["text"]
+    add_history(thread_id, "user", safe_query)
 
-def answer_synthesis_node(
-    state: AgentState
-) -> AgentState:
-
-    query = state["masked_query"]
-    intent = state["intent"]
-
-    if intent == "APPLICATION_LOOKUP":
-
-        result = state.get("tool_result", {})
-
-        if "error" in result:
-
-            response = AgentStructuredResponse(
-                query=query,
-                intent=intent,
-                answer=(
-                    "Unable to retrieve application status: "
-                    + result["error"]
-                ),
-                sources=[],
-                escalation_recommended=False,
-                escalation_score=0.0,
-                grounded=False,
-            )
-
-        else:
-
-            answer = (
-                f"Application {result['record_id']} "
-                f"({result['category']}) is currently "
-                f"'{result['status']}'. "
-                f"Loan Amount: INR "
-                f"{result['loan_amount_inr']:,}. "
-                f"Days since creation: "
-                f"{result['days_since_created']}. "
-                f"Fraud Review Flag: "
-                f"{result['flagged_for_fraud_review']}."
-            )
-
-            response = AgentStructuredResponse(
-                query=query,
-                intent=intent,
-                answer=answer,
-                sources=[result["record_id"]],
-                escalation_recommended=(
-                    result["escalation_recommended"]
-                ),
-                escalation_score=(
-                    result["escalation_score"]
-                ),
-                grounded=True,
-            )
-
-    else:
-
-        chunks = state.get("context", [])
-
-        if not chunks:
-
-            response = AgentStructuredResponse(
-                query=query,
-                intent=intent,
-                answer=(
-                    "I am sorry, but I do not have enough "
-                    "policy information in my knowledge base "
-                    "to answer that specific question."
-                ),
-                sources=[],
-                escalation_recommended=False,
-                escalation_score=0.0,
-                grounded=False,
-            )
-
-        else:
-
-            context = " ".join(
-                chunk["content"]
-                for chunk in chunks
-            )
-
-            sources = list(
-                dict.fromkeys(
-                    chunk["doc_id"]
-                    for chunk in chunks
-                )
-            )
-
-            answer = (
-                f"Based on Cred Policy documents "
-                f"({', '.join(sources)}): {context}"
-            )
-
-            response = AgentStructuredResponse(
-                query=query,
-                intent=intent,
-                answer=answer,
-                sources=sources,
-                escalation_recommended=False,
-                escalation_score=0.0,
-                grounded=verify_groundedness(
-                    context,
-                    answer,
-                ),
-            )
-
-    state["response"] = response.model_dump()
-
-    history = state.get(
-        "conversation_history",
-        [],
+    config = {"configurable": {"thread_id": thread_id}}
+    state = agent_graph.invoke(
+        {"query": safe_query, "thread_id": thread_id},
+        config=config
     )
 
-    history.extend([
-        f"User: {query}",
-        f"Agent: {response.answer}",
-    ])
+    response = AgentResponse.model_validate(state["response"]).model_dump()
+    add_history(thread_id, "assistant", response["answer"])
+    return response
 
-    state["conversation_history"] = history
 
-    return state
+def build_interrupt_graph():
+    """Graph used only for interruption/resume testing."""
+    return create_builder().compile(
+        checkpointer=checkpointer,
+        interrupt_after=["rag", "lookup"]
+    )
 
-def route_intent(
-    state: AgentState
-) -> str:
 
-    if state.get("guardrail_triggered"):
-        return "end"
-
-    if state["intent"] == "APPLICATION_LOOKUP":
-        return "application"
-
-    return "rag"
-
-builder = StateGraph(AgentState)
-
-builder.add_node(
-    "input_guardrail",
-    input_guardrail_node,
-)
-
-builder.add_node(
-    "rag",
-    rag_retrieval_node,
-)
-
-builder.add_node(
-    "application",
-    application_lookup_node,
-)
-
-builder.add_node(
-    "answer",
-    answer_synthesis_node,
-)
-
-builder.set_entry_point(
-    "input_guardrail"
-)
-
-builder.add_conditional_edges(
-    "input_guardrail",
-    route_intent,
-    {
-        "rag": "rag",
-        "application": "application",
-        "end": END,
-    },
-)
-
-builder.add_edge(
-    "rag",
-    "answer",
-)
-
-builder.add_edge(
-    "application",
-    "answer",
-)
-
-builder.add_edge(
-    "answer",
-    END,
-)
-
-os.makedirs(
-    "data",
-    exist_ok=True,
-)
-
-connection = sqlite3.connect(
-    "data/checkpoints.sqlite",
-    check_same_thread=False,
-)
-
-checkpointer = SqliteSaver(
-    connection
-)
-
-agent_graph = builder.compile(
-    checkpointer=checkpointer
-)
+if __name__ == "__main__":
+    print(run_agent("What documents are required for KYC?", "demo-1"))
+    print(run_agent("Check application status for REC0001", "demo-2"))
