@@ -6,7 +6,7 @@ from langgraph.checkpoint.sqlite import SqliteSaver
 
 from dataset import LOAN_APPLICATIONS
 from rag_core import answer_query
-from guardrails import input_guardrail, apply_rag_output_guardrail
+from guardrails import input_guardrail, apply_rag_output_guardrail, FALLBACK
 from schemas import AgentResponse
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -90,30 +90,34 @@ def rag_node(state: AgentState):
     return state
 
 
-def final_node(state: AgentState):
+def final_node(state):
     if state["intent"] == "lookup":
-        result = state["tool_result"]
-        if result.get("found"):
-            answer = (
-                f"Application {result['record_id']} is {result['status']}. "
-                f"Loan amount: INR {result['loan_amount_inr']:,}. "
-                f"Escalation score: {result['escalation_score']:.3f}."
-            )
+        result = state["lookup_result"]
+
+        if not result["found"]:
+            answer = "Loan application record not found."
         else:
-            answer = result.get("message", "Loan application not found.")
+            answer = (
+                f'Application {result["record_id"]} is {result["status"]}. '
+                f'Loan amount: INR {result["loan_amount_inr"]:,}. '
+                f'Escalation score: {result["escalation_score"]:.3f}.'
+            )
+
         source = "loan_status_tool"
+
     else:
-        answer = apply_rag_output_guardrail(state["rag_result"])
+        guarded = apply_rag_output_guardrail(state["rag_result"])
+        answer = guarded.get("answer", FALLBACK) if isinstance(guarded, dict) else guarded
         source = "knowledge_base"
 
-    state["response"] = {
-        "answer": answer,
-        "intent": state["intent"],
-        "source": source,
-        "thread_id": state.get("thread_id", "default")
+    return {
+        "response": {
+            "answer": answer,
+            "intent": state["intent"],
+            "source": source,
+            "thread_id": state["thread_id"]
+        }
     }
-    return state
-
 
 def create_builder():
     builder = StateGraph(AgentState)
